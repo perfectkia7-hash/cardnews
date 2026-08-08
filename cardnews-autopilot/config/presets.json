@@ -1,0 +1,117 @@
+{
+  "_comment": "분야별 매체 RSS 묶음. --preset 으로 불러온다. 구글 뉴스와 달리 요약 원문과 대표 이미지가 같이 와서, 사진이 들어가는 카드뉴스를 만들려면 이쪽이 필수다. 모든 피드는 2026-08 기준 동작을 확인했다. 매체 사정으로 주소가 바뀔 수 있으니 가끔 점검할 것.",
+
+  "tech": {
+    "label": "글로벌 테크 / AI",
+    "query": "artificial intelligence OR AI chip OR semiconductor OR OpenAI OR Anthropic",
+    "lang": "en",
+    "region": "US",
+    "feeds": [
+      "https://techcrunch.com/feed/",
+      "https://www.theverge.com/rss/index.xml",
+      "https://arstechnica.com/feed/",
+      "https://www.wired.com/feed/category/business/latest/rss",
+      "https://venturebeat.com/category/ai/feed/",
+      "https://www.engadget.com/rss.xml",
+      "https://www.technologyreview.com/feed/",
+      "https://www.zdnet.com/news/rss.xml",
+      "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss"
+    ]
+  },
+
+  "tech-kr": {
+    "label": "국내 IT / 테크",
+    "query": "인공지능 OR 반도체 OR IT업계 OR 스타트업",
+    "lang": "ko",
+    "region": "KR",
+    "feeds": [
+      "https://rss.etnews.com/Section901.xml",
+      "https://rss.etnews.com/20.xml",
+      "https://feeds.feedburner.com/Bloter"
+    ]
+  },
+
+  "business": {
+    "label": "글로벌 경제 / 비즈니스",
+    "query": "economy OR markets OR federal reserve OR inflation",
+    "lang": "en",
+    "region": "US",
+    "feeds": [
+      "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
+      "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+      "https://feeds.bbci.co.uk/news/business/rss.xml"
+    ]
+  },
+
+  "world": {
+    "label": "국제 뉴스",
+    "query": "world news OR international",
+    "lang": "en",
+    "region": "US",
+    "feeds": [
+      "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "https://www.aljazeera.com/xml/rss/all.xml",
+      "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+    ]
+  },
+
+  "science": {
+    "label": "과학 / 연구",
+    "query": "scientific study OR research breakthrough",
+    "lang": "en",
+    "region": "US",
+    "feeds": [
+      "https://www.sciencedaily.com/rss/top/science.xml",
+      "https://feeds.nature.com/nature/rss/current",
+      "https://phys.org/rss-feed/"
+    ]
+  },
+
+  "crypto": {
+    "label": "코인 / 블록체인",
+    "query": "bitcoin OR ethereum OR crypto regulation",
+    "lang": "en",
+    "region": "US",
+    "feeds": [
+      "https://www.coindesk.com/arc/outboundfeeds/rss/",
+      "https://cointelegraph.com/rss",
+      "https://decrypt.co/feed"
+    ]
+  },
+
+  "design": {
+    "label": "디자인 / 크리에이티브",
+    "query": "design trends OR branding OR architecture",
+    "lang": "en",
+    "region": "US",
+    "feeds": [
+      "https://www.dezeen.com/feed/",
+      "https://www.designboom.com/feed/",
+      "https://www.creativebloq.com/feeds.xml",
+      "https://feeds.feedburner.com/core77/blog"
+    ]
+  },
+
+  "health": {
+    "label": "건강 / 의학",
+    "query": "health study OR medical research OR nutrition",
+    "lang": "en",
+    "region": "US",
+    "feeds": [
+      "https://medicalxpress.com/rss-feed/",
+      "https://www.sciencedaily.com/rss/health_medicine.xml"
+    ]
+  },
+
+  "kr": {
+    "label": "국내 종합",
+    "query": "주요뉴스",
+    "lang": "ko",
+    "region": "KR",
+    "feeds": [
+      "https://www.yna.co.kr/rss/news.xml",
+      "https://www.hani.co.kr/rss/",
+      "https://rss.donga.com/total.xml"
+    ]
+  }
+}

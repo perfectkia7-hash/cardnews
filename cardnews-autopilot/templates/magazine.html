@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>magazine</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumMyeongjo.css">
+<style>
+/* ── magazine · 에디토리얼 감성. 라이프스타일/문화/인터뷰 ── */
+:root {
+  --accent: #A8583C;
+  --bg:     #F4EFE6;
+  --fg:     #211E1A;
+  --muted:  #8C8377;
+  --line:   #DDD3C4;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #333;
+  font-family: Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+#deck { display: flex; flex-direction: column; gap: 24px; }
+
+.card {
+  position: relative;
+  width: 1080px; height: 1350px;
+  background: var(--bg); color: var(--fg);
+  padding: 92px 90px;
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+/* 종이 질감을 흉내낸 아주 옅은 비네트 */
+.card::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(120% 90% at 50% 0%, rgba(255,255,255,.55), transparent 60%);
+  pointer-events: none;
+}
+
+.head {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  padding-bottom: 30px; border-bottom: 2px solid var(--fg); margin-bottom: 54px;
+}
+.head .kicker {
+  font-size: 25px; font-weight: 700; letter-spacing: .3em; text-transform: uppercase;
+}
+.head .num {
+  font-family: 'NanumMyeongjo', serif;
+  font-size: 40px; color: var(--accent); line-height: 1;
+}
+
+.fit {
+  flex: 1; font-size: 100px; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: center;
+}
+
+.headline {
+  font-family: 'NanumMyeongjo', 'Noto Serif KR', serif;
+  font-size: .74em; font-weight: 800; line-height: 1.34;
+  letter-spacing: -.022em; word-break: keep-all;
+}
+.body {
+  font-size: .335em; font-weight: 400; line-height: 1.78;
+  color: #4A443C; margin-top: .44em; word-break: keep-all;
+}
+
+.cover .headline { font-size: .96em; line-height: 1.26; }
+.cover .body {
+  font-size: .3em; color: var(--muted); margin-top: .6em;
+  padding-top: .5em; border-top: 1px solid var(--line);
+}
+
+.outro { text-align: center; }
+.outro .head { justify-content: center; }
+.outro .fit { justify-content: center; }
+.outro .headline { font-size: .8em; }
+
+.src {
+  margin-top: 42px; font-size: 24px; color: var(--muted);
+  font-style: italic; letter-spacing: -.01em;
+}
+
+.foot {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-top: 46px; padding-top: 26px; border-top: 1px solid var(--line);
+  font-size: 25px; color: var(--muted);
+}
+.foot .handle { font-weight: 700; letter-spacing: .04em; color: var(--accent); }
+.foot .swipe { font-weight: 700; color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="deck"></div>
+<script src="_engine.js"></script>
+<script>
+renderDeck({
+  defaultAccent: '#A8583C',
+  body(card, { brand }) {
+    const kicker =
+      card.kind === 'cover' ? (brand.label || 'FEATURE')
+      : card.kind === 'outro' ? 'FIN'
+      : 'STORY';
+    const num = card.kind === 'content' ? String(card.index - 1).padStart(2, '0') : '';
+    return `
+      <div class="head"><span class="kicker">${kicker}</span><span class="num">${num}</span></div>
+      <div class="fit">
+        ${parts.headline(card)}
+        ${parts.body(card)}
+      </div>
+      ${parts.source(card)}
+      ${parts.footer(card, brand)}
+    `;
+  },
+});
+</script>
+</body>
+</html>

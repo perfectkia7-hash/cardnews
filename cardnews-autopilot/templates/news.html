@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>news</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<style>
+/* ── news · 실제 뉴스 카드뉴스 계정들이 쓰는 문법 ────────────
+   사진이 화면을 채우고, 하단 검은 밴드에 키커 + 헤드라인.
+   사진이 주인공이라 타이포그래피만 있는 카드보다 훨씬 자연스럽다.
+   ────────────────────────────────────────────────────────── */
+:root {
+  --accent: #FFFFFF;
+  --band:   #000000;
+  --fg:     #FFFFFF;
+  --kicker: #8E8E93;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #333;
+  font-family: Pretendard, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+#deck { display: flex; flex-direction: column; gap: 24px; }
+
+.card {
+  position: relative;
+  width: 1080px; height: 1350px;
+  background: var(--band);
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+
+/* ── 사진 영역 ── */
+.photo {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: #101014;
+}
+.photo img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* 사진 아래쪽을 살짝 눌러 밴드와 자연스럽게 이어지게 */
+.photo::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 220px;
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,.55));
+}
+
+/* 사진을 못 구했을 때 — 강조색 그라디언트로 대체 */
+.card.noimage .photo {
+  background:
+    radial-gradient(90% 70% at 20% 15%, color-mix(in srgb, var(--accent) 55%, transparent), transparent 70%),
+    linear-gradient(150deg, #1B2233 0%, #0A0C12 70%);
+}
+.card.noimage .photo::before {
+  content: attr(data-mark);
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 220px; font-weight: 900; letter-spacing: -.06em;
+  color: rgba(255,255,255,.07);
+}
+
+/* ── 하단 텍스트 밴드 ── */
+.band {
+  background: var(--band);
+  padding: 40px 52px 54px;
+  flex-shrink: 0;
+}
+
+.kicker {
+  font-size: 25px; font-weight: 500; color: var(--kicker);
+  letter-spacing: -.01em; margin-bottom: 18px;
+}
+.kicker b { font-weight: 600; color: var(--kicker); }
+
+/* 글이 길면 엔진이 이 폰트 크기를 줄인다 */
+.fit { font-size: 100px; max-height: 300px; overflow: hidden; }
+
+.headline {
+  font-size: .54em; font-weight: 800; line-height: 1.32;
+  letter-spacing: -.032em; color: var(--fg); word-break: keep-all;
+}
+
+/* 표지는 조금 더 크게 */
+.cover .headline { font-size: .60em; }
+
+/* ── 엔딩 ── 사진 없이 한 장 전체를 브랜드 카드로 */
+.outro { justify-content: center; }
+.outro .photo { display: none; }
+.outro .band {
+  background: none;
+  padding: 0 72px;
+  text-align: center;
+}
+.outro .kicker { margin-bottom: 30px; }
+.outro .fit { max-height: 420px; }
+.outro .headline { font-size: .72em; line-height: 1.28; }
+.outro .sub {
+  font-size: 30px; color: #9A9AA0; margin-top: 30px; line-height: 1.6;
+}
+.outro::before {
+  content: ''; position: absolute; top: -180px; left: 50%;
+  transform: translateX(-50%);
+  width: 900px; height: 700px; border-radius: 50%;
+  background: var(--accent); opacity: .16; filter: blur(140px);
+}
+.outro .band { position: relative; z-index: 1; }
+.outro .page { color: #46464B; }
+
+/* 우하단 페이지 표시 */
+.page {
+  position: absolute; right: 52px; bottom: 54px;
+  font-size: 24px; font-weight: 700; color: #55555A;
+}
+</style>
+</head>
+<body>
+<div id="deck"></div>
+<script src="_engine.js"></script>
+<script>
+renderDeck({
+  defaultAccent: '#3B82F6',
+  cardClass(card) {
+    return card.imageSrc ? '' : 'noimage';
+  },
+  body(card, { brand }) {
+    const label = brand.label || '최신 뉴스';
+    const handle = brand.handle ? String(brand.handle).replace(/^@/, '') : '';
+    const kicker = handle ? `<b>${handle}</b> | ${label}` : label;
+
+    const photo = card.imageSrc
+      ? `<div class="photo"><img src="${card.imageSrc}" alt=""></div>`
+      : `<div class="photo" data-mark="${card.index}"></div>`;
+
+    const sub = card.kind === 'outro' && card.body
+      ? `<div class="sub">${card.body.replace(/\n/g, '<br>')}</div>`
+      : '';
+
+    return `
+      ${photo}
+      <div class="band">
+        <div class="kicker">${kicker}</div>
+        <div class="fit">${parts.headline(card)}</div>
+        ${sub}
+      </div>
+      ${card.kind === 'cover' ? '' : `<div class="page">${card.index}/${card.total}</div>`}
+    `;
+  },
+});
+</script>
+</body>
+</html>

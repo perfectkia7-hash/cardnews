@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>darktech</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<style>
+/* ── darktech · AI/테크/코인. 딥네이비 + 네온 액센트 ────── */
+:root {
+  --accent: #4DA3FF;
+  --bg0:    #070A14;
+  --bg1:    #0F1626;
+  --fg:     #F2F5FA;
+  --muted:  #7C8AA5;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #333;
+  font-family: Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+#deck { display: flex; flex-direction: column; gap: 24px; }
+
+.card {
+  position: relative;
+  width: 1080px; height: 1350px;
+  background: linear-gradient(165deg, var(--bg1) 0%, var(--bg0) 62%);
+  color: var(--fg);
+  padding: 88px 80px;
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+
+/* 배경 그리드 */
+.card::before {
+  content: ''; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.038) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.038) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, #000 0%, transparent 78%);
+}
+/* 상단 네온 글로우 */
+.card::after {
+  content: ''; position: absolute; top: -320px; left: 50%;
+  transform: translateX(-50%);
+  width: 900px; height: 620px; border-radius: 50%;
+  background: var(--accent); opacity: .18; filter: blur(120px);
+}
+
+.card > * { position: relative; z-index: 1; }
+
+.head { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; }
+.head .chip {
+  font-family: ui-monospace, 'SFMono-Regular', Consolas, monospace;
+  font-size: 24px; font-weight: 600; letter-spacing: .12em;
+  color: var(--accent);
+  border: 1.5px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  border-radius: 999px; padding: 10px 22px;
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+.head .rule { flex: 1; height: 1px; background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 40%, transparent), transparent); }
+
+.fit {
+  flex: 1; font-size: 100px; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: center;
+}
+
+.headline {
+  font-size: .73em; font-weight: 800; line-height: 1.26;
+  letter-spacing: -.032em; word-break: keep-all;
+}
+.body {
+  font-size: .34em; font-weight: 400; line-height: 1.7;
+  color: #B7C2D6; margin-top: .4em; word-break: keep-all;
+}
+
+.cover .headline {
+  font-size: .99em; line-height: 1.16;
+  background: linear-gradient(180deg, #fff 30%, color-mix(in srgb, var(--accent) 70%, #fff));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.cover .body { font-size: .32em; color: var(--muted); margin-top: .56em; }
+
+.outro { text-align: center; }
+.outro .head { justify-content: center; }
+.outro .head .rule { display: none; }
+.outro .fit { justify-content: center; }
+.outro .headline { font-size: .8em; }
+
+.src {
+  margin-top: 40px; font-family: ui-monospace, Consolas, monospace;
+  font-size: 23px; color: var(--muted);
+}
+
+.foot {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-top: 44px; padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,.09);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 25px; color: var(--muted);
+}
+.foot .handle { font-weight: 700; color: var(--fg); }
+.foot .swipe, .foot .page { font-weight: 700; color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="deck"></div>
+<script src="_engine.js"></script>
+<script>
+renderDeck({
+  defaultAccent: '#4DA3FF',
+  body(card, { brand }) {
+    const chip =
+      card.kind === 'cover' ? (brand.label || 'TECH BRIEF')
+      : card.kind === 'outro' ? 'EOF'
+      : `0${card.index - 1}`;
+    return `
+      <div class="head"><span class="chip">${chip}</span><span class="rule"></span></div>
+      <div class="fit">
+        ${parts.headline(card)}
+        ${parts.body(card)}
+      </div>
+      ${parts.source(card)}
+      ${parts.footer(card, brand)}
+    `;
+  },
+});
+</script>
+</body>
+</html>

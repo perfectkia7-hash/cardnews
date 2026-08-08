@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>board</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<style>
+/* ── board · 정보 정리형. 교육/꿀팁/요약 콘텐츠에 잘 맞음 ── */
+:root {
+  --accent: #2F6BFF;
+  --bg:     #FFFFFF;
+  --panel:  #F3F5FA;
+  --fg:     #14161C;
+  --muted:  #7A8092;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #333;
+  font-family: Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+#deck { display: flex; flex-direction: column; gap: 24px; }
+
+.card {
+  position: relative;
+  width: 1080px; height: 1350px;
+  background: var(--bg); color: var(--fg);
+  padding: 76px 72px;
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+
+/* 본문 카드는 내용을 패널 안에 담는다 */
+.panel {
+  flex: 1;
+  background: var(--panel);
+  border-radius: 44px;
+  padding: 72px 64px;
+  display: flex; flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.cover .panel {
+  background: var(--accent); color: #fff;
+}
+.cover .panel::after {
+  content: ''; position: absolute; right: -140px; bottom: -180px;
+  width: 480px; height: 480px; border-radius: 50%;
+  background: rgba(255,255,255,.12);
+}
+
+.step {
+  align-self: flex-start;
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 74px; height: 74px; padding: 0 22px;
+  border-radius: 24px;
+  background: var(--accent); color: #fff;
+  font-size: 34px; font-weight: 800; letter-spacing: .02em;
+  margin-bottom: 44px;
+}
+.cover .step { background: rgba(255,255,255,.22); }
+
+.fit {
+  flex: 1; font-size: 100px; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: center;
+}
+
+.headline {
+  font-size: .66em; font-weight: 800; line-height: 1.3;
+  letter-spacing: -.03em; word-break: keep-all;
+}
+.body {
+  font-size: .33em; font-weight: 400; line-height: 1.72;
+  color: #4B5163; margin-top: .38em; word-break: keep-all;
+}
+
+.cover .headline { font-size: .88em; line-height: 1.2; color: #fff; }
+.cover .body { font-size: .31em; color: rgba(255,255,255,.85); margin-top: .5em; }
+
+.outro .panel { align-items: center; text-align: center; }
+.outro .step { align-self: center; }
+.outro .fit { justify-content: center; }
+.outro .headline { font-size: .76em; }
+
+.src { margin-top: 36px; font-size: 23px; color: var(--muted); }
+
+.foot {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 34px 12px 0; font-size: 26px; color: var(--muted);
+}
+.foot .handle { font-weight: 800; color: var(--fg); }
+.foot .swipe, .foot .page { font-weight: 800; color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="deck"></div>
+<script src="_engine.js"></script>
+<script>
+renderDeck({
+  defaultAccent: '#2F6BFF',
+  body(card, { brand }) {
+    const step =
+      card.kind === 'cover' ? (brand.label || 'TODAY')
+      : card.kind === 'outro' ? 'END'
+      : String(card.index - 1);
+    return `
+      <div class="panel">
+        <div class="step">${step}</div>
+        <div class="fit">
+          ${parts.headline(card)}
+          ${parts.body(card)}
+        </div>
+        ${parts.source(card)}
+      </div>
+      ${parts.footer(card, brand)}
+    `;
+  },
+});
+</script>
+</body>
+</html>

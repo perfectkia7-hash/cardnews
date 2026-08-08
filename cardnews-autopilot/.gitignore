@@ -1,0 +1,7 @@
+node_modules/
+out/
+.env
+*.log
+
+# config/config.json 은 커밋해야 한다 — GitHub Actions 가 읽는다.
+# 비밀값은 들어가지 않으므로 공개돼도 안전하다.

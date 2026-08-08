@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>story</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<style>
+/* ── story · 한 사건을 깊게 다루는 기본 템플릿 ──────────────
+   표지는 사진이 꽉 차고, 본문 카드는 사진 + 헤드라인 + 설명으로
+   나뉜다. "무슨 일이 일어났는지" 를 카드마다 읽히게 하는 구조.
+   ────────────────────────────────────────────────────────── */
+:root {
+  --accent: #3B82F6;
+  --band:   #000000;
+  --fg:     #FFFFFF;
+  --body:   #C9C9CE;
+  --kicker: #8E8E93;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #333;
+  font-family: Pretendard, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+#deck { display: flex; flex-direction: column; gap: 24px; }
+
+.card {
+  position: relative;
+  width: 1080px; height: 1350px;
+  background: var(--band);
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+
+/* ── 사진 ──
+   남는 공간을 사진이 가져간다. 글이 짧으면 사진이 커지고 길면 작아져서
+   아래쪽에 빈 검은 여백이 생기지 않는다. */
+.photo {
+  flex: 1;
+  min-height: 380px;
+  position: relative;
+  overflow: hidden;
+  background: #101014;
+}
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 160px;
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,.7));
+}
+
+/* ── 사진이 없는 카드 ──
+   빈 사진칸을 남기지 않고, 글을 가운데 놓아 의도된 텍스트 카드처럼 보이게 한다. */
+.card.noimage { justify-content: center; }
+.card.noimage .photo { display: none; }
+.card.noimage .band { padding: 0 66px; }
+.card.noimage .headline { font-size: .54em; }
+.card.noimage .desc { font-size: .315em; }
+/* 순검정이면 아래쪽이 비어 보인다. 위아래로 은은한 빛을 깔아 균형을 잡는다. */
+.card.noimage::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(70% 42% at 22% 14%, color-mix(in srgb, var(--accent) 42%, transparent), transparent 72%),
+    radial-gradient(60% 38% at 88% 92%, color-mix(in srgb, var(--accent) 26%, transparent), transparent 70%);
+  opacity: .5;
+}
+.card.noimage .band { position: relative; z-index: 1; }
+/* 사진 카드처럼 절대배치하면 세로 중앙에 놓인 .band 기준으로 잡혀 본문과 겹친다.
+   텍스트 카드에서는 그냥 글 아래에 붙인다. */
+.card.noimage .src { margin-top: 34px; }
+
+/* ── 텍스트 ── */
+.band {
+  flex: 0 0 auto;
+  padding: 42px 60px 56px;
+  display: flex; flex-direction: column;
+}
+
+.kicker {
+  font-size: 24px; font-weight: 500; color: var(--kicker);
+  letter-spacing: -.01em; margin-bottom: 22px; flex-shrink: 0;
+}
+.kicker b { font-weight: 600; }
+
+/* 글이 길면 엔진이 이 폰트 크기를 줄인다.
+   높이가 정해져 있어야 넘침을 감지하므로 max-height 를 지운 채로 두면 안 된다. */
+.fit { font-size: 100px; max-height: 620px; overflow: hidden; }
+
+.headline {
+  font-size: .47em; font-weight: 800; line-height: 1.32;
+  letter-spacing: -.03em; color: var(--fg); word-break: keep-all;
+}
+
+.desc {
+  font-size: .295em; font-weight: 400; line-height: 1.74;
+  color: var(--body); margin-top: .30em; word-break: keep-all;
+  letter-spacing: -.015em;
+}
+/* 숫자·고유명사를 살짝 띄워 눈에 걸리게 */
+.desc b { color: #FFFFFF; font-weight: 600; }
+
+.src {
+  flex-shrink: 0;
+  margin-top: 28px; font-size: 22px; color: #5E5E65;
+  letter-spacing: -.01em;
+}
+
+/* ── 표지 ── 사진이 꽉 차고 제목만 */
+.cover .photo::after { height: 300px; }
+.cover .band { padding-top: 36px; }
+.cover .fit { max-height: 420px; }
+.cover .headline { font-size: .60em; line-height: 1.26; }
+.cover .desc { font-size: .275em; color: var(--kicker); margin-top: .38em; }
+
+/* ── 엔딩 ── */
+.outro { justify-content: center; }
+.outro .photo { display: none; }
+.outro .band { text-align: center; padding: 0 72px; }
+.outro .headline { font-size: .70em; }
+.outro .desc { font-size: .285em; margin-top: .42em; }
+.outro::before {
+  content: ''; position: absolute; top: -180px; left: 50%;
+  transform: translateX(-50%);
+  width: 900px; height: 700px; border-radius: 50%;
+  background: var(--accent); opacity: .16; filter: blur(140px);
+}
+.outro .band { position: relative; z-index: 1; }
+
+.page {
+  position: absolute; right: 60px; bottom: 56px;
+  font-size: 23px; font-weight: 700; color: #55555A;
+}
+</style>
+</head>
+<body>
+<div id="deck"></div>
+<script src="_engine.js"></script>
+<script>
+renderDeck({
+  defaultAccent: '#3B82F6',
+  cardClass(card) {
+    return card.imageSrc ? '' : 'noimage';
+  },
+  body(card, { brand }) {
+    const label = brand.label || '뉴스';
+    const handle = brand.handle ? String(brand.handle).replace(/^@/, '') : '';
+    const kicker = handle ? `<b>${handle}</b> | ${label}` : label;
+
+    const photo = card.imageSrc
+      ? `<div class="photo"><img src="${card.imageSrc}" alt=""></div>`
+      : '<div class="photo"></div>';
+
+    // 본문에서 **강조** 표기를 굵게 바꾼다.
+    const desc = card.body
+      ? `<p class="desc">${card.body
+          .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+          .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+          .split('\n').join('<br>')}</p>`
+      : '';
+
+    return `
+      ${photo}
+      <div class="band">
+        <div class="kicker">${kicker}</div>
+        <div class="fit">
+          ${parts.headline(card)}
+          ${desc}
+        </div>
+        ${card.source ? `<div class="src">${card.source}</div>` : ''}
+      </div>
+      ${card.kind === 'cover' ? '' : `<div class="page">${card.index}/${card.total}</div>`}
+    `;
+  },
+});
+</script>
+</body>
+</html>

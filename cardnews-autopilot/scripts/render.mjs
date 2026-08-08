@@ -1,0 +1,161 @@
+#!/usr/bin/env node
+/**
+ * draft.json → 인스타그램 캐러셀 이미지(1080×1350 JPEG)
+ *
+ *   node scripts/render.mjs --draft out/draft.json --template minimal --out out/cards
+ *   node scripts/render.mjs --draft out/draft.json --template darktech --handle "@my_news" --accent "#3B82F6"
+ */
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { pathToFileURL } from 'node:url';
+import { launchBrowser } from './lib/browser.mjs';
+import { attachImages } from './lib/images.mjs';
+import { ROOT, parseArgs, fail, log, readJson, exists } from './lib/util.mjs';
+
+export const CARD_WIDTH = 1080;
+export const CARD_HEIGHT = 1350;
+
+export const TEMPLATES = ['story', 'news', 'minimal', 'breaking', 'magazine', 'darktech', 'board'];
+
+/** 표지 + 본문 + 엔딩을 하나의 덱으로 조립한다. 템플릿은 이 구조만 알면 된다. */
+export function buildDeck(draft, { outro = true } = {}) {
+  const cards = [];
+  const body = draft.cards ?? [];
+
+  cards.push({
+    kind: 'cover',
+    headline: draft.title ?? '',
+    body: draft.subtitle ?? '',
+    source: '',
+    // 표지 사진을 따로 안 줬으면 첫 기사 사진을 쓴다.
+    image: draft.coverImage ?? body[0]?.image ?? '',
+  });
+
+  for (const card of body) {
+    cards.push({
+      kind: 'content',
+      headline: card.headline ?? '',
+      body: card.body ?? '',
+      source: card.source ?? '',
+      image: card.image ?? '',
+    });
+  }
+
+  if (outro) {
+    const publishers = [...new Set((draft.sources ?? []).map((s) => s.publisher).filter(Boolean))];
+    cards.push({
+      kind: 'outro',
+      headline: draft.outroHeadline ?? '도움이 되셨다면\n저장 & 팔로우',
+      body: draft.outroBody ?? '매일 새로운 소식을 정리해 드려요.',
+      source: publishers.length ? `출처 · ${publishers.slice(0, 4).join(', ')}` : '',
+      image: draft.outroImage ?? '',
+    });
+  }
+
+  // 인스타 캐러셀 한도
+  if (cards.length > 10) cards.length = 10;
+
+  return cards.map((card, i) => ({ ...card, index: i + 1, total: Math.min(cards.length, 10) }));
+}
+
+async function main() {
+  const args = parseArgs();
+
+  const draftPath = typeof args.draft === 'string' ? args.draft : 'out/draft.json';
+  if (!(await exists(draftPath))) {
+    fail(`초안 파일이 없습니다: ${draftPath}\n먼저 뉴스를 수집하고 draft.json 을 작성하세요.`);
+  }
+  const draft = await readJson(draftPath);
+
+  const template = typeof args.template === 'string' ? args.template : 'story';
+  const templatePath = path.join(ROOT, 'templates', `${template}.html`);
+  if (!(await exists(templatePath))) {
+    fail(`템플릿 '${template}' 이 없습니다. 사용 가능: ${TEMPLATES.join(', ')}`);
+  }
+
+  const outDir = path.resolve(typeof args.out === 'string' ? args.out : 'out/cards');
+
+  const brand = {
+    handle: typeof args.handle === 'string' ? args.handle : draft.brand?.handle ?? '',
+    accent: typeof args.accent === 'string' ? args.accent : draft.brand?.accent ?? '',
+    label: typeof args.label === 'string' ? args.label : draft.brand?.label ?? '',
+  };
+
+  const deck = buildDeck(draft, { outro: args.outro !== 'false' && args['no-outro'] !== true });
+  if (deck.length < 2) fail('카드가 1장뿐입니다. draft.json 의 cards 배열을 확인하세요.');
+
+  log(`카드 ${deck.length}장 렌더링 (템플릿: ${template})…`);
+
+  await fs.rm(outDir, { recursive: true, force: true });
+  await fs.mkdir(outDir, { recursive: true });
+
+  // 사진은 미리 받아서 로컬로 붙인다 (핫링크 차단 회피).
+  if (args['no-images'] !== true) {
+    await attachImages(deck, path.join(outDir, '.src'));
+  }
+
+  const browser = await launchBrowser();
+  const files = [];
+
+  try {
+    const page = await browser.newPage();
+    await page.setViewport({ width: CARD_WIDTH, height: CARD_HEIGHT, deviceScaleFactor: 1 });
+
+    // 템플릿 스크립트가 읽어갈 데이터. goto 이전에 주입해야 한다.
+    await page.evaluateOnNewDocument(
+      (payload) => {
+        window.__DECK__ = payload;
+      },
+      { cards: deck, brand },
+    );
+
+    await page.goto(pathToFileURL(templatePath).href, { waitUntil: 'networkidle0', timeout: 60_000 });
+
+    // 웹폰트가 늦게 오면 글자가 잘려 보인다. 폰트 로딩까지 기다린다.
+    await page.evaluate(async () => {
+      if (document.fonts?.ready) await document.fonts.ready;
+    });
+    await page.waitForSelector('.card', { timeout: 15_000 });
+
+    const handles = await page.$$('.card');
+    if (handles.length !== deck.length) {
+      log(`  ! 템플릿이 만든 카드 수(${handles.length})가 예상(${deck.length})과 다릅니다.`);
+    }
+
+    for (let i = 0; i < handles.length; i++) {
+      const file = path.join(outDir, `${String(i + 1).padStart(2, '0')}.jpg`);
+      await handles[i].screenshot({ path: file, type: 'jpeg', quality: 92 });
+      files.push(file);
+      log(`  ✔ ${path.basename(file)}`);
+    }
+  } finally {
+    await browser.close();
+  }
+
+  // 매체 사진을 쓰므로 출처 표기는 항상 캡션에 붙인다.
+  const publishers = [...new Set((draft.sources ?? []).map((s) => s.publisher).filter(Boolean))];
+  const credit = publishers.length ? `출처 · ${publishers.join(', ')}` : '';
+
+  const caption = [draft.caption ?? '', credit, (draft.hashtags ?? []).join(' ')]
+    .filter(Boolean)
+    .join('\n\n');
+  const manifest = {
+    template,
+    brand,
+    title: draft.title ?? '',
+    caption,
+    hashtags: draft.hashtags ?? [],
+    sources: draft.sources ?? [],
+    files,
+    renderedAt: new Date().toISOString(),
+  };
+  await fs.writeFile(path.join(outDir, 'manifest.json'), JSON.stringify(manifest, null, 2), 'utf8');
+
+  log(`\n✔ 완료 — ${outDir}`);
+  process.stdout.write(JSON.stringify(manifest, null, 2));
+}
+
+// 다른 스크립트가 import 할 때는 실행하지 않는다.
+if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
+  main().catch((err) => fail(err.stack || err.message));
+}

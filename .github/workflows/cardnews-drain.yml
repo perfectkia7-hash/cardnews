@@ -1,0 +1,41 @@
+# 카드뉴스 오토파일럿 — 발행 버튼 회수
+# 초안을 만든 잡이 끝난 뒤에 버튼을 눌러도 이 잡이 발행합니다.
+name: cardnews-drain
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+# 같은 시각에 두 번 돌아 중복 발행되는 일이 없게 한 번에 하나만 실행합니다.
+concurrency:
+  group: cardnews-drain
+  cancel-in-progress: false
+
+jobs:
+  drain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 의존성 설치
+        working-directory: cardnews-autopilot
+        run: npm ci --omit=optional
+
+      - name: 발행 버튼 확인
+        working-directory: cardnews-autopilot
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/drain.mjs

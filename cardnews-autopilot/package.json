@@ -1,0 +1,24 @@
+{
+  "name": "cardnews-autopilot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "인스타그램 카드뉴스 자동 생성 · 텔레그램 승인 · 자동 발행",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "setup:telegram": "node scripts/telegram-setup.mjs",
+    "setup:instagram": "node scripts/instagram-setup.mjs",
+    "tick": "node scripts/tick.mjs",
+    "doctor": "node scripts/doctor.mjs"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.2.5",
+    "puppeteer-core": "^24.24.0"
+  },
+  "optionalDependencies": {
+    "@anthropic-ai/sdk": "^0.71.0"
+  }
+}

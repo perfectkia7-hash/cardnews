@@ -1,0 +1,35 @@
+{
+  "timezone": "Asia/Seoul",
+
+  "publishTimes": ["08:00", "13:00", "19:00"],
+
+  "approvalMinutes": 30,
+  "drainEveryMinutes": 15,
+  "pendingExpiryHours": 24,
+  "autoPublish": false,
+
+  "imageHost": "github",
+  "imageRepo": "perfectkia7-hash/cardnews",
+  "imageBranch": "main",
+
+  "topic": {
+    "preset": "tech",
+    "label": "글로벌 테크 / AI",
+    "hours": 36,
+    "limit": 25,
+    "exclude": [],
+    "match": []
+  },
+
+  "cards": {
+    "count": 3,
+    "template": "story",
+    "outputLang": "ko"
+  },
+
+  "brand": {
+    "handle": "@zip_ggul_item",
+    "accent": "#22C55E",
+    "label": "최신 AI 뉴스"
+  }
+}
