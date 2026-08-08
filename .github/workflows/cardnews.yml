@@ -16,6 +16,10 @@ jobs:
     permissions:
       contents: write       # 이미지·상태 커밋용
 
+    # step 의 if 에서는 secrets 를 못 읽는다. 잡 단계에서 한 번 풀어 둔다.
+    env:
+      USE_SUBSCRIPTION: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}
+
     steps:
       - uses: actions/checkout@v4
 
@@ -32,12 +36,12 @@ jobs:
 
       # 구독으로 돌릴 때 필요. API 키 방식이면 이 단계는 그냥 지나갑니다.
       - name: Claude Code 설치
-        if: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}
+        if: env.USE_SUBSCRIPTION == 'true'
         run: npm install -g @anthropic-ai/claude-code
 
       # API 키 방식일 때만 SDK 를 깝니다.
       - name: Anthropic SDK 설치
-        if: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN == '' }}
+        if: env.USE_SUBSCRIPTION != 'true'
         working-directory: cardnews-autopilot
         run: npm install @anthropic-ai/sdk
 
