@@ -1,0 +1,122 @@
+# 카드뉴스 오토파일럿 — 리드 마그넷 자료집
+#
+# "댓글 남기시면 자료집 드려요" 에 쓸 PDF 를 만듭니다.
+# Actions 탭에서 Run workflow 로 직접 돌립니다. 예약은 걸지 않습니다 —
+# 자료집은 매일 낼 물건이 아니고, 낼 때마다 주제를 정하는 게 맞습니다.
+#
+# 결과물은 레포에 커밋되므로 공개 raw 주소가 생깁니다. 그 주소를 ManyChat 에
+# 넣으면 됩니다. 별도 호스팅이 필요 없습니다.
+name: cardnews-magnet
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: '자료집 주제 (예: 이번 주 AI 뉴스 총정리)'
+        required: true
+        default: '이번 주 AI 뉴스 총정리'
+      preset:
+        description: '분야 프리셋 (config/presets.json 의 키)'
+        required: false
+        default: 'tech'
+      days:
+        description: '최근 며칠치 기사를 볼지'
+        required: false
+        default: '7'
+      limit:
+        description: '수집할 기사 수'
+        required: false
+        default: '40'
+
+concurrency:
+  group: cardnews-magnet
+  cancel-in-progress: false
+
+jobs:
+  magnet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    # step 의 if 에서는 secrets 를 못 읽는다. 잡 단계에서 한 번 풀어 둔다.
+    env:
+      USE_SUBSCRIPTION: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 한글 폰트 설치
+        run: sudo apt-get update && sudo apt-get install -y fonts-noto-cjk
+
+      - name: 의존성 설치
+        working-directory: cardnews-autopilot
+        run: npm ci --omit=optional
+
+      - name: Claude Code 설치
+        if: env.USE_SUBSCRIPTION == 'true'
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Anthropic SDK 설치
+        if: env.USE_SUBSCRIPTION != 'true'
+        working-directory: cardnews-autopilot
+        run: npm install @anthropic-ai/sdk
+
+      - name: 자료집 생성
+        working-directory: cardnews-autopilot
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # 입력값을 run 안에 ${{ }} 로 직접 끼우면 따옴표가 든 주제 하나로
+          # 셸 명령이 바뀐다. 환경변수로 넘겨 셸이 해석하지 못하게 한다.
+          IN_TOPIC: ${{ inputs.topic }}
+          IN_PRESET: ${{ inputs.preset }}
+          IN_DAYS: ${{ inputs.days }}
+          IN_LIMIT: ${{ inputs.limit }}
+        run: |
+          node scripts/leadmagnet.mjs \
+            --topic "$IN_TOPIC" \
+            --preset "$IN_PRESET" \
+            --days "$IN_DAYS" \
+            --limit "$IN_LIMIT" \
+            --out out/magnet
+
+      # 레포에 넣어야 공개 주소가 생긴다. 그 주소를 ManyChat 에 넣는다.
+      - name: 레포에 커밋
+        id: commit
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          mkdir -p magnet
+          cp cardnews-autopilot/out/magnet/leadmagnet.pdf "magnet/$DATE.pdf"
+          cp cardnews-autopilot/out/magnet/report.json "magnet/$DATE.json"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add magnet
+          git commit -m "자료집 $DATE"
+          git push
+          echo "url=https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/magnet/$DATE.pdf" >> "$GITHUB_OUTPUT"
+
+      - name: 다운로드용 아티팩트
+        uses: actions/upload-artifact@v4
+        with:
+          name: leadmagnet
+          path: cardnews-autopilot/out/magnet/
+
+      - name: 결과 안내
+        run: |
+          {
+            echo "## 자료집이 만들어졌습니다"
+            echo ""
+            echo "**공개 주소** — ManyChat 에 이 링크를 넣으세요"
+            echo ""
+            echo '```'
+            echo "${{ steps.commit.outputs.url }}"
+            echo '```'
+            echo ""
+            echo "원고를 손보고 조판만 다시 하려면 magnet/*.json 을 고친 뒤"
+            echo '`node scripts/leadmagnet.mjs --topic x --report magnet/날짜.json` 를 돌리세요.'
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -40,7 +40,11 @@ function loadEnvFile() {
       value = value.slice(1, -1);
     }
 
-    if (key && process.env[key] === undefined) process.env[key] = value;
+    // 빈 값은 "설정하지 않은 것"으로 둔다. 빈 문자열로 넣어 버리면 값이 있는
+    // 것처럼 보여서, 예컨대 CLAUDE_CODE_OAUTH_TOKEN= 한 줄 때문에 claude CLI 가
+    // 로그인 세션을 무시하고 토큰 인증을 시도하다 "Not logged in" 으로 죽는다.
+    // .env.example 을 복사하면 빈 줄이 그대로 남으므로 흔하게 밟는다.
+    if (key && value !== '' && process.env[key] === undefined) process.env[key] = value;
   }
 }
 
