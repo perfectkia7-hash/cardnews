@@ -165,10 +165,10 @@ on:
 ${scheduleLines}
   workflow_dispatch:        # 탭에서 수동 실행도 가능
 
-# 회수 잡(cardnews-drain.yml)과 같은 그룹입니다. 두 잡이 동시에 텔레그램을
-# 폴링하면 서로의 연결을 끊어(409 Conflict) 버튼 응답을 놓칩니다.
+# 회수 잡과 락을 공유하지 않습니다. 공유하면 회수 잡이 버튼을 지켜보는 동안
+# 뉴스 발송이 그만큼 밀립니다. 동시 폴링 충돌은 각자 물러나며 처리합니다.
 concurrency:
-  group: cardnews-telegram
+  group: cardnews-tick
   cancel-in-progress: false
 
 jobs:
@@ -236,16 +236,16 @@ on:
     - cron: '*/${everyMinutes} * * * *'
   workflow_dispatch:
 
-# 초안 잡(cardnews.yml)과 같은 그룹입니다. 두 잡이 동시에 텔레그램을 폴링하면
-# 서로의 연결을 끊어(409 Conflict) 버튼 응답을 놓칩니다.
+# 회수 잡끼리만 겹치지 않게 합니다. 초안 잡과는 락을 나누지 않습니다 —
+# 나누면 지켜보는 동안 뉴스 발송이 밀립니다.
 concurrency:
-  group: cardnews-telegram
+  group: cardnews-drain
   cancel-in-progress: false
 
 jobs:
   drain:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: ${everyMinutes + 6}
     permissions:
       contents: write
 
@@ -268,7 +268,7 @@ jobs:
           IG_USER_ID: \${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: \${{ secrets.IG_ACCESS_TOKEN }}
           GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
-        run: node scripts/drain.mjs
+        run: node scripts/drain.mjs --watch --minutes ${Math.max(1, everyMinutes - 1)}
 `;
 }
 

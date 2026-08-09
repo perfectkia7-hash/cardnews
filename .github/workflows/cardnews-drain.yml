@@ -8,15 +8,16 @@ on:
   workflow_dispatch:
 
 # 같은 시각에 두 번 돌아 중복 발행되는 일이 없게 한 번에 하나만 실행합니다.
-# 초안 잡(cardnews.yml)과 같은 그룹. 동시에 폴링하면 서로 끊긴다.
+# 회수 잡끼리만 겹치지 않게 한다. 초안 잡과는 락을 나누지 않는다 —
+# 나누면 지켜보는 동안 뉴스 발송이 밀린다.
 concurrency:
-  group: cardnews-telegram
+  group: cardnews-drain
   cancel-in-progress: false
 
 jobs:
   drain:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     permissions:
       contents: write
 
@@ -39,4 +40,4 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node scripts/drain.mjs
+        run: node scripts/drain.mjs --watch --minutes 14

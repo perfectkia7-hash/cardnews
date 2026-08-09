@@ -46,12 +46,16 @@ export async function processDecisions(config, chatId, decisions) {
 
       const mediaId = await publishCarousel(entry.imageUrls, entry.caption);
 
+      // 여기부터는 뒷정리다. 인스타에는 이미 올라갔으므로 무엇이 실패하든
+      // "실패"라고 말하면 안 된다 — 사용자가 다시 눌러 같은 글이 두 번 올라간다.
       await clearButtons(
         chatId,
         decision.messageId,
         `✅ <b>발행 완료</b>\n<code>media ${mediaId}</code>`,
       );
-      await removePending(config, entry.draftId);
+      await removePending(config, entry.draftId).catch((err) =>
+        log(`  ! ${entry.draftId} 대기 목록 정리 실패(발행은 됨): ${err.message}`),
+      );
       await sendMusicHint(chatId, config, entry);
 
       log(`  ✔ ${entry.draftId} 발행 완료 — media ${mediaId}`);

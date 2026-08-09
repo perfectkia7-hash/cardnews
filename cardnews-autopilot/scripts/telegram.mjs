@@ -216,7 +216,11 @@ export async function pollDecisions({ chatId = null, timeoutSec = 5 } = {}) {
       { timeoutMs: (timeoutSec + 15) * 1000 },
     );
   } catch (err) {
-    log(`  ! 폴링 오류: ${err.message}`);
+    // 다른 폴러와 겹치면 텔레그램이 한쪽을 끊는다(409 Conflict). 곧바로 다시
+    // 때리면 서로를 계속 끊으므로 잠깐 물러난다. 지켜보기 모드에서 이 함수가
+    // 촘촘히 불리기 때문에, 물러나는 건 호출한 쪽이 아니라 여기가 맡는다.
+    log(`  ! 폴링 오류(잠시 후 재시도): ${err.message}`);
+    await sleep(5000);
     return [];
   }
 

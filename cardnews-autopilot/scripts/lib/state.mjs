@@ -20,10 +20,36 @@ function repoConfig(config) {
   return usable ? { repo, branch: config?.imageBranch ?? 'main' } : null;
 }
 
+/**
+ * 토큰 없이도 상태를 읽어 본다.
+ *
+ * 이미지 호스팅 때문에 레포가 Public 이라 raw 주소로 그냥 읽힌다. 로컬에서
+ * 돌릴 때(GITHUB_TOKEN 이 없거나 만료됐을 때) 실제 대기 목록을 보려면 이 길이
+ * 필요하다. raw 는 CDN 캐시가 끼므로 쓰기 경로로는 쓰지 않는다.
+ */
+async function readPublic(config, name) {
+  const repo = config?.imageRepo ?? process.env.IMAGE_REPO;
+  if (!repo?.includes('/')) return null;
+  const branch = config?.imageBranch ?? 'main';
+  const url = `https://raw.githubusercontent.com/${repo}/${branch}/state/${name}.json?t=${Date.now()}`;
+
+  try {
+    const res = await fetch(url, { cache: 'no-store' });
+    if (res.status === 404) return null;
+    if (!res.ok) return null;
+    return JSON.parse(await res.text());
+  } catch {
+    return null;
+  }
+}
+
 export async function readState(config, name, fallback) {
   const target = repoConfig(config);
 
   if (!target) {
+    const viaPublic = await readPublic(config, name);
+    if (viaPublic !== null) return viaPublic;
+
     const file = path.join(ROOT, 'out', 'state', `${name}.json`);
     if (!(await exists(file))) return fallback;
     try {
@@ -38,7 +64,13 @@ export async function readState(config, name, fallback) {
     if (!found) return fallback;
     return JSON.parse(found.content.toString('utf8'));
   } catch (err) {
-    log(`  ! 상태 파일 읽기 실패(${name}), 기본값으로 진행: ${err.message}`);
+    log(`  ! 상태 파일 읽기 실패(${name}): ${err.message}`);
+    const viaPublic = await readPublic(config, name);
+    if (viaPublic !== null) {
+      log('    공개 주소로 대신 읽었습니다.');
+      return viaPublic;
+    }
+    log('    기본값으로 진행합니다.');
     return fallback;
   }
 }
