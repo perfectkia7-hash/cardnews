@@ -143,6 +143,7 @@ node scripts/render.mjs --draft out/draft.json --template story --out out/cards 
 3. 캡션 + 해시태그를 **복사하기 쉽게 하나의 코드블록으로** 출력한다.
 4. 자동 모드를 아직 안 썼으면 "매일 자동으로 받아보시겠어요?" 한 줄로 안내한다. 강요하지 않는다.
 
+<!-- HOLD:start 보류 — 판매본에서 제외 -->
 ---
 
 ## 리드 마그넷 (자료집 PDF)
@@ -197,6 +198,7 @@ sections[] : { heading, note, items[] }
 > 댓글 → 자동 DM 은 이 스킬 밖이다. 인스타 메시지 API 는 상시 웹훅 서버와 Meta 앱 심사를 요구한다. ManyChat 같은 도구를 쓰는 편이 빠르고, 이 스킬은 **보낼 물건**을 만드는 쪽을 맡는다.
 
 ---
+<!-- HOLD:end -->
 
 ## 자동 모드 세팅
 
@@ -255,7 +257,9 @@ sections[] : { heading, note, items[] }
 scripts/fetch-news.mjs    뉴스 수집 (RSS + 본문·대표사진 추출)
 scripts/render.mjs        draft.json → 카드 이미지 (사진 자동 다운로드 포함)
 scripts/setup.mjs         자동 모드 세팅 (--help 로 플래그 확인, 대화형도 됨)
+<!-- HOLD:start 보류 — 판매본에서 제외 -->
 scripts/leadmagnet.mjs    리드 마그넷 자료집 PDF 생성
+<!-- HOLD:end -->
 scripts/telegram-setup.mjs 텔레그램 연결 (채팅 ID 자동 탐지)
 scripts/doctor.mjs        진단 — 세팅이 막히면 제일 먼저 실행
 scripts/tick.mjs          스케줄 진입점 — 초안 생성·전송

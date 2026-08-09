@@ -24,8 +24,6 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { ROOT, parseArgs, fail, log, readJson, writeJson, exists } from './lib/util.mjs';
 import { writeCardNews, detectProvider } from './lib/copywriter.mjs';
-import { writeEngageCards } from './lib/engage.mjs';
-import { generateDeckImages } from './lib/imagegen.mjs';
 import { uploadCards } from './upload-github.mjs';
 import { publishCarousel } from './publish-ig.mjs';
 import { checkTokenExpiry } from './refresh-token.mjs';
@@ -98,6 +96,7 @@ async function buildDraft(config, outDir, alreadyUsed) {
   return draft;
 }
 
+// HOLD:start 보류 — 판매본에서 제외
 /**
  * 참여형: 소재 목록에서 하나를 꺼내 원고를 쓰고 사진까지 만든다.
  *
@@ -109,6 +108,20 @@ async function buildDraft(config, outDir, alreadyUsed) {
 async function buildEngageDraft(config, outDir, alreadyUsed) {
   const file = path.join(ROOT, 'config', 'topics.json');
   if (!(await exists(file))) return null;
+
+  // 참여형 모듈은 여기서만 불러온다.
+  //
+  // 상단에서 import 하면 파일이 없을 때 스킬 전체가 시작도 못 하고 죽는다.
+  // 기본 구성에는 이 모듈들이 없으므로 필요할 때만 찾는다.
+  let writeEngageCards;
+  let generateDeckImages;
+  try {
+    ({ writeEngageCards } = await import('./lib/engage.mjs'));
+    ({ generateDeckImages } = await import('./lib/imagegen.mjs'));
+  } catch {
+    log('      참여형 모듈이 없습니다 — 뉴스 모드로 진행합니다.');
+    return null;
+  }
 
   const queue = (await readJson(file)).topics ?? [];
   // 이미 다룬 소재는 건너뛴다. 지문은 소재 문장 그대로 쓴다.
@@ -145,6 +158,8 @@ async function buildEngageDraft(config, outDir, alreadyUsed) {
   return draft;
 }
 
+// HOLD:end
+
 /** 3단계: 카드 렌더 */
 async function renderCards(config, outDir, cardsDir, draft) {
   log('[3/6] 카드 렌더');
@@ -161,11 +176,11 @@ async function renderCards(config, outDir, cardsDir, draft) {
   if (brand.accent) renderArgs.push('--accent', brand.accent);
   if (brand.label) renderArgs.push('--label', brand.label);
 
-  // 줄 물건이 있을 때만 "댓글 남기면 보내드려요" 를 붙인다.
+  // 마지막 카드에 행동 유도 문구를 붙이는 선택 기능.
   //
-  // 소재별 자료집(topics.json 의 magnet)이 먼저고, 없으면 config 의 기본 CTA 를
-  // 쓴다. 둘 다 비어 있으면 CTA 없이 나간다 — 없는 걸 약속하지 않기 위해서다.
-  // draft.cta 는 render.mjs 가 draft.json 에서 직접 읽으므로 여기선 config 만 본다.
+  // 실제로 줄 것이 있을 때만 켠다. promise 가 비어 있으면 붙지 않는다 —
+  // 없는 걸 약속하면 한 번은 통하고 그다음부터 안 통한다.
+  // 초안이 자체 cta 를 들고 오면 render.mjs 가 그쪽을 먼저 본다.
   const cta = config.cta ?? {};
   if (!draft?.cta && cta.enabled && cta.promise) {
     renderArgs.push('--cta-promise', cta.promise);
@@ -220,10 +235,12 @@ async function main() {
       const alreadyUsed = await loadPublished(config);
       if (alreadyUsed.size) log(`        (최근 다룬 것 ${alreadyUsed.size}건 제외)`);
 
+      // HOLD:start 보류 — 판매본에서 제외
       // 참여형 소재가 남아 있으면 그걸 먼저 쓴다. 다 쓰면 뉴스로 돌아간다.
       if ((config.contentMode ?? 'news') === 'engage') {
         draft = await buildEngageDraft(config, outDir, alreadyUsed);
       }
+      // HOLD:end
       if (!draft) draft = await buildDraft(config, outDir, alreadyUsed);
     }
     draft.brand = { ...(config.brand ?? {}), ...(draft.brand ?? {}) };
