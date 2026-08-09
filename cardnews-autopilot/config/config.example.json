@@ -37,6 +37,11 @@
     "label": "최신 AI 뉴스"
   },
 
+  "_music": "인스타 API 로는 게시물에 음악을 붙일 수 없습니다(앱 전용 기능). 발행 뒤 앱에서 어떻게 붙이는지 텔레그램으로 알려 줍니다. 필요 없으면 remind 를 false 로.",
+  "music": {
+    "remind": true
+  },
+
   "imageRepo": "myname/cardnews",
   "imageBranch": "main"
 }

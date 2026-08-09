@@ -165,6 +165,12 @@ on:
 ${scheduleLines}
   workflow_dispatch:        # 탭에서 수동 실행도 가능
 
+# 회수 잡(cardnews-drain.yml)과 같은 그룹입니다. 두 잡이 동시에 텔레그램을
+# 폴링하면 서로의 연결을 끊어(409 Conflict) 버튼 응답을 놓칩니다.
+concurrency:
+  group: cardnews-telegram
+  cancel-in-progress: false
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -230,9 +236,10 @@ on:
     - cron: '*/${everyMinutes} * * * *'
   workflow_dispatch:
 
-# 같은 시각에 두 번 돌아 중복 발행되는 일이 없게 한 번에 하나만 실행합니다.
+# 초안 잡(cardnews.yml)과 같은 그룹입니다. 두 잡이 동시에 텔레그램을 폴링하면
+# 서로의 연결을 끊어(409 Conflict) 버튼 응답을 놓칩니다.
 concurrency:
-  group: cardnews-drain
+  group: cardnews-telegram
   cancel-in-progress: false
 
 jobs:
@@ -390,6 +397,8 @@ async function main() {
     topic,
     cards,
     brand,
+    // 음악은 인스타 앱에서만 붙일 수 있다. 발행 뒤 방법을 알려 준다.
+    music: { remind: true },
     imageRepo,
     imageBranch: 'main',
   };

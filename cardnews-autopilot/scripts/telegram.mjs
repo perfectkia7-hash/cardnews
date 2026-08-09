@@ -130,8 +130,45 @@ export async function photoUrls(messages) {
   return urls;
 }
 
+/**
+ * 버튼의 로딩 표시를 끈다.
+ *
+ * 콜백 ID 는 몇 분이면 만료된다. 15분마다 도는 회수 잡이 볼 때는 거의 항상 만료돼
+ * 있어서 이 호출은 실패하는 게 정상이다. 발행을 막으면 안 되므로 절대 던지지 않는다.
+ * 사용자에게 결과를 알리는 건 메시지 편집(clearButtons)이 맡는다 — 그건 나이와 무관하다.
+ */
 export async function answerCallback(callbackId, text) {
-  return call('answerCallbackQuery', { callback_query_id: callbackId, text });
+  if (!callbackId) return false;
+  try {
+    await call('answerCallbackQuery', { callback_query_id: callbackId, text }, { timeoutMs: 10_000 });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * 발행 뒤 음악 안내.
+ *
+ * 인스타 API 로는 게시물에 음악을 붙일 수 없다 — 음악 추가는 앱 전용 기능이다.
+ * 그래서 올리는 것까지만 자동으로 하고, 앱에서 15초면 끝나는 나머지를 알려 준다.
+ */
+export async function sendMusicHint(chatId, config, entry) {
+  if (config?.music?.remind === false) return null;
+
+  const mood = entry?.musicMood
+    ? `\n\n🎧 이 소재에 어울리는 결: <b>${entry.musicMood}</b>`
+    : '';
+
+  return sendMessage(
+    chatId,
+    '🎵 <b>음악 붙이기</b> (앱에서 15초)\n' +
+      '1. 인스타 앱 → 방금 올라온 게시물\n' +
+      '2. 오른쪽 위 <b>⋯</b> → <b>수정</b> → <b>음악 추가</b>\n' +
+      '3. 목록 맨 위가 지금 인기 있는 오디오다' +
+      mood +
+      '\n\n<i>음악은 인스타 앱에서만 붙일 수 있어 이 단계는 자동화가 안 됩니다.</i>',
+  ).catch(() => null);
 }
 
 /** 버튼을 없애서 두 번 눌리는 걸 막는다. */
@@ -198,9 +235,15 @@ export async function pollDecisions({ chatId = null, timeoutSec = 5 } = {}) {
 
 /**
  * 지정한 초안에 대한 발행/취소 응답을 기다린다.
+ *
+ * 기다리는 동안 **다른 초안**의 버튼이 눌릴 수도 있다(어제 것을 이제 누르는 경우).
+ * 그 응답을 그냥 버리면 오프셋만 넘어가 영영 사라지므로, onOther 로 넘겨서
+ * 호출한 쪽이 바로 처리하게 한다.
+ *
+ * @param {(decisions:Array<object>)=>Promise<void>} [options.onOther]
  * @returns {Promise<{decision:'publish'|'skip'|'timeout', callbackId?:string, messageId?:number}>}
  */
-export async function awaitDecision(draftId, { minutes = 30, chatId = null } = {}) {
+export async function awaitDecision(draftId, { minutes = 30, chatId = null, onOther = null } = {}) {
   const deadline = Date.now() + minutes * 60_000;
   let offset = 0;
 
@@ -223,11 +266,23 @@ export async function awaitDecision(draftId, { minutes = 30, chatId = null } = {
       continue;
     }
 
+    let mine = null;
+    const others = [];
     for (const update of updates) {
       offset = update.update_id + 1;
       const parsed = parseCallback(update, chatId);
-      if (!parsed || parsed.draftId !== draftId) continue;
-      return { decision: parsed.action, callbackId: parsed.callbackId, messageId: parsed.messageId };
+      if (!parsed) continue;
+      if (parsed.draftId === draftId) mine = parsed;
+      else others.push(parsed);
+    }
+
+    if (others.length > 0 && onOther) {
+      // 여기서 실패해도 내 초안 대기는 계속돼야 한다.
+      await onOther(others).catch((err) => log(`  ! 다른 초안 처리 실패: ${err.message}`));
+    }
+
+    if (mine) {
+      return { decision: mine.action, callbackId: mine.callbackId, messageId: mine.messageId };
     }
   }
 

@@ -12,9 +12,9 @@
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { ROOT, fail, log, readJson, exists } from './lib/util.mjs';
-import { loadPending, removePending } from './lib/state.mjs';
-import { publishCarousel } from './publish-ig.mjs';
-import { pollDecisions, answerCallback, clearButtons, sendMessage } from './telegram.mjs';
+import { loadPending } from './lib/state.mjs';
+import { processDecisions } from './lib/approve.mjs';
+import { pollDecisions } from './telegram.mjs';
 
 async function loadConfig() {
   const file = path.join(ROOT, 'config', 'config.json');
@@ -43,43 +43,7 @@ async function main() {
     return;
   }
 
-  for (const decision of decisions) {
-    const entry = pending.find((p) => p.draftId === decision.draftId);
-    if (!entry) continue; // 이미 처리됐거나 만료된 초안
-
-    if (decision.action === 'skip') {
-      if (decision.callbackId) await answerCallback(decision.callbackId, '취소했습니다.');
-      await clearButtons(chatId, decision.messageId, '🗑 <b>취소됨</b> — 발행하지 않았습니다.');
-      await removePending(config, entry.draftId);
-      log(`  · ${entry.draftId} 취소`);
-      continue;
-    }
-
-    if (decision.action !== 'publish') continue;
-
-    if (decision.callbackId) await answerCallback(decision.callbackId, '발행합니다…');
-    await clearButtons(chatId, decision.messageId, '⏳ <b>발행 중…</b>');
-
-    try {
-      const mediaId = await publishCarousel(entry.imageUrls, entry.caption);
-      await clearButtons(
-        chatId,
-        decision.messageId,
-        `✅ <b>발행 완료</b>\n<code>media ${mediaId}</code>`,
-      );
-      await removePending(config, entry.draftId);
-      log(`  ✔ ${entry.draftId} 발행 완료 — media ${mediaId}`);
-    } catch (err) {
-      // 실패해도 대기 목록에 남겨 둔다. 원인을 고치고 다시 누르면 된다.
-      await clearButtons(
-        chatId,
-        decision.messageId,
-        `⚠️ <b>발행 실패</b>\n<code>${String(err.message).slice(0, 400)}</code>\n\n초안은 그대로 두었습니다.`,
-      ).catch(() => {});
-      await sendMessage(chatId, '문제를 고친 뒤 위 메시지의 버튼을 다시 눌러 주세요.').catch(() => {});
-      log(`  ✖ ${entry.draftId} 발행 실패: ${err.message}`);
-    }
-  }
+  await processDecisions(config, chatId, decisions);
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {

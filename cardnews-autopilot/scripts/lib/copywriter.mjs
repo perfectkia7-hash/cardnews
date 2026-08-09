@@ -49,13 +49,19 @@ const CARD_SCHEMA = {
         items: { type: 'string' },
         description: '# 을 포함한 해시태그 5~8개.',
       },
+      musicMood: {
+        type: 'string',
+        description:
+          '이 소재에 얹으면 어울릴 음악의 결을 12자 이내로. 예: "잔잔한 로파이", ' +
+          '"긴장감 있는 신스". 인스타 앱에서 오디오를 고를 때 쓰는 힌트다.',
+      },
       usedArticleIndexes: {
         type: 'array',
         items: { type: 'integer' },
         description: '실제로 근거로 삼은 기사 번호.',
       },
   },
-  required: ['title', 'subtitle', 'cards', 'caption', 'hashtags', 'usedArticleIndexes'],
+  required: ['title', 'subtitle', 'cards', 'caption', 'hashtags', 'musicMood', 'usedArticleIndexes'],
 };
 
 const CARD_TOOL = {
@@ -280,6 +286,7 @@ export async function writeCardNews(newsPayload, options = {}) {
     cards,
     caption: draft.caption,
     hashtags: draft.hashtags,
+    musicMood: draft.musicMood ?? '',
     sources: sources.length ? sources : story.slice(0, 3).map((a) => ({
       title: a.title,
       link: a.link,

@@ -35,8 +35,10 @@ import {
   answerCallback,
   clearButtons,
   awaitDecision,
+  sendMusicHint,
 } from './telegram.mjs';
 import { loadPublished, recordPublished, addPending, removePending } from './lib/state.mjs';
+import { processDecisions } from './lib/approve.mjs';
 
 const run = promisify(execFile);
 
@@ -216,6 +218,7 @@ async function main() {
       title: String(draft.title ?? '').replace(/\n/g, ' '),
       imageUrls,
       caption,
+      musicMood: draft.musicMood ?? '',
       fingerprints: draft.fingerprints ?? [],
       createdAt: new Date().toISOString(),
     });
@@ -241,6 +244,9 @@ async function main() {
       const decision = await awaitDecision(draftId, {
         minutes: config.approvalMinutes ?? 30,
         chatId,
+        // 기다리는 동안 지난 초안의 버튼이 눌리면 여기서 바로 처리한다.
+        // 넘기지 않으면 그 응답은 오프셋만 지나가고 영영 사라진다.
+        onOther: (others) => processDecisions(config, chatId, others),
       });
       callbackId = decision.callbackId ?? null;
       if (decision.messageId) controlMessageId = decision.messageId;
@@ -260,13 +266,14 @@ async function main() {
       }
     }
 
-    if (callbackId) await answerCallback(callbackId, '발행합니다…');
+    await answerCallback(callbackId, '발행합니다…');
     await clearButtons(chatId, controlMessageId, '⏳ <b>발행 중…</b>');
 
     const mediaId = await publishCarousel(imageUrls, caption);
 
     await clearButtons(chatId, controlMessageId, `✅ <b>발행 완료</b>\n<code>media ${mediaId}</code>`);
     await removePending(config, draftId);
+    await sendMusicHint(chatId, config, { musicMood: draft.musicMood });
     log(`\n✔ 발행 완료 — media ${mediaId}`);
 
     // 토큰이 만료되면 발행이 조용히 멈춘다. 미리 알려준다.

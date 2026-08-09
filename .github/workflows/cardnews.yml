@@ -9,6 +9,12 @@ on:
     - cron: '0 10 * * *'   # 현지 19:00
   workflow_dispatch:        # 탭에서 수동 실행도 가능
 
+# 초안 잡과 회수 잡이 동시에 텔레그램을 폴링하면 서로를 끊는다(409 Conflict).
+# 두 워크플로가 같은 그룹을 써서 한 번에 하나만 돌게 한다.
+concurrency:
+  group: cardnews-telegram
+  cancel-in-progress: false
+
 jobs:
   publish:
     runs-on: ubuntu-latest
