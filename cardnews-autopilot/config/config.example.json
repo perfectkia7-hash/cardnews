@@ -9,7 +9,7 @@
 
   "_buttons": "approvalMinutes 동안은 초안 잡이 직접 기다립니다. 그 뒤로는 회수 잡이 drainWatchMinutes 동안 계속 지켜보며 늦게 누른 발행을 처리합니다. GitHub 예약은 자주 밀리므로 '자주 뜨는' 대신 '한 번 뜨면 오래 지켜보는' 설계입니다. pendingExpiryHours 가 지난 초안은 뉴스가 상해서 자동으로 만료됩니다.",
   "approvalMinutes": 30,
-  "drainWatchMinutes": 350,
+  "drainWatchMinutes": 110,
   "pendingExpiryHours": 24,
 
   "autoPublish": false,

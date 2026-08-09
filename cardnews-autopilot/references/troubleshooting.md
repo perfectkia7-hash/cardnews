@@ -87,8 +87,27 @@ sudo apt-get install -y fonts-noto-cjk
 
 일부러 초기화하려면 레포에서 `state/published.json` 을 지우면 된다.
 
+### 인스타 계정 추가가 안 된다 / 로그인 창이 튕긴다
+개발 모드에서는 **앱에 역할로 등록된 계정만** 인증된다. 내 계정이라도 등록해야 한다.
+
+1. 앱 대시보드 → **앱 역할(App roles)** → **역할(Roles)** → **사용자 추가(Add People)**
+2. 창을 아래로 내려 **Instagram 테스터(Instagram Tester)** 선택
+3. 본인 인스타 사용자 이름 입력 → 초대 발송
+4. **인스타 앱에서 초대를 수락한다** — 설정 → **앱 및 웹사이트** → **테스터 초대** → 수락
+
+4번을 빼먹어 계속 막히는 경우가 가장 많다. 수락한 뒤 액세스 토큰을 다시 발급하면 통과한다.
+
+### `instagram_business_content_publish` 가 목록에 없다 / 추가가 안 된다
+권한 목록은 앱에 붙인 **사용 사례(Use cases)** 에 따라 달라진다. 이 권한이 안 보이면 Instagram 사용 사례가 안 붙어 있는 것이다.
+
+앱 대시보드 → **사용 사례** → Instagram 관련 사용 사례 추가 → **사용자 지정(Customize)** 안에서 `instagram_business_basic` 과 `instagram_business_content_publish` 를 추가한다.
+
 ### `인스타 API 오류 ... (#200)` 권한 부족
-`instagram_business_content_publish` 권한이 승인되지 않았다. Meta 앱 → Instagram → API 설정에서 권한을 확인하고 토큰을 다시 발급받는다.
+권한은 붙였는데 **토큰을 다시 안 받은** 경우가 대부분이다. 기존 토큰에는 새 권한이 들어 있지 않다. Meta 앱 → Instagram → API 설정에서 토큰을 새로 발급하고 아래로 확인한다.
+
+```bash
+node scripts/instagram-setup.mjs
+```
 
 ### `인스타 API 오류 ... OAuthException` / 토큰 만료
 장기 토큰은 60일이면 끝난다.
@@ -128,12 +147,28 @@ claude setup-token
 ANTHROPIC_MODEL: claude-haiku-4-5
 ```
 
-### `Claude Code CLI 를 찾지 못했습니다`
+### `Claude Code CLI 를 찾지 못했습니다` / `claude 은(는) 인식할 수 없는 명령`
 구독 방식은 Claude Code CLI 로 실행된다. 워크플로가 자동으로 설치하지만, 로컬에서 돌릴 땐 직접 깔아야 한다.
 
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
+
+설치했는데도 못 찾는다면 **터미널을 껐다 켠다.** PATH 는 터미널을 열 때 읽히므로, 설치 전부터 열려 있던 창은 새 명령을 모른다. 윈도우에서 특히 자주 난다.
+
+그래도 안 되면 실제 설치 위치로 바로 실행한다.
+
+```bash
+npm config get prefix
+```
+
+나온 경로 + `\claude.cmd` 가 실제 파일이다.
+
+```bash
+"C:\Users\내이름\AppData\Roaming\npm\claude.cmd" setup-token
+```
+
+> 여기서 오래 붙잡히면 API 키 방식으로 넘어가도 된다. 하루 1편이면 월 1달러 안쪽이다.
 
 ### `Claude CLI 오류 ... 인증`
 토큰이 만료됐거나(유효기간 1년) 잘못 복사된 경우다. 다시 발급한다.
@@ -175,7 +210,10 @@ GitHub 의 예약 실행(cron)은 보장된 시각이 아니라 **최선 노력*
 
 **응답을 잃지는 않는다.** 텔레그램이 24시간 동안 보관하므로, 잡이 뜨는 순간 밀린 응답을 한꺼번에 처리한다. 급할 땐 Actions 탭 → `cardnews-drain` → **Run workflow** 로 직접 띄우면 된다.
 
-그래서 이 스킬은 **자주 뜨는 대신 한 번 뜨면 오래 지켜보는** 쪽을 택했다. 2시간마다 띄우되 한 번에 350분(5시간 50분)을 지켜본다. `cancel-in-progress: false` 라 겹친 실행은 취소되지 않고 대기하다가, 앞 실행이 끝나는 순간 이어받는다. 예약이 몇 번 밀려도 지켜보는 구간이 끊기지 않는다.
+그래서 이 스킬은 **자주 뜨는 대신 한 번 뜨면 오래 지켜보는** 쪽을 택했다. 2시간마다 띄우고 한 번에 110분을 지켜본다. 하루 대부분의 시간에 감시가 살아 있어서, 누르면 몇 초 안에 올라간다.
+
+### Actions 탭에 `cancelled` 이 쌓인다
+감시 시간을 예약 주기보다 길게 잡으면 다음 실행이 대기열에 쌓였다가 그 다음 실행에 밀려 취소된다. **동작은 정상**이지만 기록이 지저분해진다. `config.json` 의 `drainWatchMinutes` 를 예약 주기보다 짧게 두면 없어진다(기본값이 그렇게 맞춰져 있다).
 
 공개 레포는 Actions 사용 시간이 무제한이라 이렇게 돌려도 **비용은 그대로 0원**이다.
 

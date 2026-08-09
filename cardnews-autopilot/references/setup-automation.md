@@ -46,15 +46,33 @@ node scripts/tick.mjs --draft out/draft.json
    - 인스타 API 가 공개 이미지 주소를 요구해서 그렇다
    - 공개 레포는 Actions 실행 시간이 무제한 무료다
    - **토큰은 레포에 안 들어간다.** 전부 Secrets 에 넣으므로 공개해도 안전하다
-4. 이 스킬 폴더(`cardnews-autopilot/`) 를 통째로 레포에 넣고 push
+4. 레포를 클론한 뒤, 이 스킬 폴더를 **`.claude/skills/` 안에** 넣는다
+
+```
+<클론한 레포>/
+  .claude/
+    skills/
+      cardnews-autopilot/     ← 이 폴더
+```
+
+`.claude/skills/` 여야 Claude Code 가 스킬로 인식한다. 그리고 레포 안이어야 GitHub Actions 가 내려받아 실행할 수 있다. 둘 다 만족하는 자리가 여기다.
 
 ```bash
-git init
 git add .
 git commit -m "카드뉴스 자동화"
-git branch -M main
-git remote add origin https://github.com/내계정/cardnews.git
-git push -u origin main
+git push
+```
+
+> **`node_modules/` 는 커밋되지 않는다** (스킬의 `.gitignore` 가 막는다). Actions 가 `npm ci` 로 알아서 설치하므로 그게 맞다.
+> 반대로 `config/config.json` 은 **반드시 커밋해야 한다.** Actions 가 이 파일을 읽는다. 비밀값은 안 들어가므로 공개돼도 안전하다.
+
+### git 이 `Author identity unknown` 이라고 하면
+
+처음 커밋할 때 나온다. 이름과 메일을 한 번만 등록하면 된다.
+
+```bash
+git config user.email "본인메일@example.com"
+git config user.name "본인이름"
 ```
 
 ### 로컬 테스트용 토큰 (Actions 만 쓸 거면 건너뛰기)
@@ -117,6 +135,30 @@ claude setup-token
 - **유효기간 1년.** 만료되면 같은 명령으로 다시 발급하면 된다
 - 카드뉴스 1편당 사용량은 아주 적어서(입력 3천~7천 토큰) 구독 한도에 거의 영향이 없다
 
+> **토큰은 비밀번호와 같다.** 화면에 뜬 값을 채팅창이나 스크린샷으로 남에게 보내지 않는다. GitHub Secrets 에만 넣는다.
+
+#### `claude` 명령을 못 찾는다고 나오면 (윈도우에서 자주 난다)
+
+설치는 됐는데 터미널이 아직 모르는 상태다. 순서대로 해보면 거의 다 풀린다.
+
+**1) 터미널을 껐다 켠다.** PATH 는 터미널을 열 때 읽어들이므로, 설치 후 열려 있던 창은 새 명령을 모른다. 이것만으로 대부분 해결된다.
+
+**2) 그래도 안 되면 설치 위치를 직접 확인한다.**
+
+```bash
+npm config get prefix
+```
+
+나온 경로 뒤에 `\claude.cmd` 를 붙인 게 실제 파일이다. 그 전체 경로로 바로 실행한다.
+
+```bash
+"C:\Users\내이름\AppData\Roaming\npm\claude.cmd" setup-token
+```
+
+**3) 관리자 권한이 필요하다고 하면** 터미널을 관리자로 실행해 `npm install -g` 를 다시 돌린다.
+
+> 이 단계에서 시간을 많이 뺏기면 **구독 대신 API 키(②번)로 넘어가도 된다.** 하루 1편이면 월 1달러 안쪽이라, 여기서 한 시간 붙잡고 있는 것보다 나을 수 있다. 나중에 여유 있을 때 구독 방식으로 바꾸면 된다.
+
 ### ② 구독이 없다면 — API 키
 
 1. https://console.anthropic.com 접속 → 가입
@@ -148,6 +190,10 @@ claude setup-token
 3. 앱 용도: **기타** → 앱 유형: **비즈니스**
 4. 앱 이름 입력 후 생성
 
+> **개발자 등록이 안 넘어간다면** 본인 확인이 안 끝난 것이다. 페이스북 계정에 **휴대폰 번호와 이메일 인증**이 둘 다 돼 있어야 한다. 만든 지 얼마 안 된 계정이면 며칠 지나야 풀리기도 한다. 사업자 등록은 필요 없다.
+
+> **"사용 사례를 고르세요" 화면이 나오면** — 이 자동화에 필요한 건 **Instagram 관련 사용 사례**다. 여러 개 골라도 되고, 나중에 앱 대시보드에서 바꿀 수 있으니 여기서 오래 고민하지 않아도 된다.
+
 ### 4-3. Instagram 제품 추가
 
 1. 앱 대시보드 → **제품 추가** → **Instagram** → **설정**
@@ -166,6 +212,37 @@ claude setup-token
 1. **Instagram → API 설정** 화면에서 **액세스 토큰 생성**
 2. 인스타 계정으로 로그인 → 권한 승인
 3. 나온 토큰 → `.env` 의 **`IG_ACCESS_TOKEN`**
+
+### 여기서 제일 많이 막힌다 — 두 가지
+
+**① 계정을 추가하려는데 오류가 뜨거나, 로그인 창이 튕긴다**
+
+개발 모드에서는 **앱에 역할로 등록된 계정만** 인증할 수 있다. 내 계정이라도 등록을 안 하면 막힌다.
+
+1. 앱 대시보드 왼쪽 메뉴 → **앱 역할(App roles)** → **역할(Roles)**
+2. 오른쪽 위 **사용자 추가(Add People)**
+3. 뜨는 창에서 아래로 내려 **Instagram 테스터(Instagram Tester)** 를 고른다
+4. 본인 인스타 **사용자 이름**을 넣고 초대를 보낸다
+
+**그리고 초대를 수락해야 한다.** 이걸 빼먹어서 계속 막히는 경우가 많다.
+
+> 인스타 앱 → 설정 → **앱 및 웹사이트** → **테스터 초대** → 수락
+
+수락한 뒤 다시 **액세스 토큰 생성**을 하면 통과한다.
+
+**② `instagram_business_content_publish` 가 목록에 없거나 추가가 안 된다**
+
+권한 목록은 **어떤 사용 사례를 골랐는지**에 따라 달라진다. 이 권한이 안 보이면 Instagram 사용 사례가 앱에 안 붙어 있는 것이다.
+
+1. 앱 대시보드 → **사용 사례(Use cases)** 로 가서 Instagram 관련 사용 사례를 추가한다
+2. 그 사용 사례의 **사용자 지정(Customize)** 안에 권한 목록이 있다
+3. 거기서 `instagram_business_basic` 과 `instagram_business_content_publish` 를 추가한다
+
+권한을 추가한 뒤에는 **토큰을 다시 발급해야 한다.** 기존 토큰에는 새 권한이 들어 있지 않아서, 발행 단계에서야 권한 오류가 난다. 잘 붙었는지는 아래로 확인한다.
+
+```bash
+node scripts/instagram-setup.mjs
+```
 
 계정 ID 는 직접 찾을 필요가 없다. 토큰만 넣고 실행하면 된다.
 
@@ -313,7 +390,7 @@ node scripts/tick.mjs --dry
 |---|---|
 | `publishTimes` | 초안 받는 시각 목록. **개수가 곧 하루 발행 편수**다. `["08:00","19:00"]` 이면 하루 2편. **바꾸면 `setup.mjs` 를 다시 돌려야** 워크플로 cron 도 같이 갱신된다 |
 | `approvalMinutes` | 초안 잡이 직접 기다리는 시간. 이 시간이 지나도 버튼은 살아 있다 |
-| `drainWatchMinutes` | 회수 잡이 한 번 뜰 때 버튼을 지켜보는 시간 (기본 350분). 바꾸면 워크플로의 `--minutes` 와 `timeout-minutes` 도 같이 맞춰야 한다 |
+| `drainWatchMinutes` | 회수 잡이 한 번 뜰 때 버튼을 지켜보는 시간 (기본 110분). 바꾸면 워크플로의 `--minutes` 와 `timeout-minutes` 도 같이 맞춰야 한다. **예약 주기(2시간)보다 짧게 유지한다** — 길면 실행이 대기열에 쌓여 `cancelled` 로 남는다 |
 | `pendingExpiryHours` | 이 시간이 지난 초안은 만료 (기본 24) |
 | `autoPublish` | `true` 로 두면 승인 없이 바로 올린다. 처음엔 `false` 를 권한다 |
 | `cards.count` | 본문 카드 장수 |

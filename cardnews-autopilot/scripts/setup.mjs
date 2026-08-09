@@ -572,7 +572,10 @@ async function main() {
   // 간격이 28분에서 146분까지 튄다. 그래서 자주 뜨는 대신, 한 번 뜨면 오래
   // 지켜보고 다음 실행이 대기열에서 이어받게 한다.
   const drainEveryHours = 2;
-  const drainWatchMinutes = 350; // GitHub 잡 상한 360분 안쪽
+  // 주기(120분)보다 짧게 잡는다. 더 길면 다음 실행이 대기열에 쌓였다가
+  // 그 다음 실행에 밀려 cancelled 로 남는다. 동작은 정상인데 Actions 탭이
+  // 취소 기록으로 뒤덮여 고장난 것처럼 보인다.
+  const drainWatchMinutes = 110;
 
   // ── 레포 ────────────────────────────────────────────────
   console.log('\n5. 이미지 호스팅');

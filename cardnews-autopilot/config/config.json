@@ -4,7 +4,7 @@
   "publishTimes": ["08:00", "13:00", "19:00"],
 
   "approvalMinutes": 30,
-  "drainWatchMinutes": 350,
+  "drainWatchMinutes": 110,
   "pendingExpiryHours": 24,
   "autoPublish": false,
 
