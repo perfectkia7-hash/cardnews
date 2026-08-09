@@ -129,7 +129,11 @@ async function buildEngageDraft(config, outDir, alreadyUsed) {
 
   // 표지도 같은 방식으로 만든다. 카드 배열 앞에 잠깐 끼워 한 번에 처리한다.
   const withCover = [{ imagePrompt: draft.coverImagePrompt, image: '' }, ...draft.cards];
-  await generateDeckImages(withCover, path.join(outDir, 'gen'), { width: 1080, height: 1350 });
+  await generateDeckImages(withCover, path.join(outDir, 'gen'), {
+    width: 1080,
+    height: 1350,
+    style: config.images?.style ?? 'editorial',
+  });
   draft.coverImage = withCover[0].image ?? '';
 
   // 자료집이 있을 때만 CTA 를 붙인다. 없는 걸 약속하지 않는다.

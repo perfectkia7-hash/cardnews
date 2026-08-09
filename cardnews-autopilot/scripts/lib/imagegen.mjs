@@ -20,13 +20,63 @@ import { log, fetchWithRetry } from './util.mjs';
 
 const GEMINI_MODEL = 'imagen-4.0-fast-generate-001';
 
+/**
+ * 화풍 고정 문구.
+ *
+ * 잘 나가는 계정들의 사진이 "미드저니 같다" 는 건 모델 때문만이 아니다. 계정마다
+ * 렌즈·조명·색이 늘 같아서 한 사람이 찍은 것처럼 보이기 때문이다. 카드마다
+ * 화풍이 흔들리면 아무리 좋은 모델을 써도 짜깁기처럼 보인다.
+ *
+ * 그래서 내용 프롬프트 뒤에 이 문구를 항상 붙인다. config 의 images.style 로
+ * 고를 수 있고, 직접 문장을 넣어도 된다.
+ */
+export const STYLES = {
+  editorial:
+    'editorial photography, muted natural palette, soft directional window light, ' +
+    'fine film grain, subtle imperfections, shallow depth of field, 85mm lens, f1.8',
+  clean:
+    'clean product photography, bright even lighting, soft shadows, ' +
+    'minimal composition, plenty of negative space, pastel neutral background',
+  moody:
+    'moody cinematic photography, low key lighting, deep shadows, teal and amber grade, ' +
+    'anamorphic look, fine grain, 50mm lens',
+  vivid:
+    'vivid high contrast photography, saturated colors, crisp detail, ' +
+    'bold graphic composition, studio strobe lighting',
+};
+
+/**
+ * 어느 화풍이든 공통으로 막을 것.
+ *
+ * 글자가 들어가면 카드 문구와 겹쳐 지저분해진다. 옷차림을 명시하는 이유는
+ * 따로 있다 — 인물 프롬프트를 그냥 두면 모델이 맨어깨나 노출이 있는 구도를
+ * 내놓는 일이 잦다. 사람이 매번 보고 거르는 구조가 아니라 자동으로 나가므로
+ * 여기서 막는다.
+ */
+const NEGATIVE =
+  'fully clothed, modest everyday clothing, ' +
+  'no text, no words, no letters, no captions, no watermark, no logo, ' +
+  'not a collage, no borders, no frame';
+
+/** 내용 프롬프트에 화풍과 금지 사항을 붙여 최종 프롬프트를 만든다. */
+export function composePrompt(prompt, style = 'editorial') {
+  const look = STYLES[style] ?? style; // 목록에 없으면 직접 넣은 문장으로 본다
+  return [prompt, look, NEGATIVE].filter(Boolean).join(', ');
+}
+
 export function detectImageProvider() {
   if (process.env.CARDNEWS_IMAGE_PROVIDER) return process.env.CARDNEWS_IMAGE_PROVIDER;
   if (process.env.GEMINI_API_KEY) return 'gemini';
   return 'pollinations';
 }
 
-/** 키 없이 도는 쪽. 주소에 프롬프트를 실어 보내면 이미지가 돌아온다. */
+/**
+ * 키 없이 도는 쪽. 주소에 프롬프트를 실어 보내면 이미지가 돌아온다.
+ *
+ * ⚠ 요청한 크기를 지켜주지 않는다. 1080x1350 을 달라고 해도 858x686 이 온다.
+ *   카드가 1080x1350 이라 확대되고 잘려서 뭉개진다. 상시 운영은 GEMINI_API_KEY
+ *   를 넣어 Imagen 쪽으로 돌리는 게 낫다 — 하루 500장까지 무료다.
+ */
 async function viaPollinations(prompt, { width, height, seed }) {
   const url =
     `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}` +
@@ -76,14 +126,20 @@ async function viaGemini(prompt, { width, height }) {
  * @returns {Promise<string>} 저장된 경로. 실패하면 빈 문자열.
  */
 export async function generateImage(prompt, destDir, basename, options = {}) {
-  const { width = 1080, height = 1350, seed = Math.floor(Math.random() * 1e9) } = options;
+  const {
+    width = 1080,
+    height = 1350,
+    seed = Math.floor(Math.random() * 1e9),
+    style = 'editorial',
+  } = options;
   const provider = detectImageProvider();
+  const full = composePrompt(prompt, style);
 
   try {
     const buffer =
       provider === 'gemini'
-        ? await viaGemini(prompt, { width, height })
-        : await viaPollinations(prompt, { width, height, seed });
+        ? await viaGemini(full, { width, height })
+        : await viaPollinations(full, { width, height, seed });
 
     if (buffer.length < 5_000) throw new Error('돌아온 이미지가 너무 작습니다.');
 
