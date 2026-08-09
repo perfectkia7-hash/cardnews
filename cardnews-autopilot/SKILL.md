@@ -145,6 +145,26 @@ node scripts/render.mjs --draft out/draft.json --template story --out out/cards 
 
 ---
 
+## 리드 마그넷 (자료집 PDF)
+
+카드뉴스에 "댓글 남기시면 자료집 보내드려요" 를 붙이려면 **줄 물건**이 있어야 한다. 바이럴이 도는 계정들의 실제 동력은 카드 디자인이 아니라 이 자료집이다.
+
+사용자가 "자료집 만들어줘", "무료 배포용 PDF", "리드 마그넷" 같은 말을 하면 이걸 쓴다.
+
+```bash
+node scripts/leadmagnet.mjs --topic "이번 주 AI 뉴스 총정리" --preset tech --days 7
+```
+
+`out/magnet/leadmagnet.pdf` 가 나온다. 원고는 `out/magnet/report.json` 에 남으므로, 문구만 손봐서 다시 구울 때는 `--report out/magnet/report.json` 으로 수집·작성을 건너뛴다.
+
+**반드시 지킬 것 — 없는 사실을 만들지 않는다.** 이 스크립트는 실제로 수집한 기사만 근거로 삼는다. 사용자가 "수익 사례 100건 모아줘" 처럼 근거 없는 자료를 요구하면, 모델의 기억으로 채우지 말고 **근거가 될 자료를 어디서 가져올지 먼저 정하자고 되묻는다.** 검증 안 된 숫자가 든 자료집은 계정 신뢰를 한 번에 무너뜨린다.
+
+항목마다 붙는 A/B/C 등급은 내용의 중요도가 아니라 **근거가 얼마나 단단한지**를 뜻한다. 면책 문구는 코드가 자동으로 붙이므로 지우지 않는다.
+
+> 댓글 → 자동 DM 은 이 스킬 밖이다. 인스타 메시지 API 는 상시 웹훅 서버와 Meta 앱 심사를 요구한다. ManyChat 같은 도구를 쓰는 편이 빠르고, 이 스킬은 **보낼 물건**을 만드는 쪽을 맡는다.
+
+---
+
 ## 자동 모드 세팅
 
 사용자가 자동화를 원하면 `references/setup-automation.md` 를 읽고 그 순서대로 안내한다. 요약하면:
@@ -202,6 +222,7 @@ node scripts/render.mjs --draft out/draft.json --template story --out out/cards 
 scripts/fetch-news.mjs    뉴스 수집 (RSS + 본문·대표사진 추출)
 scripts/render.mjs        draft.json → 카드 이미지 (사진 자동 다운로드 포함)
 scripts/setup.mjs         자동 모드 세팅 (--help 로 플래그 확인, 대화형도 됨)
+scripts/leadmagnet.mjs    리드 마그넷 자료집 PDF 생성
 scripts/telegram-setup.mjs 텔레그램 연결 (채팅 ID 자동 탐지)
 scripts/doctor.mjs        진단 — 세팅이 막히면 제일 먼저 실행
 scripts/tick.mjs          스케줄 진입점 — 초안 생성·전송

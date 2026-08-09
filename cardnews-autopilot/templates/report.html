@@ -1,0 +1,208 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>자료집</title>
+<style>
+  /* A4 인쇄용. 화면이 아니라 종이 기준으로 짠다. */
+  @page { size: A4; margin: 0; }
+
+  :root {
+    --accent: #22C55E;
+    --ink:    #14161C;
+    --body:   #3E434F;
+    --muted:  #8A90A0;
+    --line:   #E4E7EE;
+    --page-x: 18mm;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif;
+    color: var(--body);
+    font-size: 10.5pt;
+    line-height: 1.75;
+    word-break: keep-all;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  b { color: var(--ink); font-weight: 700; }
+
+  /* ── 표지 ── */
+  .cover {
+    height: 297mm;
+    padding: var(--page-x);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: var(--ink);
+    color: #fff;
+    page-break-after: always;
+  }
+  .cover .badge {
+    align-self: flex-start;
+    font-size: 9pt; font-weight: 700; letter-spacing: .02em;
+    padding: 5px 12px; border-radius: 999px;
+    background: var(--accent); color: #06210F;
+    margin-bottom: auto;
+  }
+  .cover h1 {
+    font-size: 30pt; font-weight: 800; line-height: 1.22;
+    letter-spacing: -.03em; color: #fff;
+  }
+  .cover .sub { margin-top: 10mm; font-size: 12pt; color: rgba(255,255,255,.72); }
+  .cover .handle {
+    margin-top: 14mm; padding-top: 6mm;
+    border-top: 1px solid rgba(255,255,255,.18);
+    font-size: 10pt; color: rgba(255,255,255,.55);
+  }
+
+  /* ── 본문 ── */
+  .page { padding: 16mm var(--page-x); }
+
+  h2 {
+    font-size: 16pt; font-weight: 800; color: var(--ink);
+    letter-spacing: -.02em; margin-bottom: 2mm;
+    padding-bottom: 3mm; border-bottom: 2px solid var(--ink);
+    page-break-after: avoid;
+  }
+  .note { font-size: 10pt; color: var(--muted); margin-bottom: 7mm; }
+
+  .intro {
+    background: #F6F8FA; border-left: 3px solid var(--accent);
+    padding: 6mm 7mm; margin-bottom: 10mm; font-size: 10.5pt;
+  }
+
+  /* 항목이 페이지 경계에서 잘리면 읽기 나쁘다. 통째로 넘긴다. */
+  .item {
+    page-break-inside: avoid;
+    padding: 6mm 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .item:last-child { border-bottom: none; }
+
+  .item-head { display: flex; align-items: baseline; gap: 7px; margin-bottom: 1.5mm; }
+  .grade {
+    flex: none;
+    font-size: 8pt; font-weight: 800; line-height: 1;
+    padding: 4px 7px; border-radius: 5px;
+    background: var(--ink); color: #fff;
+  }
+  .grade.B { background: #6B7280; }
+  .grade.C { background: #C2C7D0; color: #4B5163; }
+
+  .item h3 {
+    font-size: 12.5pt; font-weight: 700; color: var(--ink);
+    letter-spacing: -.02em; line-height: 1.4;
+  }
+  .one-line {
+    font-size: 10pt; color: var(--accent); font-weight: 600;
+    margin-bottom: 2.5mm;
+  }
+  .item p { margin-bottom: 1.5mm; }
+  .src { margin-top: 3mm; font-size: 8.5pt; color: var(--muted); }
+
+  /* ── 마무리 ── */
+  .takeaways { page-break-before: always; }
+  .takeaways ol { margin: 0 0 0 5mm; }
+  .takeaways li { margin-bottom: 4mm; font-size: 11pt; color: var(--ink); }
+
+  .grade-guide {
+    margin-top: 10mm; padding: 6mm 7mm;
+    background: #F6F8FA; border-radius: 6px; font-size: 9.5pt;
+  }
+  .grade-guide dt { font-weight: 800; color: var(--ink); margin-top: 3mm; }
+  .grade-guide dt:first-child { margin-top: 0; }
+
+  .disclaimer {
+    margin-top: 10mm; padding-top: 5mm;
+    border-top: 1px solid var(--line);
+    font-size: 8.5pt; color: var(--muted); line-height: 1.7;
+  }
+  .outro {
+    margin-top: 8mm; padding: 6mm 7mm;
+    background: var(--ink); color: #fff; border-radius: 6px;
+    font-size: 10.5pt;
+  }
+  .outro b { color: var(--accent); }
+</style>
+
+<div id="root"></div>
+
+<script>
+  const { report, brand, grades, disclaimer } = window.__REPORT__;
+
+  const esc = (v) => String(v ?? '')
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+  /** 본문 규칙과 맞춘다 — **강조** 는 <b>, 줄바꿈은 문단. */
+  const rich = (v) => esc(v)
+    .replace(/\*\*([^*\n]+)\*\*/g, '<b>$1</b>')
+    .split('\n').filter(Boolean)
+    .map((line) => `<p>${line}</p>`)
+    .join('');
+
+  /** 제목은 문단이 아니라 한 덩어리다. 줄바꿈만 살린다. */
+  const lines = (v) => esc(v).split('\n').join('<br>');
+
+  const day = (iso) => {
+    if (!iso) return '';
+    const d = new Date(iso);
+    return Number.isNaN(+d) ? '' : ` · ${d.toISOString().slice(0, 10)}`;
+  };
+
+  if (brand?.accent) document.documentElement.style.setProperty('--accent', brand.accent);
+
+  const sections = (report.sections ?? []).map((s) => `
+    <section>
+      <h2>${esc(s.heading)}</h2>
+      <div class="note">${esc(s.note)}</div>
+      ${(s.items ?? []).map((it) => `
+        <div class="item">
+          <div class="item-head">
+            <span class="grade ${esc(it.grade)}">${esc(it.grade)}</span>
+            <h3>${esc(it.title)}</h3>
+          </div>
+          <div class="one-line">${esc(it.oneLine)}</div>
+          ${rich(it.body)}
+          <div class="src">출처 ${esc(it.source?.publisher ?? '')}${day(it.source?.publishedAt)}</div>
+        </div>
+      `).join('')}
+    </section>
+  `).join('');
+
+  const gradeGuide = Object.entries(grades ?? {})
+    .map(([k, v]) => `<dt>${esc(k)}급</dt><dd>${esc(v)}</dd>`)
+    .join('');
+
+  document.getElementById('root').innerHTML = `
+    <div class="cover">
+      <div class="badge">${esc(brand?.handle ?? '자료집')}</div>
+      <h1>${lines(report.title)}</h1>
+      <div class="sub">${esc(report.subtitle)}</div>
+      <div class="handle">${esc(brand?.handle ?? '')}</div>
+    </div>
+
+    <div class="page">
+      <div class="intro">${rich(report.intro)}</div>
+      ${sections}
+    </div>
+
+    <div class="page takeaways">
+      <h2>정리하면</h2>
+      <div class="note">이 자료 전체를 관통하는 것들</div>
+      <ol>${(report.takeaways ?? []).map((t) => `<li>${esc(t)}</li>`).join('')}</ol>
+
+      <dl class="grade-guide">
+        <div style="font-weight:800;color:var(--ink);margin-bottom:3mm">등급이 뜻하는 것</div>
+        ${gradeGuide}
+      </dl>
+
+      <div class="outro">
+        더 빠른 소식은 인스타그램 <b>${esc(brand?.handle ?? '')}</b> 에서 받아보세요.
+      </div>
+
+      <div class="disclaimer">${esc(disclaimer)}</div>
+    </div>
+  `;
+</script>

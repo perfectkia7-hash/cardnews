@@ -64,12 +64,6 @@ const CARD_SCHEMA = {
   required: ['title', 'subtitle', 'cards', 'caption', 'hashtags', 'musicMood', 'usedArticleIndexes'],
 };
 
-const CARD_TOOL = {
-  name: 'submit_cardnews',
-  description: '완성된 카드뉴스 원고를 제출한다.',
-  input_schema: CARD_SCHEMA,
-};
-
 /**
  * 다룰 사건 하나를 고른다.
  * 여러 매체가 다룬 묶음일수록 큰 사건이고, 본문·사진도 많이 모인다.
@@ -175,7 +169,7 @@ export function detectProvider() {
 }
 
 /** Anthropic API 로 호출 (토큰당 과금) */
-async function runViaApi(systemPrompt, prompt, model) {
+async function runViaApi(systemPrompt, prompt, model, { schema, toolName, maxTokens }) {
   let Anthropic;
   try {
     ({ default: Anthropic } = await import('@anthropic-ai/sdk'));
@@ -186,10 +180,10 @@ async function runViaApi(systemPrompt, prompt, model) {
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
   const response = await client.messages.create({
     model,
-    max_tokens: 4000,
+    max_tokens: maxTokens,
     system: systemPrompt,
-    tools: [CARD_TOOL],
-    tool_choice: { type: 'tool', name: 'submit_cardnews' },
+    tools: [{ name: toolName, description: '완성된 결과를 제출한다.', input_schema: schema }],
+    tool_choice: { type: 'tool', name: toolName },
     messages: [{ role: 'user', content: prompt }],
   });
 
@@ -199,7 +193,7 @@ async function runViaApi(systemPrompt, prompt, model) {
 }
 
 /** Claude Code CLI 로 호출 (구독 사용 — 추가 요금 없음) */
-async function runViaCli(systemPrompt, prompt) {
+async function runViaCli(systemPrompt, prompt, { schema }) {
   if (!(await claudeCli.isAvailable())) {
     throw new Error(
       'Claude Code CLI 를 찾지 못했습니다.\n' +
@@ -207,8 +201,37 @@ async function runViaCli(systemPrompt, prompt) {
         '  또는 ANTHROPIC_API_KEY 를 등록해 API 방식으로 전환하세요.',
     );
   }
-  return claudeCli.generate({ prompt, systemPrompt, schema: CARD_SCHEMA });
+  return claudeCli.generate({ prompt, systemPrompt, schema });
 }
+
+/**
+ * 스키마에 맞는 구조화된 결과를 받아 온다. 카드뉴스든 리포트든 이 길을 쓴다.
+ *
+ * 있는 자격증명에 따라 구독(CLI)과 API 중 알아서 고른다.
+ */
+export async function writeStructured({
+  systemPrompt,
+  prompt,
+  schema,
+  toolName = 'submit_result',
+  maxTokens = 4000,
+  model = process.env.ANTHROPIC_MODEL || 'claude-sonnet-5',
+}) {
+  const provider = detectProvider();
+  if (!provider) throw new Error(NO_PROVIDER_MESSAGE);
+
+  return provider === 'cli'
+    ? runViaCli(systemPrompt, prompt, { schema })
+    : runViaApi(systemPrompt, prompt, model, { schema, toolName, maxTokens });
+}
+
+const NO_PROVIDER_MESSAGE =
+  '카피를 쓸 수단이 없습니다. 둘 중 하나를 등록하세요.\n\n' +
+  '  ① CLAUDE_CODE_OAUTH_TOKEN  — Claude 구독으로 실행. 추가 요금 없음 (권장)\n' +
+  '       로컬에서:  claude setup-token\n' +
+  '       나온 토큰을 GitHub Secrets 에 등록\n\n' +
+  '  ② ANTHROPIC_API_KEY        — API 로 실행. 토큰당 과금\n' +
+  '       https://console.anthropic.com 에서 발급';
 
 /**
  * @returns {Promise<object>} draft.json 과 같은 구조
@@ -223,16 +246,7 @@ export async function writeCardNews(newsPayload, options = {}) {
   } = options;
 
   const provider = detectProvider();
-  if (!provider) {
-    throw new Error(
-      '카피를 쓸 수단이 없습니다. 둘 중 하나를 등록하세요.\n\n' +
-        '  ① CLAUDE_CODE_OAUTH_TOKEN  — Claude 구독으로 실행. 추가 요금 없음 (권장)\n' +
-        '       로컬에서:  claude setup-token\n' +
-        '       나온 토큰을 GitHub Secrets 에 등록\n\n' +
-        '  ② ANTHROPIC_API_KEY        — API 로 실행. 토큰당 과금\n' +
-        '       https://console.anthropic.com 에서 발급',
-    );
-  }
+  if (!provider) throw new Error(NO_PROVIDER_MESSAGE);
 
   const story = pickStory(newsPayload, alreadyUsed);
   if (story.length === 0) {
@@ -260,10 +274,13 @@ export async function writeCardNews(newsPayload, options = {}) {
       : `      카피 작성 중… (API · ${model})`,
   );
 
-  const draft =
-    provider === 'cli'
-      ? await runViaCli(systemPrompt, prompt)
-      : await runViaApi(systemPrompt, prompt, model);
+  const draft = await writeStructured({
+    systemPrompt,
+    prompt,
+    schema: CARD_SCHEMA,
+    toolName: 'submit_cardnews',
+    model,
+  });
   const cards = (draft.cards ?? []).map((card) => ({
     headline: card.headline,
     body: card.body,
