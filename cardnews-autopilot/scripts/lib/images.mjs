@@ -53,18 +53,41 @@ export async function downloadImage(url, destDir, basename) {
  */
 export async function attachImages(cards, destDir) {
   let ok = 0;
+  let missing = 0;
+
   await Promise.all(
     cards.map(async (card, i) => {
       if (!card.image) return;
+
+      // 내 PC 에 있는 파일이면 받을 것 없이 그대로 쓴다.
+      //
+      // 프롬프트 가이드처럼 "이 프롬프트로 뽑으면 이렇게 나옵니다" 를 보여주는
+      // 카드뉴스는 사진이 곧 증거라, 직접 만든 이미지를 넣어야 한다. 예전에는
+      // http 로 시작하지 않으면 조용히 버려서 왜 사진이 안 붙는지 알 수 없었다.
+      if (!/^https?:\/\//.test(card.image)) {
+        const local = path.resolve(card.image);
+        try {
+          await fs.access(local);
+          card.imageSrc = pathToFileURL(local).href;
+          ok++;
+        } catch {
+          log(`  ! 이미지 파일을 찾지 못했습니다: ${card.image}`);
+          missing++;
+        }
+        return;
+      }
+
       const file = await downloadImage(card.image, destDir, String(i + 1).padStart(2, '0'));
       if (file) {
         card.imageSrc = pathToFileURL(file).href;
         ok++;
+      } else {
+        missing++;
       }
     }),
   );
 
   const wanted = cards.filter((c) => c.image).length;
-  if (wanted) log(`  이미지 ${ok}/${wanted}장 확보`);
+  if (wanted) log(`  이미지 ${ok}/${wanted}장 확보${missing ? ` (실패 ${missing})` : ''}`);
   return ok;
 }

@@ -97,6 +97,29 @@ async function main() {
     label: typeof args.label === 'string' ? args.label : draft.brand?.label ?? '',
   };
 
+  // 사진을 폴더째 넘기면 파일명 순서대로 표지부터 붙인다.
+  //
+  // 프롬프트 가이드 같은 카드뉴스는 "이 프롬프트로 뽑으면 이렇게 나옵니다" 가
+  // 핵심이라 직접 만든 이미지를 써야 한다. draft.json 에 경로를 하나씩 적는
+  // 것보다 폴더에 넣고 한 번에 넘기는 편이 손이 덜 간다.
+  if (typeof args.photos === 'string') {
+    const dir = path.resolve(args.photos);
+    const files = (await fs.readdir(dir))
+      .filter((f) => /\.(jpe?g|png|webp)$/i.test(f))
+      .sort()
+      .map((f) => path.join(dir, f));
+
+    if (files.length === 0) fail(`${dir} 안에 이미지가 없습니다.`);
+    log(`사진 ${files.length}장을 ${path.basename(dir)} 에서 가져옵니다.`);
+
+    // 첫 장은 표지, 나머지는 본문 카드에 순서대로.
+    const [cover, ...rest] = files;
+    draft.coverImage = cover;
+    (draft.cards ?? []).forEach((card, i) => {
+      if (rest[i]) card.image = rest[i];
+    });
+  }
+
   // 줄 물건이 있을 때만 CTA 를 붙인다. --cta-promise 가 곧 "무엇을 준다"는 약속이다.
   const cta =
     typeof args['cta-promise'] === 'string'
