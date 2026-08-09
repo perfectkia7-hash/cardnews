@@ -152,13 +152,23 @@ node scripts/render.mjs --draft out/draft.json --template story --out out/cards 
 1. **텔레그램 봇 생성** → 토큰, 채팅 ID 확보
 2. **인스타그램 비즈니스 계정 + Meta 앱** → 액세스 토큰, IG 유저 ID 확보
 3. **GitHub 공개 레포 생성** → 이미지 호스팅 + 스케줄러를 동시에 해결
-4. 세팅 마법사 실행:
+4. **세팅은 사용자에게 떠넘기지 말고 네가 실행한다.**
+
+   `setup.mjs` 는 터미널 질문 대신 플래그로도 받는다. 사용자에게 열세 번 답하게 하지 말고, 대화로 값을 모아 한 번에 넘겨라. 필요한 건 사실상 레포와 계정 핸들 둘뿐이고 나머지는 기본값이 좋다.
 
    ```bash
-   node scripts/setup.mjs
+   node scripts/setup.mjs --repo owner/repo --handle @my_account \
+     --brand-label "최신 AI 뉴스" --times "08:00,19:00"
    ```
 
+   - `--repo` 만 필수다. 레포 안에서 돌리면 `git origin` 에서 알아서 찾으므로 그것도 생략된다.
+   - 분야는 `--preset`(목록은 `config/presets.json`), 직접 키워드는 `--query "..."`.
+   - 전체 플래그는 `node scripts/setup.mjs --help` 로 확인한다.
+   - 사람이 직접 답하고 싶어 하면 플래그 없이 `node scripts/setup.mjs` 를 터미널에서 돌리게 한다.
+
 5. 워크플로 파일 생성 후 레포에 푸시, GitHub Secrets 등록
+
+   `setup.mjs` 는 **레포 루트의** `.github/workflows/` 에 파일을 만든다(`.git` 을 찾아 올라간다). 출력에 찍힌 실제 경로를 사용자에게 그대로 보여주고, 그 파일과 `config/config.json`, 스킬 폴더 전체를 커밋해야 한다고 알린다 — 워크플로가 체크아웃해서 실행하기 때문이다.
 
 세팅 중 사용자가 막히면 `references/troubleshooting.md` 를 확인한다. **토큰이나 API 키를 대신 발급받으려 하지 말고**, 사용자가 직접 발급하도록 화면 순서를 알려준 뒤 값만 받는다.
 
@@ -191,7 +201,7 @@ node scripts/render.mjs --draft out/draft.json --template story --out out/cards 
 ```
 scripts/fetch-news.mjs    뉴스 수집 (RSS + 본문·대표사진 추출)
 scripts/render.mjs        draft.json → 카드 이미지 (사진 자동 다운로드 포함)
-scripts/setup.mjs         자동 모드 대화형 세팅
+scripts/setup.mjs         자동 모드 세팅 (--help 로 플래그 확인, 대화형도 됨)
 scripts/telegram-setup.mjs 텔레그램 연결 (채팅 ID 자동 탐지)
 scripts/doctor.mjs        진단 — 세팅이 막히면 제일 먼저 실행
 scripts/tick.mjs          스케줄 진입점 — 초안 생성·전송

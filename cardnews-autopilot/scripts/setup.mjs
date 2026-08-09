@@ -5,16 +5,75 @@
  * config/config.json 과 GitHub Actions 워크플로를 만들어 준다.
  * 비밀값은 묻지도, 저장하지도 않는다 — 전부 GitHub Secrets 로 간다.
  *
- *   node scripts/setup.mjs
+ * 두 가지 방법으로 쓴다.
+ *
+ *   node scripts/setup.mjs                     사람이 터미널에서 답하기
+ *   node scripts/setup.mjs --repo owner/repo … 값을 미리 넘기기
+ *
+ * 두 번째가 있는 이유: 이건 Claude Code 스킬이다. 구매자가 "설정해줘" 라고
+ * 하면 Claude 가 대화로 값을 모아 한 번에 넘겨 끝내는 게 맞다. 사람이
+ * 터미널에 앉아 열세 번 답하게 만들 이유가 없다.
+ *
+ * 전체 플래그는 --help 로 본다.
  */
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import readline from 'node:readline/promises';
+import { execFile } from 'node:child_process';
+import { promisify } from 'node:util';
 import { stdin, stdout } from 'node:process';
-import { ROOT, fail, readJson, writeJson, exists } from './lib/util.mjs';
+import { ROOT, parseArgs, fail, readJson, writeJson, exists } from './lib/util.mjs';
 import { TEMPLATES } from './render.mjs';
 
-const rl = readline.createInterface({ input: stdin, output: stdout });
+const run = promisify(execFile);
+const ARGS = parseArgs();
+
+/**
+ * 물어볼 수 있는 상황인지.
+ *
+ * 파이프로 실행되면(= Claude Code 나 CI) readline 이 입력을 통째로 삼키고
+ * 닫혀서 첫 질문에서 죽는다. 그래서 이럴 땐 아예 만들지 않고, 플래그와
+ * 기본값만으로 진행한다.
+ */
+const NON_INTERACTIVE = Boolean(ARGS.yes) || !stdin.isTTY;
+
+let rl = null;
+function prompt() {
+  if (!rl) rl = readline.createInterface({ input: stdin, output: stdout });
+  return rl;
+}
+
+/**
+ * 플래그나 기본값으로 답이 이미 정해졌는지 본다.
+ * @returns {{value:any}|null} 정해졌으면 값, 아니면 null (= 물어봐야 함)
+ */
+function fromFlags(flagName, fallback, validate) {
+  const given = flagName ? ARGS[flagName] : undefined;
+
+  if (given !== undefined && given !== true) {
+    try {
+      const value = validate(String(given));
+      console.log(`   --${flagName} → ${JSON.stringify(value)}`);
+      return { value };
+    } catch (err) {
+      fail(`--${flagName} 값이 잘못됐습니다.\n  ${err.message}`);
+    }
+  }
+
+  if (!NON_INTERACTIVE) return null;
+
+  if (fallback === null) {
+    fail(
+      `--${flagName} 이(가) 필요합니다.\n` +
+        '  터미널에서 직접 실행하면 물어봐 드립니다:  node scripts/setup.mjs\n' +
+        '  전체 플래그는:  node scripts/setup.mjs --help',
+    );
+  }
+
+  const value = validate(String(fallback));
+  console.log(`   --${flagName} → ${JSON.stringify(value)} (기본값)`);
+  return { value };
+}
 
 /**
  * 워크플로를 놓을 곳을 찾는다.
@@ -44,11 +103,58 @@ async function resolveWorkflowDir() {
   return { dir: path.join(ROOT, '_workflows'), repoRoot: null };
 }
 
-async function ask(question, fallback = '') {
-  const suffix = fallback ? ` (${fallback})` : '';
-  const answer = (await rl.question(`${question}${suffix}\n> `)).trim();
-  return answer || fallback;
+/** 이미 클론된 레포라면 origin 에서 owner/repo 를 읽어 온다. */
+async function gitRemoteRepo(repoRoot) {
+  if (!repoRoot) return null;
+  try {
+    const { stdout: url } = await run('git', ['remote', 'get-url', 'origin'], { cwd: repoRoot });
+    const match = /github\.com[:/]([A-Za-z0-9._-]+\/[A-Za-z0-9._-]+?)(?:\.git)?\s*$/i.exec(url);
+    if (!match) return null;
+    console.log(`\n   (git origin 에서 ${match[1]} 를 찾았습니다)`);
+    return match[1];
+  } catch {
+    return null;
+  }
 }
+
+const HELP = `
+카드뉴스 오토파일럿 — 자동 모드 세팅
+
+  node scripts/setup.mjs                 터미널에서 하나씩 답하기
+  node scripts/setup.mjs --repo a/b …    값을 미리 넘기기 (Claude 가 대신 실행)
+
+파이프로 실행되면 질문하지 않고 플래그와 기본값만 씁니다.
+--repo 만 필수고, 레포 안에서 돌리면 git origin 에서 알아서 찾습니다.
+
+  --repo <owner/repo>    이미지 호스팅 + 스케줄러 레포 (필수)
+
+  --preset <키>          분야 프리셋. 목록은 config/presets.json  (기본 tech)
+  --query "<키워드>"     프리셋 대신 직접 키워드. 주면 preset 은 무시됨
+  --topic-label "<이름>" 분야 이름 (관리용)
+  --lang ko --region KR  --query 를 쓸 때의 수집 언어·지역
+  --hours <1-168>        최근 몇 시간 기사까지  (기본 24)
+  --exclude "a,b"        제외 키워드
+
+  --template <이름>      story|news|minimal|breaking|magazine|darktech|board  (기본 story)
+  --cards <3-8>          본문 카드 장수  (기본 5)
+  --out-lang ko|en       카드에 쓸 언어  (기본 ko)
+
+  --handle @이름         카드에 찍을 계정 핸들  (기본 @my_account)
+  --accent <색>          강조색. #22C55E 또는 초록/파랑 같은 이름
+  --brand-label "<문구>" 카드 상단 배지 문구  (기본 최신 뉴스)
+
+  --timezone <지역/도시> 기본 Asia/Seoul. seoul, 서울 같은 별칭도 됨
+  --times "08:00,19:00"  초안 받을 시각. 개수가 곧 하루 발행 편수
+  --approval <1-300>     초안 잡이 버튼을 기다리는 분  (기본 30)
+
+  --yes                  터미널이어도 묻지 않고 기본값으로 진행
+  --help                 이 도움말
+
+예시
+  node scripts/setup.mjs --repo me/cardnews --preset tech \\
+    --handle @ai_hotnews --brand-label "최신 AI 뉴스" \\
+    --accent 초록 --times "08:00,13:00,19:00" --cards 3
+`;
 
 /**
  * 답을 그 자리에서 검증한다.
@@ -56,25 +162,38 @@ async function ask(question, fallback = '') {
  * 마지막에 한꺼번에 검사하면 하나 틀렸을 때 앞서 입력한 게 전부 날아간다.
  * validate 는 정리된 값을 돌려주거나, 문제를 설명하는 Error 를 던진다.
  */
-async function askValid(question, fallback, validate) {
+async function askValid(question, fallback, validate, flagName) {
+  const preset = fromFlags(flagName, fallback, validate);
+  if (preset) return preset.value;
+
+  const suffix = fallback ? ` (${fallback})` : '';
   while (true) {
-    const raw = await ask(question, fallback);
+    const typed = (await prompt().question(`${question}${suffix}\n> `)).trim();
     try {
-      return validate(raw);
+      return validate(typed || String(fallback ?? ''));
     } catch (err) {
       console.log(`   ✖ ${err.message}`);
     }
   }
 }
 
-function askNumber(prompt, fallback, min, max) {
-  return askValid(prompt, String(fallback), (raw) => {
-    const n = Number(raw);
-    if (!Number.isFinite(n) || n < min || n > max) {
-      throw new Error(`${min}~${max} 사이의 숫자를 넣어주세요.`);
-    }
-    return Math.round(n);
-  });
+function ask(question, fallback = '', flagName) {
+  return askValid(question, fallback, (raw) => raw.trim(), flagName);
+}
+
+function askNumber(question, fallback, min, max, flagName) {
+  return askValid(
+    question,
+    String(fallback),
+    (raw) => {
+      const n = Number(raw);
+      if (!Number.isFinite(n) || n < min || n > max) {
+        throw new Error(`${min}~${max} 사이의 숫자를 넣어주세요.`);
+      }
+      return Math.round(n);
+    },
+    flagName,
+  );
 }
 
 /** 자주 쓰는 도시 이름을 IANA 시간대로 바꿔 준다. */
@@ -145,13 +264,27 @@ function normalizeHandle(raw) {
   return `@${cleaned}`;
 }
 
-async function askChoice(question, choices, fallback) {
+async function askChoice(question, choices, fallback, flagName) {
+  const validate = (raw) => {
+    const value = raw.trim();
+    if (choices.some(([key]) => key === value)) return value;
+    throw new Error(
+      `'${value}' 는 목록에 없습니다. 고를 수 있는 값: ${choices.map(([k]) => k).join(', ')}`,
+    );
+  };
+
+  const preset = fromFlags(flagName, fallback, validate);
+  if (preset) return preset.value;
+
   console.log(`\n${question}`);
   for (const [key, label] of choices) console.log(`   ${key.padEnd(10)} ${label}`);
   while (true) {
-    const answer = (await rl.question(`> (${fallback}) `)).trim() || fallback;
-    if (choices.some(([key]) => key === answer)) return answer;
-    console.log(`   '${answer}' 는 목록에 없습니다. 다시 골라주세요.`);
+    const typed = (await prompt().question(`> (${fallback}) `)).trim() || fallback;
+    try {
+      return validate(typed);
+    } catch (err) {
+      console.log(`   ✖ ${err.message}`);
+    }
   }
 }
 
@@ -306,11 +439,23 @@ jobs:
 }
 
 async function main() {
+  if (ARGS.help || ARGS.h) {
+    console.log(HELP);
+    return;
+  }
+
   console.log('\n══════════════════════════════════════════');
   console.log('  카드뉴스 오토파일럿 — 자동 모드 세팅');
   console.log('══════════════════════════════════════════');
   console.log('\n비밀번호나 토큰은 여기서 묻지 않습니다.');
-  console.log('설정만 정하고, 비밀값은 마지막에 안내하는 곳에 직접 넣으시면 됩니다.\n');
+  console.log('설정만 정하고, 비밀값은 마지막에 안내하는 곳에 직접 넣으시면 됩니다.');
+  if (NON_INTERACTIVE) {
+    console.log('\n(묻지 않고 진행합니다 — 넘겨받은 값과 기본값을 씁니다)');
+  }
+  console.log('');
+
+  // 레포 위치를 먼저 잡는다. 레포 주소를 되묻지 않으려면 이게 앞에 있어야 한다.
+  const { dir: workflowDir, repoRoot } = await resolveWorkflowDir();
 
   const presets = await readJson(path.join(ROOT, 'config', 'presets.json'));
   const presetKeys = Object.keys(presets).filter((k) => !k.startsWith('_'));
@@ -320,22 +465,36 @@ async function main() {
     ...presetKeys.map((k) => [k, presets[k].label]),
     ['custom', '직접 키워드 입력'],
   ];
-  const presetKey = await askChoice('1. 어떤 분야를 다루시나요?', presetChoices, 'tech');
+  // --query 를 준 건 곧 직접 키워드를 쓰겠다는 뜻이다. 굳이 --preset custom 까지
+  // 같이 쓰게 만들지 않는다.
+  const presetKey = ARGS.query
+    ? 'custom'
+    : await askChoice('1. 어떤 분야를 다루시나요?', presetChoices, 'tech', 'preset');
 
   const topic = {};
   if (presetKey === 'custom') {
-    topic.label = await ask('\n분야 이름은? (카드에 표시되진 않고 관리용입니다)', '내 뉴스');
-    topic.query = await ask('\n검색 키워드는? (OR 로 여러 개 가능)', '');
-    if (!topic.query) fail('키워드가 없으면 뉴스를 못 모읍니다.');
-    topic.lang = await ask('\n수집 언어 코드는? (ko / en / ja …)', 'ko');
-    topic.region = await ask('\n수집 지역 코드는? (KR / US / JP …)', 'KR');
+    topic.label = await ask('\n분야 이름은? (카드에 표시되진 않고 관리용입니다)', '내 뉴스', 'topic-label');
+    topic.query = await askValid(
+      '\n검색 키워드는? (OR 로 여러 개 가능)',
+      null,
+      (raw) => {
+        const v = raw.trim();
+        if (!v) throw new Error('키워드가 없으면 뉴스를 못 모읍니다.');
+        return v;
+      },
+      'query',
+    );
+    topic.lang = await ask('\n수집 언어 코드는? (ko / en / ja …)', 'ko', 'lang');
+    topic.region = await ask('\n수집 지역 코드는? (KR / US / JP …)', 'KR', 'region');
   } else {
     topic.preset = presetKey;
     topic.label = presets[presetKey].label;
   }
-  topic.hours = Number(await ask('\n최근 몇 시간 내 기사를 볼까요?', '24'));
-  const excludeRaw = await ask('\n제외할 키워드가 있나요? (쉼표 구분, 없으면 엔터)', '');
+  topic.hours = await askNumber('\n최근 몇 시간 내 기사를 볼까요?', 24, 1, 168, 'hours');
+  topic.limit = 25;
+  const excludeRaw = await ask('\n제외할 키워드가 있나요? (쉼표 구분, 없으면 엔터)', '', 'exclude');
   topic.exclude = excludeRaw ? excludeRaw.split(',').map((s) => s.trim()).filter(Boolean) : [];
+  topic.match = [];
 
   // ── 카드 ────────────────────────────────────────────────
   const template = await askChoice(
@@ -350,28 +509,39 @@ async function main() {
       ['board', '패널 정리형 · 교육/꿀팁'],
     ],
     'story',
+    'template',
   );
   if (!TEMPLATES.includes(template)) fail(`알 수 없는 템플릿: ${template}`);
 
   const cards = {
-    count: await askNumber('\n본문 카드 몇 장? (표지·엔딩 제외)', 5, 3, 8),
+    count: await askNumber('\n본문 카드 몇 장? (표지·엔딩 제외)', 5, 3, 8, 'cards'),
     template,
-    outputLang: await askValid('\n카드에 쓸 언어는? (ko / en)', 'ko', (raw) => {
-      const v = raw.trim().toLowerCase();
-      if (v !== 'ko' && v !== 'en') throw new Error("ko 또는 en 으로 넣어주세요.");
-      return v;
-    }),
+    outputLang: await askValid(
+      '\n카드에 쓸 언어는? (ko / en)',
+      'ko',
+      (raw) => {
+        const v = raw.trim().toLowerCase();
+        if (v !== 'ko' && v !== 'en') throw new Error("ko 또는 en 으로 넣어주세요.");
+        return v;
+      },
+      'out-lang',
+    ),
   };
 
   // ── 브랜딩 ──────────────────────────────────────────────
   const brand = {
-    handle: await askValid('\n3. 카드에 넣을 계정 핸들은?', '@my_account', normalizeHandle),
-    accent: await askValid('\n강조색은? (색 이름도 됩니다. 비우면 템플릿 기본색)', '', normalizeAccent),
-    label: await ask('\n카드 상단 문구는? (예: 최신 AI 뉴스)', '최신 뉴스'),
+    handle: await askValid('\n3. 카드에 넣을 계정 핸들은?', '@my_account', normalizeHandle, 'handle'),
+    accent: await askValid(
+      '\n강조색은? (색 이름도 됩니다. 비우면 템플릿 기본색)',
+      '',
+      normalizeAccent,
+      'accent',
+    ),
+    label: await ask('\n카드 상단 문구는? (예: 최신 AI 뉴스)', '최신 뉴스', 'brand-label'),
   };
 
   // ── 스케줄 ──────────────────────────────────────────────
-  const timezone = await askValid('\n4. 시간대는?', 'Asia/Seoul', normalizeTimezone);
+  const timezone = await askValid('\n4. 시간대는?', 'Asia/Seoul', normalizeTimezone, 'timezone');
 
   console.log('\n매일 몇 시에 초안을 받을까요?');
   console.log('   여러 개면 쉼표로 구분합니다. 개수가 곧 하루 발행 편수입니다.');
@@ -389,11 +559,11 @@ async function main() {
       if (Number(h) > 23 || Number(m) > 59) throw new Error(`'${t}' 는 없는 시각입니다.`);
       return `${h.padStart(2, '0')}:${m}`;
     });
-  });
+  }, 'times');
 
   console.log('\n발행 버튼을 처음에 몇 분까지 기다릴까요?');
   console.log('   이 시간이 지나도 버튼은 살아 있습니다 — 회수 잡이 나중에 처리합니다.');
-  const approvalMinutes = await askNumber('', 30, 1, 300);
+  const approvalMinutes = await askNumber('', 30, 1, 300, 'approval');
 
   // 회수 잡 주기는 묻지 않는다.
   //
@@ -410,10 +580,11 @@ async function main() {
   console.log('   이 자동화를 돌릴 GitHub 레포(공개)를 그대로 쓰면 추가 가입이 없습니다.');
   console.log('   ⚠ 레포 페이지 상단에 적힌 이름을 그대로 쓰세요. 계정명에 -hash 같은 꼬리가 붙기도 합니다.');
 
-  const imageRepo = await askValid('\n레포 주소는? (owner/repo 형식)', '', (raw) => {
+  const cleanRepo = (raw) => {
     // 주소를 통째로 붙여넣는 경우가 많다.
     const cleaned = raw
       .trim()
+      .replace(/^git@github\.com:/i, '')
       .replace(/^https?:\/\/(www\.)?github\.com\//i, '')
       .replace(/\.git$/i, '')
       .replace(/\/+$/, '');
@@ -423,7 +594,17 @@ async function main() {
     }
     if (cleaned !== raw.trim()) console.log(`   → ${cleaned} 로 정리했습니다.`);
     return cleaned;
-  });
+  };
+
+  // 이미 클론된 레포 안이라면 물어볼 필요가 없다. 계정명 오타(-hash 누락 같은)로
+  // 이미지 업로드가 전부 404 나는 사고가 여기서 제일 많이 난다.
+  const detectedRepo = await gitRemoteRepo(repoRoot);
+  const imageRepo = await askValid(
+    '\n레포 주소는? (owner/repo 형식)',
+    detectedRepo ?? null,
+    cleanRepo,
+    'repo',
+  );
 
   const config = {
     timezone,
@@ -445,7 +626,6 @@ async function main() {
   await writeJson(path.join(ROOT, 'config', 'config.json'), config);
 
   const converted = normalized.map((t) => toUtcCron(t, timezone));
-  const { dir: workflowDir, repoRoot } = await resolveWorkflowDir();
   await fs.mkdir(workflowDir, { recursive: true });
 
   // 워크플로는 레포 루트에서 돈다. 스킬이 `.claude/skills/…` 처럼 깊이 들어가
@@ -516,4 +696,4 @@ async function main() {
 
 main()
   .catch((err) => fail(err.stack || err.message))
-  .finally(() => rl.close());
+  .finally(() => rl?.close());

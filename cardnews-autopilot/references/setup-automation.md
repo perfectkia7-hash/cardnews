@@ -198,20 +198,32 @@ node scripts/refresh-token.mjs
 
 ---
 
-## 5단계 — 설정 마법사 (5분)
+## 5단계 — 설정 (1분)
 
-레포를 클론한 폴더에서:
+**Claude Code 에게 맡기는 게 가장 빠르다.** "자동 모드 세팅해줘" 라고 하면 필요한 값만 묻고 대신 실행한다.
+
+직접 하고 싶다면 스킬 폴더에서:
 
 ```bash
-cd cardnews-autopilot
 npm install
 node scripts/setup.mjs
 ```
 
-분야·디자인·시간을 묻는다. 답하고 나면 두 파일이 생긴다.
+분야·디자인·시간을 하나씩 묻는다. 값을 이미 알고 있다면 한 줄로 끝내도 된다.
 
-- `cardnews-autopilot/config/config.json` — 설정 (비밀값 없음)
-- `.github/workflows/cardnews.yml` — 스케줄 (현지 시각을 UTC 로 변환해 넣어준다)
+```bash
+node scripts/setup.mjs --repo owner/repo --handle @my_account \
+  --brand-label "최신 AI 뉴스" --times "08:00,19:00"
+```
+
+`--repo` 만 필수고, 클론한 레포 안에서 돌리면 `git origin` 에서 알아서 찾으므로 그마저 생략된다. 전체 목록은 `node scripts/setup.mjs --help`.
+
+끝나면 두 파일이 생긴다. **화면에 찍히는 실제 경로를 확인하자.**
+
+- `<스킬폴더>/config/config.json` — 설정 (비밀값 없음)
+- `<레포루트>/.github/workflows/cardnews.yml` — 스케줄 (현지 시각을 UTC 로 변환해 넣어준다)
+
+> 워크플로는 반드시 **레포 루트의** `.github/workflows/` 에 있어야 GitHub 이 인식한다. 마법사가 `.git` 을 찾아 올라가 그 자리에 만들어 주지만, 스킬을 git 레포 밖(예: `~/.claude/skills/`)에 두면 만들 곳을 알 수 없어 임시 폴더에 만들고 경고한다. 그럴 땐 두 파일을 레포 루트로 직접 옮긴다.
 
 ---
 
