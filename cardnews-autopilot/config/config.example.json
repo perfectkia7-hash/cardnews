@@ -37,6 +37,11 @@
     "label": "최신 AI 뉴스"
   },
 
+  "_contentMode": "news = 매일 뉴스 한 건을 깊게. engage = config/topics.json 의 소재를 하나씩 꺼내 참여형 카드뉴스를 만들고 사진까지 생성합니다. 소재를 다 쓰면 자동으로 뉴스로 돌아갑니다. 채널을 키우려면 engage 쪽입니다.",
+  "contentMode": "news",
+
+  "_images": "engage 모드는 가져올 사진이 없어 직접 만듭니다. GEMINI_API_KEY 를 넣으면 하루 500장까지 무료로 화질 좋게 뽑고, 없으면 키가 필요 없는 Pollinations 로 뽑습니다.",
+
   "_cta": "마지막 카드와 캡션 첫 줄에 '댓글 남기면 보내드려요' 를 붙입니다. 좋아요보다 댓글이 몇 배 많은 게시물은 전부 이 구조입니다. 다만 promise 는 실제로 보낼 자료가 있을 때만 채우세요 — 없는 걸 약속하면 역효과입니다. 자료집은 scripts/leadmagnet.mjs 로 만들고, 발송은 ManyChat 같은 DM 자동화 도구가 맡습니다.",
   "cta": {
     "enabled": false,

@@ -1,0 +1,32 @@
+{
+  "_": "참여형 카드뉴스 소재 목록입니다. 위에서부터 하나씩 꺼내 씁니다. 이미 다룬 소재는 state/published.json 에 기록돼 다시 나오지 않습니다. 비면 뉴스 모드로 돌아갑니다.",
+  "_magnet": "magnet 은 그 소재의 자료집 주소입니다. 채워 두면 카드 마지막 장과 캡션에 '댓글 남기면 보내드려요' 가 붙습니다. 비워 두면 CTA 없이 나갑니다 — 없는 걸 약속하지 않기 위해서입니다.",
+
+  "topics": [
+    {
+      "topic": "챗GPT로 인물 사진 뽑을 때 얼굴이 계속 바뀌는 문제와 고정하는 법",
+      "magnet": "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/magnet/chatgpt-face-consistency.pdf",
+      "magnetName": "프롬프트 7종 전부"
+    },
+    {
+      "topic": "AI로 만든 사진이 딱 봐도 티 나는 이유와 사진처럼 보이게 하는 법",
+      "magnet": "",
+      "magnetName": ""
+    },
+    {
+      "topic": "챗GPT에게 일을 시킬 때 결과가 확 달라지는 프롬프트 구조",
+      "magnet": "",
+      "magnetName": ""
+    },
+    {
+      "topic": "노션 AI로 회의록을 자동 정리하는 실전 세팅",
+      "magnet": "",
+      "magnetName": ""
+    },
+    {
+      "topic": "바이브코딩으로 앱 하나를 끝까지 만드는 순서",
+      "magnet": "",
+      "magnetName": ""
+    }
+  ]
+}

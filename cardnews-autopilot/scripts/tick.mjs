@@ -24,6 +24,8 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { ROOT, parseArgs, fail, log, readJson, writeJson, exists } from './lib/util.mjs';
 import { writeCardNews, detectProvider } from './lib/copywriter.mjs';
+import { writeEngageCards } from './lib/engage.mjs';
+import { generateDeckImages } from './lib/imagegen.mjs';
 import { uploadCards } from './upload-github.mjs';
 import { publishCarousel } from './publish-ig.mjs';
 import { checkTokenExpiry } from './refresh-token.mjs';
@@ -96,8 +98,51 @@ async function buildDraft(config, outDir, alreadyUsed) {
   return draft;
 }
 
+/**
+ * 참여형: 소재 목록에서 하나를 꺼내 원고를 쓰고 사진까지 만든다.
+ *
+ * 뉴스와 달리 가져올 사진이 없으므로 카드마다 이미지를 생성한다. 사진 없이
+ * 텍스트만 나가면 단조로워서 반응이 안 온다.
+ *
+ * @returns {Promise<object|null>} 쓸 소재가 없으면 null
+ */
+async function buildEngageDraft(config, outDir, alreadyUsed) {
+  const file = path.join(ROOT, 'config', 'topics.json');
+  if (!(await exists(file))) return null;
+
+  const queue = (await readJson(file)).topics ?? [];
+  // 이미 다룬 소재는 건너뛴다. 지문은 소재 문장 그대로 쓴다.
+  const next = queue.find((t) => t.topic && !alreadyUsed.has(`topic:${t.topic}`));
+  if (!next) {
+    log('      소재 목록을 다 썼습니다 — 뉴스 모드로 진행합니다.');
+    return null;
+  }
+
+  log('[1-2/6] 참여형 원고 작성');
+  const cardConf = config.cards ?? {};
+  const draft = await writeEngageCards(next.topic, {
+    outputLang: cardConf.outputLang ?? 'ko',
+    cardCount: cardConf.count ?? 4,
+    brandLabel: config.brand?.label ?? '',
+  });
+  log(`      "${String(draft.title).replace(/\n/g, ' ')}"`);
+
+  // 표지도 같은 방식으로 만든다. 카드 배열 앞에 잠깐 끼워 한 번에 처리한다.
+  const withCover = [{ imagePrompt: draft.coverImagePrompt, image: '' }, ...draft.cards];
+  await generateDeckImages(withCover, path.join(outDir, 'gen'), { width: 1080, height: 1350 });
+  draft.coverImage = withCover[0].image ?? '';
+
+  // 자료집이 있을 때만 CTA 를 붙인다. 없는 걸 약속하지 않는다.
+  if (next.magnet && next.magnetName) {
+    draft.cta = { promise: next.magnetName, trigger: config.cta?.trigger ?? '아무 댓글' };
+    draft.magnetUrl = next.magnet;
+  }
+  draft.fingerprints = [`topic:${next.topic}`];
+  return draft;
+}
+
 /** 3단계: 카드 렌더 */
-async function renderCards(config, outDir, cardsDir) {
+async function renderCards(config, outDir, cardsDir, draft) {
   log('[3/6] 카드 렌더');
   const cardConf = config.cards ?? {};
   const brand = config.brand ?? {};
@@ -113,9 +158,12 @@ async function renderCards(config, outDir, cardsDir) {
   if (brand.label) renderArgs.push('--label', brand.label);
 
   // 줄 물건이 있을 때만 "댓글 남기면 보내드려요" 를 붙인다.
-  // config 의 cta.promise 가 곧 그 약속이라, 비워 두면 CTA 가 나가지 않는다.
+  //
+  // 소재별 자료집(topics.json 의 magnet)이 먼저고, 없으면 config 의 기본 CTA 를
+  // 쓴다. 둘 다 비어 있으면 CTA 없이 나간다 — 없는 걸 약속하지 않기 위해서다.
+  // draft.cta 는 render.mjs 가 draft.json 에서 직접 읽으므로 여기선 config 만 본다.
   const cta = config.cta ?? {};
-  if (cta.enabled && cta.promise) {
+  if (!draft?.cta && cta.enabled && cta.promise) {
     renderArgs.push('--cta-promise', cta.promise);
     if (cta.trigger) renderArgs.push('--cta-trigger', cta.trigger);
   }
@@ -166,14 +214,19 @@ async function main() {
     } else {
       // 최근에 다룬 사건은 빼고 고른다. 하루에 여러 편 낼 때 중복을 막는다.
       const alreadyUsed = await loadPublished(config);
-      if (alreadyUsed.size) log(`        (최근 다룬 사건 ${alreadyUsed.size}건 제외)`);
-      draft = await buildDraft(config, outDir, alreadyUsed);
+      if (alreadyUsed.size) log(`        (최근 다룬 것 ${alreadyUsed.size}건 제외)`);
+
+      // 참여형 소재가 남아 있으면 그걸 먼저 쓴다. 다 쓰면 뉴스로 돌아간다.
+      if ((config.contentMode ?? 'news') === 'engage') {
+        draft = await buildEngageDraft(config, outDir, alreadyUsed);
+      }
+      if (!draft) draft = await buildDraft(config, outDir, alreadyUsed);
     }
     draft.brand = { ...(config.brand ?? {}), ...(draft.brand ?? {}) };
     await writeJson(path.join(outDir, 'draft.json'), draft);
 
     // ── 3. 렌더 ──────────────────────────────────────────────
-    const manifest = await renderCards(config, outDir, cardsDir);
+    const manifest = await renderCards(config, outDir, cardsDir, draft);
 
     // ── 4~5. 공개 URL 확보 + 텔레그램 전송 ───────────────────
     // github 방식은 먼저 올려서 얻은 주소로 미리보기를 보내고,
