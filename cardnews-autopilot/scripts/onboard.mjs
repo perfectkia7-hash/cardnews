@@ -112,6 +112,37 @@ async function checkRepo(slug) {
   return data.full_name;
 }
 
+/**
+ * Claude 토큰을 실제로 써 본다.
+ *
+ * 형식만 봐서는 알 수 없다. 잘못된 토큰이어도 저장은 되고, 며칠 뒤 새벽
+ * 자동 실행에서야 "인증 실패" 로 터진다. 그때는 원인을 짚기 어렵다.
+ * 아주 작은 요청 하나를 실제로 보내 지금 확인한다.
+ */
+async function checkClaudeToken(token) {
+  const { isAvailable, generate } = await import('./lib/claude-cli.mjs');
+  if (!(await isAvailable())) {
+    throw new Error(
+      'claude 명령을 찾지 못해 확인을 건너뜁니다.\n' +
+        '     설치: npm install -g @anthropic-ai/claude-code (설치 후 터미널 재시작)',
+    );
+  }
+
+  const prev = process.env.CLAUDE_CODE_OAUTH_TOKEN;
+  process.env.CLAUDE_CODE_OAUTH_TOKEN = token;
+  try {
+    await generate({
+      prompt: '연결 확인용이다. ok 에 1을 넣어 제출해라.',
+      systemPrompt: '너는 값을 반환하는 도구다. 설명 없이 결과만 낸다.',
+      schema: { type: 'object', properties: { ok: { type: 'integer' } }, required: ['ok'] },
+      timeoutMs: 120_000,
+    });
+  } finally {
+    if (prev === undefined) delete process.env.CLAUDE_CODE_OAUTH_TOKEN;
+    else process.env.CLAUDE_CODE_OAUTH_TOKEN = prev;
+  }
+}
+
 async function checkInstagram(token) {
   const res = await fetch(
     `https://graph.instagram.com/v21.0/me?fields=user_id,username&access_token=${token}`,
@@ -225,7 +256,20 @@ const STEPS = [
       }
       await setEnvValue('CLAUDE_CODE_OAUTH_TOKEN', token);
       console.log(C.green('  ✔ 저장했습니다.'));
-      console.log(C.dim('  이 값은 첫 자동 실행 때 실제로 검증됩니다.'));
+
+      if (await confirm('토큰이 실제로 되는지 확인해 볼까요? (20~30초)')) {
+        console.log(C.dim('  아주 작은 요청 하나를 보내는 중…'));
+        try {
+          await checkClaudeToken(token);
+          console.log(C.green('  ✔ 잘 됩니다. 자동 실행 때 이 토큰으로 원고를 씁니다.'));
+        } catch (err) {
+          console.log(C.red(`  ✖ ${err.message}`));
+          console.log(C.dim('  토큰을 다시 발급해 이 단계를 한 번 더 실행해 주세요.'));
+          console.log(C.dim('  (지금 저장은 해두었으니 나중에 고치셔도 됩니다)'));
+        }
+      } else {
+        console.log(C.dim('  건너뜁니다. 첫 자동 실행 때 확인됩니다.'));
+      }
     },
   },
 
