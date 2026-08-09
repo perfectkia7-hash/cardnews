@@ -112,6 +112,14 @@ async function renderCards(config, outDir, cardsDir) {
   if (brand.accent) renderArgs.push('--accent', brand.accent);
   if (brand.label) renderArgs.push('--label', brand.label);
 
+  // 줄 물건이 있을 때만 "댓글 남기면 보내드려요" 를 붙인다.
+  // config 의 cta.promise 가 곧 그 약속이라, 비워 두면 CTA 가 나가지 않는다.
+  const cta = config.cta ?? {};
+  if (cta.enabled && cta.promise) {
+    renderArgs.push('--cta-promise', cta.promise);
+    if (cta.trigger) renderArgs.push('--cta-trigger', cta.trigger);
+  }
+
   await run(process.execPath, renderArgs, { maxBuffer: 32 * 1024 * 1024 });
 
   const manifest = await readJson(path.join(cardsDir, 'manifest.json'));

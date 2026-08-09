@@ -33,6 +33,12 @@
     "label": "최신 AI 뉴스"
   },
 
+  "cta": {
+    "enabled": false,
+    "trigger": "아무 댓글",
+    "promise": ""
+  },
+
   "music": {
     "remind": true
   }

@@ -102,6 +102,21 @@
   .item p { margin-bottom: 1.5mm; }
   .src { margin-top: 3mm; font-size: 8.5pt; color: var(--muted); }
 
+  /* 프롬프트처럼 그대로 베껴 쓸 것. PDF 에서 복사되도록 글자로 남긴다. */
+  .snippet {
+    margin-top: 3mm;
+    padding: 4mm 5mm;
+    background: #F4F6F8;
+    border-left: 3px solid var(--accent);
+    border-radius: 4px;
+    font-family: 'D2Coding', 'Consolas', 'Menlo', monospace;
+    font-size: 9pt;
+    line-height: 1.65;
+    color: var(--ink);
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
   /* ── 마무리 ── */
   .takeaways { page-break-before: always; }
   .takeaways ol { margin: 0 0 0 5mm; }
@@ -153,27 +168,45 @@
 
   if (brand?.accent) document.documentElement.style.setProperty('--accent', brand.accent);
 
+  /**
+   * 등급과 출처는 근거가 있을 때만 붙인다.
+   *
+   * 노하우 자료집(프롬프트 모음 같은 것)에는 인용할 기사가 없다. 그런 항목에
+   * 억지로 등급을 붙이면 없는 근거를 있는 것처럼 보이게 만든다. 대신 항목마다
+   * "직접 해보고 확인" 같은 표시(check)를 쓴다.
+   */
   const sections = (report.sections ?? []).map((s) => `
     <section>
       <h2>${esc(s.heading)}</h2>
-      <div class="note">${esc(s.note)}</div>
-      ${(s.items ?? []).map((it) => `
+      ${s.note ? `<div class="note">${esc(s.note)}</div>` : ''}
+      ${(s.items ?? []).map((it) => {
+        const badge = it.grade ? `<span class="grade ${esc(it.grade)}">${esc(it.grade)}</span>` : '';
+        const foot = it.source?.publisher
+          ? `<div class="src">출처 ${esc(it.source.publisher)}${day(it.source.publishedAt)}</div>`
+          : it.check
+            ? `<div class="src">확인 · ${esc(it.check)}</div>`
+            : '';
+        return `
         <div class="item">
           <div class="item-head">
-            <span class="grade ${esc(it.grade)}">${esc(it.grade)}</span>
+            ${badge}
             <h3>${esc(it.title)}</h3>
           </div>
-          <div class="one-line">${esc(it.oneLine)}</div>
+          ${it.oneLine ? `<div class="one-line">${esc(it.oneLine)}</div>` : ''}
           ${rich(it.body)}
-          <div class="src">출처 ${esc(it.source?.publisher ?? '')}${day(it.source?.publishedAt)}</div>
-        </div>
-      `).join('')}
+          ${it.snippet ? `<pre class="snippet">${esc(it.snippet)}</pre>` : ''}
+          ${foot}
+        </div>`;
+      }).join('')}
     </section>
   `).join('');
 
-  const gradeGuide = Object.entries(grades ?? {})
-    .map(([k, v]) => `<dt>${esc(k)}급</dt><dd>${esc(v)}</dd>`)
-    .join('');
+  // 등급 설명은 실제로 등급을 쓴 자료에만 넣는다.
+  const usesGrades = (report.sections ?? [])
+    .some((s) => (s.items ?? []).some((it) => it.grade));
+  const gradeGuide = usesGrades
+    ? Object.entries(grades ?? {}).map(([k, v]) => `<dt>${esc(k)}급</dt><dd>${esc(v)}</dd>`).join('')
+    : '';
 
   document.getElementById('root').innerHTML = `
     <div class="cover">
@@ -193,13 +226,15 @@
       <div class="note">이 자료 전체를 관통하는 것들</div>
       <ol>${(report.takeaways ?? []).map((t) => `<li>${esc(t)}</li>`).join('')}</ol>
 
+      ${gradeGuide ? `
       <dl class="grade-guide">
         <div style="font-weight:800;color:var(--ink);margin-bottom:3mm">등급이 뜻하는 것</div>
         ${gradeGuide}
-      </dl>
+      </dl>` : ''}
 
       <div class="outro">
-        더 빠른 소식은 인스타그램 <b>${esc(brand?.handle ?? '')}</b> 에서 받아보세요.
+        ${esc(report.outro ?? '더 빠른 소식은 인스타그램 <핸들> 에서 받아보세요.')
+          .replace('&lt;핸들&gt;', `<b>${esc(brand?.handle ?? '')}</b>`)}
       </div>
 
       <div class="disclaimer">${esc(disclaimer)}</div>

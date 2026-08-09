@@ -151,15 +151,48 @@ node scripts/render.mjs --draft out/draft.json --template story --out out/cards 
 
 사용자가 "자료집 만들어줘", "무료 배포용 PDF", "리드 마그넷" 같은 말을 하면 이걸 쓴다.
 
+### 먼저 종류를 정한다
+
+**뉴스 요약은 리드 마그넷으로 약하다.** 사람들은 "지난주에 무슨 일이 있었나"를 받으려고 팔로우하지 않는다. **"이걸 읽으면 내가 뭘 할 수 있나"** 가 있어야 퍼진다. 주제를 들었을 때 어느 쪽인지 먼저 판단한다.
+
+| `--kind` | 무엇 | 원고를 누가 쓰나 |
+|---|---|---|
+| `guide` | 방법·노하우 (프롬프트 모음, 설정법, 체크리스트) | **Claude 가 쓴다** |
+| `research` | 사례·수치 (매출 사례, 도구 비교, 가격 조사) | **Claude 가 웹에서 찾아 쓴다** |
+| `news` | 기간 내 뉴스 정리 | 스크립트가 RSS 로 혼자 |
+
+`news` 만 스크립트가 원고까지 만든다. 나머지는 **네가 `report.json` 을 쓰고 스크립트는 조판만 한다.**
+
 ```bash
-node scripts/leadmagnet.mjs --topic "이번 주 AI 뉴스 총정리" --preset tech --days 7
+# 뉴스 — 혼자 다 함
+node scripts/leadmagnet.mjs --topic "이번 주 AI 뉴스" --preset tech --days 7
+
+# 가이드·조사 — 원고를 만든 뒤 넘긴다
+node scripts/leadmagnet.mjs --topic "AI 인물 일관성" --kind guide --report out/magnet/report.json
 ```
 
-`out/magnet/leadmagnet.pdf` 가 나온다. 원고는 `out/magnet/report.json` 에 남으므로, 문구만 손봐서 다시 구울 때는 `--report out/magnet/report.json` 으로 수집·작성을 건너뛴다.
+### report.json 을 쓰는 법
 
-**반드시 지킬 것 — 없는 사실을 만들지 않는다.** 이 스크립트는 실제로 수집한 기사만 근거로 삼는다. 사용자가 "수익 사례 100건 모아줘" 처럼 근거 없는 자료를 요구하면, 모델의 기억으로 채우지 말고 **근거가 될 자료를 어디서 가져올지 먼저 정하자고 되묻는다.** 검증 안 된 숫자가 든 자료집은 계정 신뢰를 한 번에 무너뜨린다.
+`out/guide-report.json` 이 실제 예시다. 형태는 이렇다.
 
-항목마다 붙는 A/B/C 등급은 내용의 중요도가 아니라 **근거가 얼마나 단단한지**를 뜻한다. 면책 문구는 코드가 자동으로 붙이므로 지우지 않는다.
+```
+title, subtitle, intro, takeaways, outro
+sections[] : { heading, note, items[] }
+  items[]  : { title, oneLine, body, snippet?, grade?, source?, check? }
+```
+
+- `snippet` — 프롬프트나 명령어처럼 **그대로 베껴 쓸 것.** PDF 에서 복사되는 코드 블록으로 나온다. 가이드형 자료집의 값어치는 대부분 여기에 있다.
+- `grade` + `source` — 출처가 실재할 때만 쓴다 (`research`, `news`).
+- `check` — 출처 대신 **독자가 직접 확인하는 방법** (`guide`). "같은 대화에서 3장 뽑아 비교" 처럼 구체적으로.
+- `body` 는 문장마다 줄바꿈, 핵심은 `**강조**`.
+
+### 지킬 것
+
+**수치와 사례는 반드시 출처를 단다.** "월 매출 1,000만원", "1,200억에 인수" 같은 숫자를 기억으로 쓰면 안 된다. `research` 자료집을 만들 때는 **웹 검색으로 실제 보도를 찾아 확인하고**, 못 찾은 항목은 넣지 않는다. 지어낸 숫자 하나가 계정 신뢰를 한 번에 끝낸다.
+
+**방법과 노하우는 다르다.** 프롬프트나 설정법은 독자가 즉시 시험해 본다. 출처는 없어도 되지만 **실제로 되는 것만** 쓴다. 확신이 없으면 `check` 에 확인 방법을 적어 독자가 스스로 판단하게 한다.
+
+면책 문구는 종류에 따라 코드가 자동으로 붙인다. 지우지 않는다.
 
 > 댓글 → 자동 DM 은 이 스킬 밖이다. 인스타 메시지 API 는 상시 웹훅 서버와 Meta 앱 심사를 요구한다. ManyChat 같은 도구를 쓰는 편이 빠르고, 이 스킬은 **보낼 물건**을 만드는 쪽을 맡는다.
 

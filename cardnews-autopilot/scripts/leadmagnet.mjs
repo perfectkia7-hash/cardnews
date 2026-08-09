@@ -30,6 +30,42 @@ const GRADES = {
   C: '단일 매체 보도이거나 익명 소스에 기댄 내용',
 };
 
+/**
+ * 자료집의 종류. 위험도가 다르므로 만드는 방법과 면책 문구가 다르다.
+ *
+ *   news     이 스크립트가 RSS 로 근거를 모아 쓴다. 예약 실행에 적합.
+ *   research 사례·수치를 다룬다. 출처가 반드시 필요하므로 Claude 가 웹에서
+ *            직접 조사해 원고를 만들고, 이 스크립트는 조판만 한다.
+ *   guide    방법·노하우. 인용할 기사가 없고 독자가 즉시 시험해 볼 수 있다.
+ *            등급 대신 "직접 확인" 표시를 쓴다.
+ */
+const KINDS = {
+  news: {
+    label: '뉴스 정리',
+    auto: true,
+    disclaimer:
+      '이 자료집은 공개된 언론 보도를 정리한 것이며, 각 항목의 출처와 보도 시점을 함께 표기했습니다. ' +
+      '수치와 전망은 보도 시점 기준이며 이후 달라질 수 있습니다. ' +
+      '투자·창업 권유가 아니며 어떤 결과도 보장하지 않습니다.',
+  },
+  research: {
+    label: '사례 조사',
+    auto: false,
+    disclaimer:
+      '이 자료집의 수치는 각 창업자나 매체가 공개한 내용을 정리한 것이며, 항목마다 출처와 시점을 밝혔습니다. ' +
+      '공개된 수치는 검증이 어렵고 과장이 섞일 수 있어 근거의 단단함을 등급으로 표시했습니다. ' +
+      '수익을 보장하지 않으며 투자·창업 권유가 아닙니다.',
+  },
+  guide: {
+    label: '실전 가이드',
+    auto: false,
+    disclaimer:
+      '이 자료집의 방법은 작성 시점에 실제로 시험해 본 것을 정리했습니다. ' +
+      '도구가 업데이트되면 결과가 달라질 수 있으니 직접 확인하며 사용하세요. ' +
+      '특정 서비스의 공식 문서가 아니며, 각 서비스의 이용약관을 함께 확인하시기 바랍니다.',
+  },
+};
+
 const REPORT_SCHEMA = {
   type: 'object',
   properties: {
@@ -227,9 +263,17 @@ async function main() {
   const topic = typeof args.topic === 'string' ? args.topic : null;
   if (!topic) {
     fail(
-      '--topic 이 필요합니다.\n' +
-        '  예)  node scripts/leadmagnet.mjs --topic "이번 주 AI 뉴스 총정리" --preset tech --days 7',
+      '--topic 이 필요합니다.\n\n' +
+        '  뉴스 정리 (혼자 다 함)\n' +
+        '    node scripts/leadmagnet.mjs --topic "이번 주 AI 뉴스" --preset tech --days 7\n\n' +
+        '  사례 조사 / 실전 가이드 (Claude 가 원고를 만든 뒤 조판만)\n' +
+        '    node scripts/leadmagnet.mjs --topic "..." --kind guide --report out/magnet/report.json',
     );
+  }
+
+  const kind = typeof args.kind === 'string' ? args.kind : 'news';
+  if (!KINDS[kind]) {
+    fail(`--kind 는 ${Object.keys(KINDS).join(', ')} 중 하나입니다.`);
   }
 
   const configPath = path.join(ROOT, 'config', 'config.json');
@@ -245,11 +289,8 @@ async function main() {
       handle: typeof args.handle === 'string' ? args.handle : config.brand?.handle ?? '',
       accent: typeof args.accent === 'string' ? args.accent : config.brand?.accent ?? '#22C55E',
     },
-    // 모델이 아니라 코드가 붙인다. 빠뜨리면 안 되는 종류라서.
-    disclaimer:
-      '이 자료집은 공개된 언론 보도를 정리한 것이며, 각 항목의 출처와 보도 시점을 함께 표기했습니다. ' +
-      '수치와 전망은 보도 시점 기준이며 이후 달라질 수 있습니다. ' +
-      '투자·창업 권유가 아니며 어떤 결과도 보장하지 않습니다.',
+    // 면책은 모델이 아니라 코드가 붙인다. 빠뜨리면 안 되는 종류라서.
+    disclaimer: KINDS[kind].disclaimer,
   };
 
   const outDir = path.resolve(typeof args.out === 'string' ? args.out : 'out/magnet');
@@ -261,8 +302,20 @@ async function main() {
 
   let report;
   if (preset) {
-    log('[1-2/4] 기존 원고 사용 (수집·작성 건너뜀)');
+    log(`[1-2/4] 기존 원고 사용 — ${KINDS[kind].label} (수집·작성 건너뜀)`);
     report = await readJson(path.resolve(preset));
+  } else if (!KINDS[kind].auto) {
+    // 사례·노하우는 RSS 로 못 모은다. 근거를 어디서 가져올지가 핵심이라
+    // 이 스크립트가 혼자 지어내게 두면 안 된다.
+    fail(
+      `--kind ${kind} 는 원고를 자동으로 쓰지 않습니다.\n\n` +
+        '  이 종류는 근거를 어디서 가져올지가 핵심입니다. RSS 로는 안 모이고,\n' +
+        '  모델의 기억으로 채우면 그럴듯한 거짓이 나옵니다.\n\n' +
+        '  Claude Code 에게 "자료집 원고 써줘" 라고 하세요. Claude 가 웹에서\n' +
+        '  직접 찾아보고 report.json 을 만들어 줍니다. 그 파일을 넘기세요:\n\n' +
+        `    node scripts/leadmagnet.mjs --topic "${topic}" --kind ${kind} \\\n` +
+        '      --report out/magnet/report.json',
+    );
   } else {
     const news = await collect(outDir, options);
     report = await compose(news, options);
