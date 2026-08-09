@@ -8,6 +8,7 @@
     "node": ">=20"
   },
   "scripts": {
+    "onboard": "node scripts/onboard.mjs",
     "setup": "node scripts/setup.mjs",
     "setup:telegram": "node scripts/telegram-setup.mjs",
     "setup:instagram": "node scripts/instagram-setup.mjs",
