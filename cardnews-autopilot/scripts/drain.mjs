@@ -26,6 +26,33 @@ async function loadConfig() {
   return readJson(file);
 }
 
+/**
+ * 초안 잡이 지금 돌고 있는지 본다.
+ *
+ * 초안 잡도 자기 초안의 버튼을 기다리며 폴링한다. 둘이 동시에 폴링하면
+ * 텔레그램이 한쪽을 끊으므로(409), 초안 잡이 도는 동안은 이쪽이 쉰다.
+ * 폴러를 항상 하나로 유지하는 게 목적이다.
+ *
+ * 확인에 실패하면 "안 돈다"고 본다 — 지켜보기를 멈추는 것보다 겹치는 편이 낫다.
+ */
+async function tickIsRunning(config) {
+  const repo = process.env.GITHUB_REPOSITORY ?? config?.imageRepo;
+  if (!repo?.includes('/')) return false;
+
+  const url = `https://api.github.com/repos/${repo}/actions/workflows/cardnews.yml/runs?status=in_progress&per_page=1`;
+  const headers = { accept: 'application/vnd.github+json' };
+  if (process.env.GITHUB_TOKEN) headers.authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
+
+  try {
+    const res = await fetch(url, { headers });
+    if (!res.ok) return false;
+    const data = await res.json();
+    return (data.total_count ?? 0) > 0;
+  } catch {
+    return false;
+  }
+}
+
 /** 한 번 훑고 처리한다. 처리한 건수를 돌려준다. */
 async function sweep(config, chatId, { timeoutSec }) {
   const decisions = await pollDecisions({ chatId, timeoutSec });
@@ -66,9 +93,27 @@ async function main() {
   log(`발행 버튼 지켜보는 중… (${minutes}분)`);
 
   let handled = 0;
+  let paused = false;
+  let checkedAt = 0;
+
   while (Date.now() < deadline) {
     const remainingSec = Math.floor((deadline - Date.now()) / 1000);
     if (remainingSec < 5) break;
+
+    // 초안 잡 확인은 1분에 한 번이면 충분하다.
+    if (Date.now() - checkedAt > 60_000) {
+      checkedAt = Date.now();
+      const busy = await tickIsRunning(config);
+      if (busy !== paused) {
+        log(busy ? '  · 초안 잡이 도는 중 — 잠시 양보합니다' : '  · 다시 지켜봅니다');
+        paused = busy;
+      }
+    }
+
+    if (paused) {
+      await sleep(20_000);
+      continue;
+    }
 
     const before = handled;
     handled += await sweep(config, chatId, { timeoutSec: Math.min(45, remainingSec) });

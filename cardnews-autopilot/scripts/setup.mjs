@@ -153,7 +153,7 @@ function toUtcCron(localTime, timeZone) {
   };
 }
 
-function workflowYaml({ crons, localTimes, timeZone, waitMinutes, drainEveryMinutes }) {
+function workflowYaml({ crons, localTimes, timeZone, waitMinutes }) {
   const scheduleLines = crons.map((c, i) => `    - cron: '${c}'   # 현지 ${localTimes[i]}`).join('\n');
 
   return `# 카드뉴스 오토파일럿 — 자동 생성됨
@@ -226,18 +226,23 @@ jobs:
  * 늦게 누른 발행 버튼을 처리하는 잡.
  * 초안 잡이 끝난 뒤에 눌러도 이 잡이 주기적으로 확인해서 올려 준다.
  */
-function drainWorkflowYaml({ everyMinutes }) {
+function drainWorkflowYaml({ everyHours, watchMinutes }) {
   return `# 카드뉴스 오토파일럿 — 발행 버튼 회수 (자동 생성됨)
 # 초안을 만든 잡이 끝난 뒤에 버튼을 눌러도 이 잡이 발행합니다.
 name: cardnews-drain
 
+# ${everyHours}시간마다 띄웁니다. 짧은 주기(*/15 같은)는 GitHub 가 대부분
+# 버립니다 — 실측 간격이 28분에서 146분까지 튀었습니다. 그래서 "자주 뜨는"
+# 대신 "한 번 뜨면 오래 지켜보는" 쪽으로 갑니다.
 on:
   schedule:
-    - cron: '*/${everyMinutes} * * * *'
+    - cron: '0 */${everyHours} * * *'
   workflow_dispatch:
 
-# 회수 잡끼리만 겹치지 않게 합니다. 초안 잡과는 락을 나누지 않습니다 —
-# 나누면 지켜보는 동안 뉴스 발송이 밀립니다.
+# 한 번에 하나만 돌되, 겹친 실행은 취소하지 않고 대기시킵니다. 그래서 감시가
+# 끝나는 순간 대기하던 실행이 곧바로 이어받아, 예약이 몇 번 밀려도 지켜보는
+# 구간이 끊기지 않습니다. 초안 잡과는 락을 나누지 않습니다 — 나누면 지켜보는
+# 동안 뉴스 발송이 밀립니다.
 concurrency:
   group: cardnews-drain
   cancel-in-progress: false
@@ -245,7 +250,7 @@ concurrency:
 jobs:
   drain:
     runs-on: ubuntu-latest
-    timeout-minutes: ${everyMinutes + 6}
+    timeout-minutes: ${Math.min(355, watchMinutes + 5)}
     permissions:
       contents: write
 
@@ -268,7 +273,7 @@ jobs:
           IG_USER_ID: \${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: \${{ secrets.IG_ACCESS_TOKEN }}
           GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
-        run: node scripts/drain.mjs --watch --minutes ${Math.max(1, everyMinutes - 1)}
+        run: node scripts/drain.mjs --watch --minutes ${watchMinutes}
 `;
 }
 
@@ -361,9 +366,14 @@ async function main() {
   console.log('   이 시간이 지나도 버튼은 살아 있습니다 — 회수 잡이 나중에 처리합니다.');
   const approvalMinutes = await askNumber('', 30, 1, 300);
 
-  console.log('\n회수 잡을 몇 분마다 돌릴까요? (늦게 누른 발행을 확인하는 주기)');
-  console.log('   짧을수록 반응이 빠릅니다. 공개 레포는 실행시간이 무료라 부담 없습니다.');
-  const drainEveryMinutes = await askNumber('', 15, 5, 60);
+  // 회수 잡 주기는 묻지 않는다.
+  //
+  // 예전에는 "몇 분마다 확인할까요"를 물었지만, GitHub 의 예약 실행은 보장된
+  // 시각이 아니라 최선 노력이라 이 값이 거의 의미가 없다. */15 로 걸어도 실측
+  // 간격이 28분에서 146분까지 튄다. 그래서 자주 뜨는 대신, 한 번 뜨면 오래
+  // 지켜보고 다음 실행이 대기열에서 이어받게 한다.
+  const drainEveryHours = 2;
+  const drainWatchMinutes = 350; // GitHub 잡 상한 360분 안쪽
 
   // ── 레포 ────────────────────────────────────────────────
   console.log('\n5. 이미지 호스팅');
@@ -390,7 +400,7 @@ async function main() {
     timezone,
     publishTimes: normalized,
     approvalMinutes,
-    drainEveryMinutes,
+    drainWatchMinutes,
     pendingExpiryHours: 24,
     autoPublish: false,
     imageHost: 'github',
@@ -416,13 +426,12 @@ async function main() {
       localTimes: normalized,
       timeZone: timezone,
       waitMinutes: approvalMinutes,
-      drainEveryMinutes,
     }),
     'utf8',
   );
   await fs.writeFile(
     path.join(workflowDir, 'cardnews-drain.yml'),
-    drainWorkflowYaml({ everyMinutes: drainEveryMinutes }),
+    drainWorkflowYaml({ everyHours: drainEveryHours, watchMinutes: drainWatchMinutes }),
     'utf8',
   );
 
@@ -436,7 +445,7 @@ async function main() {
   for (const [i, t] of normalized.entries()) {
     console.log(`               ${t} (${timezone})  =  UTC ${converted[i].utc}`);
   }
-  console.log(`  버튼 대기    처음 ${approvalMinutes}분 + 이후 ${drainEveryMinutes}분마다 회수`);
+  console.log(`  버튼 대기    초안 잡이 ${approvalMinutes}분 대기 + 회수 잡이 계속 지켜봄`);
   console.log(`               (${config.pendingExpiryHours}시간 지난 초안은 자동 만료)\n`);
 
   console.log('다음으로 할 일 — GitHub 레포에서:');

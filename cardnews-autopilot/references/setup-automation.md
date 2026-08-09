@@ -301,7 +301,7 @@ node scripts/tick.mjs --dry
 |---|---|
 | `publishTimes` | 초안 받는 시각 목록. **개수가 곧 하루 발행 편수**다. `["08:00","19:00"]` 이면 하루 2편. **바꾸면 `setup.mjs` 를 다시 돌려야** 워크플로 cron 도 같이 갱신된다 |
 | `approvalMinutes` | 초안 잡이 직접 기다리는 시간. 이 시간이 지나도 버튼은 살아 있다 |
-| `drainEveryMinutes` | 회수 잡 주기. 짧을수록 늦게 누른 발행이 빨리 처리된다 |
+| `drainWatchMinutes` | 회수 잡이 한 번 뜰 때 버튼을 지켜보는 시간 (기본 350분). 바꾸면 워크플로의 `--minutes` 와 `timeout-minutes` 도 같이 맞춰야 한다 |
 | `pendingExpiryHours` | 이 시간이 지난 초안은 만료 (기본 24) |
 | `autoPublish` | `true` 로 두면 승인 없이 바로 올린다. 처음엔 `false` 를 권한다 |
 | `cards.count` | 본문 카드 장수 |
