@@ -58,6 +58,8 @@ body {
   font-size: .345em; font-weight: 400; line-height: 1.66;
   color: #D4D4DA; margin-top: .38em; word-break: keep-all;
 }
+/* **강조** 는 <b> 로 변환된다 (templates/_engine.js). 본문보다 진하게. */
+.body b, .desc b { font-weight: 700; color: var(--fg); }
 
 .cover .headline { font-size: 1.0em; line-height: 1.14; }
 .cover .body { font-size: .33em; color: var(--muted); margin-top: .52em; }
