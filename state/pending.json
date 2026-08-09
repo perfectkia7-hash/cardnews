@@ -1,18 +1,21 @@
 [
   {
-    "draftId": "dmskzttdc",
-    "title": "아마존 데이터센터가 미국 최대 오염원 된다",
+    "draftId": "dmsmfclgl",
+    "title": "이제 승인 없이도 클로드가 알아서 한다",
     "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-08T23-18-03/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-08T23-18-03/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-08T23-18-03/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-08T23-18-03/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-08T23-18-03/05.jpg"
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-09T23-20-59/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-09T23-20-59/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-09T23-20-59/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-09T23-20-59/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-09T23-20-59/05.jpg"
     ],
-    "caption": "아마존이 짓는 데이터센터의 자체 발전소가 연간 이산화탄소 3300만 톤을 배출할 수 있는 허가를 받았습니다. 뉴욕타임스는 이것이 미국의 어떤 발전소보다 많은 양이라고 보도했습니다.\n\n아마존은 2040년까지 탄소 배출 제로를 약속했지만, 지난해 배출량은 오히려 16% 늘었습니다. AI 확산이 그 배경으로 지목됩니다.\n\n아마존은 \"세상이 달라졌다\"면서도 \"약속은 변하지 않았다\"고 말했습니다.\n\n출처 · TechCrunch\n\n#아마존 #데이터센터 #기후위기 #탄소배출 #AI뉴스 #테크뉴스 #ESG #텍사스",
+    "caption": "이제 클로드 코드는 승인을 구하지 않고 알아서 일을 합니다.\n앤트로픽이 8월14일부터 오토 모드를 기본값으로 켭니다.\n\n실험에서 오토 모드는 위험 행동의 89%를 잡아냈지만, 사람의 검토는 13.6%에 그쳤습니다.\n클로드 코드 책임자도 몇 달째 오토 모드만 쓴다고 밝혔습니다.\n\n여러분은 AI에게 얼마나 맡길 준비가 되셨나요?\n(출처: TechCrunch)\n\n출처 · TechCrunch\n\n#AI #앤트로픽 #클로드코드 #클로드 #자동화 #AI뉴스 #테크뉴스 #오토모드",
+    "musicMood": "긴장감 있는 신스",
     "fingerprints": [
-      "plannedamazondatacenterc_sw264o"
+      "anthropicisturningclaude_mjihcw",
+      "howtouseclaudesvoicemode_n18hj0",
+      "howtousechatgptsnewmoren_1rrmaz0"
     ],
-    "createdAt": "2026-08-08T23:18:12.195Z"
+    "createdAt": "2026-08-09T23:21:07.415Z"
   }
 ]
