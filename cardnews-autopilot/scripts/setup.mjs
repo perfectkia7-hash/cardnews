@@ -16,6 +16,34 @@ import { TEMPLATES } from './render.mjs';
 
 const rl = readline.createInterface({ input: stdin, output: stdout });
 
+/**
+ * 워크플로를 놓을 곳을 찾는다.
+ *
+ * GitHub Actions 는 **레포 루트의** `.github/workflows/` 만 읽는다. 그런데 이
+ * 스킬은 보통 `<레포>/.claude/skills/cardnews-autopilot/` 에 깔리므로,
+ * 스킬 폴더 기준 상대경로로 쓰면 `.claude/skills/.github/workflows/` 라는
+ * 아무도 안 보는 자리에 파일이 생긴다. 세팅은 성공한 것처럼 끝나고 예약은
+ * 영영 안 돈다 — 실제로 그렇게 만들어져 있었다.
+ *
+ * 그래서 `.git` 을 찾아 올라가며 진짜 레포 루트를 잡는다.
+ *
+ * @returns {Promise<{dir: string, repoRoot: string|null}>}
+ */
+async function resolveWorkflowDir() {
+  let dir = ROOT;
+  for (let i = 0; i < 12; i += 1) {
+    if (await exists(path.join(dir, '.git'))) {
+      return { dir: path.join(dir, '.github', 'workflows'), repoRoot: dir };
+    }
+    const parent = path.dirname(dir);
+    if (parent === dir) break;
+    dir = parent;
+  }
+  // 레포 밖(예: ~/.claude/skills/)에 깔린 경우. 눈에 띄는 곳에 만들어 두고
+  // 어디로 옮겨야 하는지 알려 준다. 조용히 엉뚱한 데 쓰는 것보다 낫다.
+  return { dir: path.join(ROOT, '_workflows'), repoRoot: null };
+}
+
 async function ask(question, fallback = '') {
   const suffix = fallback ? ` (${fallback})` : '';
   const answer = (await rl.question(`${question}${suffix}\n> `)).trim();
@@ -153,7 +181,7 @@ function toUtcCron(localTime, timeZone) {
   };
 }
 
-function workflowYaml({ crons, localTimes, timeZone, waitMinutes }) {
+function workflowYaml({ crons, localTimes, timeZone, waitMinutes, skillPath }) {
   const scheduleLines = crons.map((c, i) => `    - cron: '${c}'   # 현지 ${localTimes[i]}`).join('\n');
 
   return `# 카드뉴스 오토파일럿 — 자동 생성됨
@@ -193,7 +221,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y fonts-noto-cjk
 
       - name: 의존성 설치
-        working-directory: cardnews-autopilot
+        working-directory: ${skillPath}
         run: npm ci --omit=optional
 
       # 구독으로 돌릴 때 필요. API 키 방식이면 이 단계는 그냥 지나갑니다.
@@ -204,11 +232,11 @@ jobs:
       # API 키 방식일 때만 SDK 를 깝니다.
       - name: Anthropic SDK 설치
         if: env.USE_SUBSCRIPTION != 'true'
-        working-directory: cardnews-autopilot
+        working-directory: ${skillPath}
         run: npm install @anthropic-ai/sdk
 
       - name: 카드뉴스 생성 및 발행
-        working-directory: cardnews-autopilot
+        working-directory: ${skillPath}
         env:
           # 둘 중 등록된 쪽으로 알아서 실행됩니다.
           CLAUDE_CODE_OAUTH_TOKEN: \${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -226,7 +254,7 @@ jobs:
  * 늦게 누른 발행 버튼을 처리하는 잡.
  * 초안 잡이 끝난 뒤에 눌러도 이 잡이 주기적으로 확인해서 올려 준다.
  */
-function drainWorkflowYaml({ everyHours, watchMinutes }) {
+function drainWorkflowYaml({ everyHours, watchMinutes, skillPath }) {
   return `# 카드뉴스 오토파일럿 — 발행 버튼 회수 (자동 생성됨)
 # 초안을 만든 잡이 끝난 뒤에 버튼을 눌러도 이 잡이 발행합니다.
 name: cardnews-drain
@@ -262,11 +290,11 @@ jobs:
           node-version: '20'
 
       - name: 의존성 설치
-        working-directory: cardnews-autopilot
+        working-directory: ${skillPath}
         run: npm ci --omit=optional
 
       - name: 발행 버튼 확인
-        working-directory: cardnews-autopilot
+        working-directory: ${skillPath}
         env:
           TELEGRAM_BOT_TOKEN: \${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: \${{ secrets.TELEGRAM_CHAT_ID }}
@@ -313,14 +341,15 @@ async function main() {
   const template = await askChoice(
     '2. 카드 디자인은?',
     [
-      ['news', '사진 + 하단 자막 · 실제 뉴스 계정 스타일 (권장)'],
+      ['story', '사건 하나를 깊게 · 사진 여러 장 + 자세한 설명 (권장)'],
+      ['news', '그날 뉴스 여러 건을 모아보기'],
       ['minimal', '밝고 조용한 정보 전달형'],
       ['breaking', '고대비 강조형 · 속보/이슈'],
       ['magazine', '에디토리얼 감성 · 라이프스타일'],
       ['darktech', '다크 + 네온 · 테크/AI/코인'],
       ['board', '패널 정리형 · 교육/꿀팁'],
     ],
-    'news',
+    'story',
   );
   if (!TEMPLATES.includes(template)) fail(`알 수 없는 템플릿: ${template}`);
 
@@ -416,8 +445,15 @@ async function main() {
   await writeJson(path.join(ROOT, 'config', 'config.json'), config);
 
   const converted = normalized.map((t) => toUtcCron(t, timezone));
-  const workflowDir = path.join(ROOT, '..', '.github', 'workflows');
+  const { dir: workflowDir, repoRoot } = await resolveWorkflowDir();
   await fs.mkdir(workflowDir, { recursive: true });
+
+  // 워크플로는 레포 루트에서 돈다. 스킬이 `.claude/skills/…` 처럼 깊이 들어가
+  // 있어도 그 자리를 정확히 가리켜야 한다. 예전에는 'cardnews-autopilot' 로
+  // 박혀 있어서, 레포 루트에 스킬을 둔 경우가 아니면 전 단계가 실패했다.
+  const skillPath = repoRoot
+    ? path.relative(repoRoot, ROOT).split(path.sep).join('/')
+    : 'cardnews-autopilot';
 
   await fs.writeFile(
     path.join(workflowDir, 'cardnews.yml'),
@@ -426,21 +462,34 @@ async function main() {
       localTimes: normalized,
       timeZone: timezone,
       waitMinutes: approvalMinutes,
+      skillPath,
     }),
     'utf8',
   );
   await fs.writeFile(
     path.join(workflowDir, 'cardnews-drain.yml'),
-    drainWorkflowYaml({ everyHours: drainEveryHours, watchMinutes: drainWatchMinutes }),
+    drainWorkflowYaml({
+      everyHours: drainEveryHours,
+      watchMinutes: drainWatchMinutes,
+      skillPath,
+    }),
     'utf8',
   );
 
   console.log('\n══════════════════════════════════════════');
   console.log('  설정 완료');
   console.log('══════════════════════════════════════════\n');
-  console.log(`  설정 파일    cardnews-autopilot/config/config.json`);
-  console.log(`  워크플로     .github/workflows/cardnews.yml`);
-  console.log(`               .github/workflows/cardnews-drain.yml`);
+  // 경로는 짐작해서 적지 않는다. 실제로 쓴 자리를 그대로 보여준다.
+  console.log(`  설정 파일    ${path.join(ROOT, 'config', 'config.json')}`);
+  console.log(`  워크플로     ${path.join(workflowDir, 'cardnews.yml')}`);
+  console.log(`               ${path.join(workflowDir, 'cardnews-drain.yml')}`);
+  if (repoRoot) {
+    console.log(`               (레포 루트: ${repoRoot})`);
+  } else {
+    console.log('\n  ⚠ 이 스킬이 git 레포 안에 있지 않아 워크플로를 임시 폴더에 만들었습니다.');
+    console.log('    위 두 파일을 자동화용 레포의 .github/workflows/ 로 옮기셔야');
+    console.log('    GitHub 이 예약 실행을 인식합니다. 레포 루트 기준입니다.');
+  }
   console.log(`  발행 편수    하루 ${normalized.length}편`);
   for (const [i, t] of normalized.entries()) {
     console.log(`               ${t} (${timezone})  =  UTC ${converted[i].utc}`);
