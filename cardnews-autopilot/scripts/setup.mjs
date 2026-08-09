@@ -152,7 +152,7 @@ const HELP = `
 
 예시
   node scripts/setup.mjs --repo me/cardnews --preset tech \\
-    --handle @ai_hotnews --brand-label "최신 AI 뉴스" \\
+    --handle @my_account --brand-label "최신 AI 뉴스" \\
     --accent 초록 --times "08:00,13:00,19:00" --cards 3
 `;
 
@@ -593,7 +593,7 @@ async function main() {
       .replace(/\/+$/, '');
 
     if (!/^[A-Za-z0-9._-]+\/[A-Za-z0-9._-]+$/.test(cleaned)) {
-      throw new Error('owner/repo 형식으로 넣어주세요. 예) perfectkia7-hash/cardnews');
+      throw new Error('owner/repo 형식으로 넣어주세요. 예) mycompany-dev/cardnews');
     }
     if (cleaned !== raw.trim()) console.log(`   → ${cleaned} 로 정리했습니다.`);
     return cleaned;
