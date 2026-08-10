@@ -1,24 +1,5 @@
 [
   {
-    "draftId": "dmsmfclgl",
-    "title": "이제 승인 없이도 클로드가 알아서 한다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-09T23-20-59/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-09T23-20-59/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-09T23-20-59/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-09T23-20-59/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-09T23-20-59/05.jpg"
-    ],
-    "caption": "이제 클로드 코드는 승인을 구하지 않고 알아서 일을 합니다.\n앤트로픽이 8월14일부터 오토 모드를 기본값으로 켭니다.\n\n실험에서 오토 모드는 위험 행동의 89%를 잡아냈지만, 사람의 검토는 13.6%에 그쳤습니다.\n클로드 코드 책임자도 몇 달째 오토 모드만 쓴다고 밝혔습니다.\n\n여러분은 AI에게 얼마나 맡길 준비가 되셨나요?\n(출처: TechCrunch)\n\n출처 · TechCrunch\n\n#AI #앤트로픽 #클로드코드 #클로드 #자동화 #AI뉴스 #테크뉴스 #오토모드",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "anthropicisturningclaude_mjihcw",
-      "howtouseclaudesvoicemode_n18hj0",
-      "howtousechatgptsnewmoren_1rrmaz0"
-    ],
-    "createdAt": "2026-08-09T23:21:07.415Z"
-  },
-  {
     "draftId": "dmsms5o7s",
     "title": "자산은 반토막인데\\n베팅은 계속됐다",
     "imageUrls": [
@@ -34,5 +15,22 @@
       "embattledhedgefundsituat_1avnu4"
     ],
     "createdAt": "2026-08-10T05:19:19.761Z"
+  },
+  {
+    "draftId": "dmsnuywdc",
+    "title": "베조스가 다음으로\\n사려는 건 축구팀",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-10T23-25-47/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-10T23-25-47/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-10T23-25-47/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-10T23-25-47/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-10T23-25-47/05.jpg"
+    ],
+    "caption": "제프 베조스가 리버풀 인수에 나섰습니다. 성사되면 그의 첫 스포츠 구단이 됩니다.\n\n최소 30% 지분을 18억 달러에 사들이려 한다는 소식, 가디언이 보도했습니다.\n프리미어리그 20개 구단 중 13개엔 이미 미국인 주주가 있습니다.\n\n출처 · TechCrunch\n\n#베조스 #리버풀 #프리미어리그 #아마존 #억만장자 #스포츠비즈니스 #TechCrunch",
+    "musicMood": "경쾌한 팝비트",
+    "fingerprints": [
+      "jeffbezosmightfinallyget_150jzr6"
+    ],
+    "createdAt": "2026-08-10T23:25:54.450Z"
   }
 ]
