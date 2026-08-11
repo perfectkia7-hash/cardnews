@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmsms5o7s",
-    "title": "자산은 반토막인데\\n베팅은 계속됐다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-10T05-19-13/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-10T05-19-13/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-10T05-19-13/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-10T05-19-13/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-10T05-19-13/05.jpg"
-    ],
-    "caption": "자산이 반토막 난 AI 헤지펀드가 그래도 베팅을 이어갔습니다.\n\n전직 오픈AI 연구원이 20대에 세운 시추에이셔널 어웨어니스가 반도체 스타트업 소스파운드리에 4억 달러를 추가 투자했습니다. 누적 투자액은 5억 달러. 운용자산이 200억 달러에서 100억 달러로 줄어든 와중에도, 반도체 제조 스타트업에는 계속 판돈을 걸고 있습니다.\n\n출처 · TechCrunch\n\n#AI #헤지펀드 #반도체 #스타트업 #오픈AI #실리콘밸리 #테크뉴스 #앤스로픽",
-    "musicMood": "긴장감 있는 비트",
-    "fingerprints": [
-      "embattledhedgefundsituat_1avnu4"
-    ],
-    "createdAt": "2026-08-10T05:19:19.761Z"
-  },
-  {
     "draftId": "dmsnuywdc",
     "title": "베조스가 다음으로\\n사려는 건 축구팀",
     "imageUrls": [
@@ -49,5 +32,22 @@
       "openaireportedlycomplete_arujew"
     ],
     "createdAt": "2026-08-11T05:00:04.368Z"
+  },
+  {
+    "draftId": "dmsoj8ukl",
+    "title": "가스 엔진 잔디깎이는\\n이제 옛말이 됐다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-11T10-45-15/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-11T10-45-15/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-11T10-45-15/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-11T10-45-15/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-11T10-45-15/05.jpg"
+    ],
+    "caption": "가스 엔진 잔디깎이 시대가 저물고 있습니다.\n\nZDNET이 2026년 로봇 잔디깎이를 직접 테스트하고 베스트 제품을 골랐습니다. 로봇청소기처럼 센서로 스스로 움직이고, 매설 와이어로 잔디밭 경계를 정할 수도 있습니다.\n\n올여름 잔디 관리, 로봇에게 맡겨볼 만합니다.\n\n출처 · Latest news\n\n#로봇잔디깎이 #로봇청소기 #스마트홈 #테크뉴스 #ZDNET #가드닝 #IT뉴스",
+    "musicMood": "경쾌한 여름 신스",
+    "fingerprints": [
+      "bestrobotmowersof2026exp_z1x1d7"
+    ],
+    "createdAt": "2026-08-11T10:45:24.047Z"
   }
 ]
