@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmsnuywdc",
-    "title": "베조스가 다음으로\\n사려는 건 축구팀",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-10T23-25-47/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-10T23-25-47/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-10T23-25-47/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-10T23-25-47/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-10T23-25-47/05.jpg"
-    ],
-    "caption": "제프 베조스가 리버풀 인수에 나섰습니다. 성사되면 그의 첫 스포츠 구단이 됩니다.\n\n최소 30% 지분을 18억 달러에 사들이려 한다는 소식, 가디언이 보도했습니다.\n프리미어리그 20개 구단 중 13개엔 이미 미국인 주주가 있습니다.\n\n출처 · TechCrunch\n\n#베조스 #리버풀 #프리미어리그 #아마존 #억만장자 #스포츠비즈니스 #TechCrunch",
-    "musicMood": "경쾌한 팝비트",
-    "fingerprints": [
-      "jeffbezosmightfinallyget_150jzr6"
-    ],
-    "createdAt": "2026-08-10T23:25:54.450Z"
-  },
-  {
     "draftId": "dmso6x7ga",
     "title": "오픈AI 상장 미루고 직원 주식 70억달러 매입",
     "imageUrls": [
@@ -49,5 +32,23 @@
       "bestrobotmowersof2026exp_z1x1d7"
     ],
     "createdAt": "2026-08-11T10:45:24.047Z"
+  },
+  {
+    "draftId": "dmspak9f9",
+    "title": "제미니가\\n10억 명을 넘었다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-11T23-29-19/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-11T23-29-19/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-11T23-29-19/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-11T23-29-19/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-11T23-29-19/05.jpg"
+    ],
+    "caption": "제미니 앱이 월간 활성 이용자 10억 명을 돌파했습니다.\n구글 제품 중 14번째, 역대 가장 빠르게 성장한 제품이라고 합니다.\n\n오픈AI 챗GPT가 같은 기록을 세운 지 두 달 만입니다.\n이용자 63%는 음성으로 말을 걸고, 하루 1억 5000만 장의 이미지가 제미니로 만들어지고 있습니다.\n\n출처 · Ars Technica, TechCrunch\n\n#구글 #제미니 #Gemini #AI #챗GPT #테크뉴스 #인공지능 #실리콘밸리",
+    "musicMood": "경쾌한 신스팝",
+    "fingerprints": [
+      "geminibecomesgooglesfast_5v01h1",
+      "googlesgeminiappsurgesto_1f3zy12"
+    ],
+    "createdAt": "2026-08-11T23:29:27.375Z"
   }
 ]
