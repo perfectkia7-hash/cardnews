@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmsoj8ukl",
-    "title": "가스 엔진 잔디깎이는\\n이제 옛말이 됐다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-11T10-45-15/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-11T10-45-15/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-11T10-45-15/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-11T10-45-15/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-11T10-45-15/05.jpg"
-    ],
-    "caption": "가스 엔진 잔디깎이 시대가 저물고 있습니다.\n\nZDNET이 2026년 로봇 잔디깎이를 직접 테스트하고 베스트 제품을 골랐습니다. 로봇청소기처럼 센서로 스스로 움직이고, 매설 와이어로 잔디밭 경계를 정할 수도 있습니다.\n\n올여름 잔디 관리, 로봇에게 맡겨볼 만합니다.\n\n출처 · Latest news\n\n#로봇잔디깎이 #로봇청소기 #스마트홈 #테크뉴스 #ZDNET #가드닝 #IT뉴스",
-    "musicMood": "경쾌한 여름 신스",
-    "fingerprints": [
-      "bestrobotmowersof2026exp_z1x1d7"
-    ],
-    "createdAt": "2026-08-11T10:45:24.047Z"
-  },
-  {
     "draftId": "dmspak9f9",
     "title": "제미니가\\n10억 명을 넘었다",
     "imageUrls": [
@@ -51,5 +34,22 @@
       "threadshasavrappnow_1vrr8jl"
     ],
     "createdAt": "2026-08-12T05:26:43.300Z"
+  },
+  {
+    "draftId": "dmspz2od3",
+    "title": "타투 새기면 면접 준다\\n스타트업 파티의 실화",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-12T10-56-00/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-12T10-56-00/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-12T10-56-00/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-12T10-56-00/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-12T10-56-00/05.jpg"
+    ],
+    "caption": "타투를 새기면 면접을 준다는 파티, 실제로 있었습니다.\n\nY컴비네이터 스타트업 스쿨 뒤풀이에서 벌어진 일과 온라인에서 쏟아진 비판, 그리고 창업자 본인의 해명까지 정리했습니다.\n\n여러분은 이 논란, 어떻게 보시나요?\n\n출처 · Business Latest\n\n#스타트업 #타투논란 #채용 #YCombinator #테크뉴스 #실리콘밸리",
+    "musicMood": "경쾌한 팝",
+    "fingerprints": [
+      "thejobinterviewtattooguy_fwkhre"
+    ],
+    "createdAt": "2026-08-12T10:56:08.702Z"
   }
 ]
