@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmspnadwn",
-    "title": "챗GPT, 리눅스 상륙 스레드는 VR 진출",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-12T05-26-35/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-12T05-26-35/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-12T05-26-35/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-12T05-26-35/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-12T05-26-35/05.jpg"
-    ],
-    "caption": "챗GPT가 드디어 리눅스로 왔습니다. 근데 앤스로픽이 한 달 먼저 갔더군요.\n\n같은 날 메타는 스레드를 VR 헤드셋 안으로 들여보냈습니다. 리눅스 데스크톱부터 VR 헤드셋까지, 빅테크의 앱 확장 전선이 계속 넓어지고 있습니다.\n\n저장해두고 살펴보세요.\n\n출처 · TechCrunch, The Verge\n\n#챗GPT #오픈AI #리눅스 #스레드 #메타퀘스트 #앤스로픽 #테크뉴스 #AI",
-    "musicMood": "경쾌한 테크팝",
-    "fingerprints": [
-      "openailauncheschatgptdes_n9mpbk",
-      "threadshasavrappnow_1vrr8jl"
-    ],
-    "createdAt": "2026-08-12T05:26:43.300Z"
-  },
-  {
     "draftId": "dmspz2od3",
     "title": "타투 새기면 면접 준다\\n스타트업 파티의 실화",
     "imageUrls": [
@@ -51,5 +33,23 @@
       "trumpsuedoverbrazenschem_9n2m5y"
     ],
     "createdAt": "2026-08-12T23:30:45.334Z"
+  },
+  {
+    "draftId": "dmsr2udp7",
+    "title": "당신의 방송화면이\\n이미 AI를 키웠다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T05-29-35/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T05-29-35/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T05-29-35/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T05-29-35/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T05-29-35/05.jpg"
+    ],
+    "caption": "트위치 방송이 몇 년째 아마존 AI 학습에 쓰이고 있었습니다.\\n이제야 옵트아웃 설정이 생겼는데, 기본값은 여전히 '동의'입니다.\\n\\n트위치는 지원 페이지를 통해 스트림, VOD, 클립, 채팅, 채널의 사진과 글이 아마존의 생성형 AI 모델 학습에 쓰일 수 있다고 밝혔습니다. 원치 않으면 설정(twitch.tv/settings/security)에서 직접 꺼야 합니다.\\n\\n공식 방송엔 시청자 3천 명 가까이 몰려 항의했고, 최고제품책임자 마이크 민튼은 \"옵트인이었다면 아무도 하지 않았을 것\"이라고 솔직하게 답했습니다. 그는 이미 2024년 한 행사에서도 아마존의 AI 학습 활용을 인정한 바 있습니다.\n\n출처 · Ars Technica, TechCrunch\n\n#트위치 #아마존 #AI학습 #옵트아웃 #스트리머 #개인정보보호 #테크뉴스",
+    "musicMood": "차분하지만 불안한 톤",
+    "fingerprints": [
+      "twitchcontenthastraineda_173a7y",
+      "amazonwilltrainontwitchs_9kk60e"
+    ],
+    "createdAt": "2026-08-13T05:29:42.711Z"
   }
 ]
