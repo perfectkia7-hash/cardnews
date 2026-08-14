@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmsr2udp7",
-    "title": "당신의 방송화면이\\n이미 AI를 키웠다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T05-29-35/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T05-29-35/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T05-29-35/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T05-29-35/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T05-29-35/05.jpg"
-    ],
-    "caption": "트위치 방송이 몇 년째 아마존 AI 학습에 쓰이고 있었습니다.\\n이제야 옵트아웃 설정이 생겼는데, 기본값은 여전히 '동의'입니다.\\n\\n트위치는 지원 페이지를 통해 스트림, VOD, 클립, 채팅, 채널의 사진과 글이 아마존의 생성형 AI 모델 학습에 쓰일 수 있다고 밝혔습니다. 원치 않으면 설정(twitch.tv/settings/security)에서 직접 꺼야 합니다.\\n\\n공식 방송엔 시청자 3천 명 가까이 몰려 항의했고, 최고제품책임자 마이크 민튼은 \"옵트인이었다면 아무도 하지 않았을 것\"이라고 솔직하게 답했습니다. 그는 이미 2024년 한 행사에서도 아마존의 AI 학습 활용을 인정한 바 있습니다.\n\n출처 · Ars Technica, TechCrunch\n\n#트위치 #아마존 #AI학습 #옵트아웃 #스트리머 #개인정보보호 #테크뉴스",
-    "musicMood": "차분하지만 불안한 톤",
-    "fingerprints": [
-      "twitchcontenthastraineda_173a7y",
-      "amazonwilltrainontwitchs_9kk60e"
-    ],
-    "createdAt": "2026-08-13T05:29:42.711Z"
-  },
-  {
     "draftId": "dmsrek5ta",
     "title": "애플TV에\\n클래식 영화 떴다",
     "imageUrls": [
@@ -67,5 +49,22 @@
       "trumpdeclares100percentt_zinwx0"
     ],
     "createdAt": "2026-08-14T05:27:11.779Z"
+  },
+  {
+    "draftId": "dmsstuzg9",
+    "title": "중국산 로보택시\\n유럽 거리를 달린다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T10-53-30/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T10-53-30/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T10-53-30/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T10-53-30/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T10-53-30/05.jpg"
+    ],
+    "caption": "중국 로보택시 업체 포니에이아이와 우버가 손잡고 유럽 4개 도시에 로보택시 2000대를 투입하기로 했습니다.\n\n구체적인 도시와 출시 시기는 아직 베일에 싸여 있지만, 포니에이아이가 기술을, 우버가 플랫폼을 맡는 역할 분담은 이미 정해졌습니다.\n\n작년 중동에서 시작된 두 회사의 협력이 이제 유럽까지 번지고 있습니다.\n\n출처 · TechCrunch\n\n#로보택시 #자율주행 #우버 #포니에이아이 #테크뉴스 #유럽 #모빌리티",
+    "musicMood": "경쾌한 테크 신스",
+    "fingerprints": [
+      "uberandponyaiplantobring_1co2q2z"
+    ],
+    "createdAt": "2026-08-14T10:53:39.185Z"
   }
 ]
