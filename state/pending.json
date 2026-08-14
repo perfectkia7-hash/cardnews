@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmsrek5ta",
-    "title": "애플TV에\\n클래식 영화 떴다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T10-57-05/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T10-57-05/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T10-57-05/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T10-57-05/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T10-57-05/05.jpg"
-    ],
-    "caption": "애플TV가 구매·대여로만 보던 클래식 영화를 무료로 풀었습니다.\n\n더 마션, E.T., 타이타닉, 조디악 등 약 20편이 '방금 추가됨' 표시를 달고 스트리밍 목록에 올라왔습니다. 애플TV 구독료는 월 12.99달러 또는 연 99달러이고, 7일 무료 체험도 가능합니다. 넷플릭스에서도 프렌즈, 오피스 같은 옛날 콘텐츠가 가장 많이 보인다는 점을 감안하면, 이번 조치도 구독자 유지와 신규 가입을 노린 전략으로 보입니다.\n\n출처 · Engadget\n\n#애플TV #애플 #스트리밍 #영화 #클래식영화 #넷플릭스 #테크뉴스 #OTT",
-    "musicMood": "레트로 감성 무드",
-    "fingerprints": [
-      "youcannowwatchclassicmov_xq2kfg"
-    ],
-    "createdAt": "2026-08-13T10:57:13.558Z"
-  },
-  {
     "draftId": "dmss5hxcs",
     "title": "애플이 제시한 수수료\\n에픽 \"말도 안 돼\"",
     "imageUrls": [
@@ -66,5 +49,23 @@
       "uberandponyaiplantobring_1co2q2z"
     ],
     "createdAt": "2026-08-14T10:53:39.185Z"
+  },
+  {
+    "draftId": "dmstk9tof",
+    "title": "AI가 그린 티,\\n이제 지워도 된다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T23-13-28/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T23-13-28/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T23-13-28/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T23-13-28/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T23-13-28/05.jpg"
+    ],
+    "caption": "AI로 만든 이미지, 이제 그 표시를 지울 수 있게 됩니다.\n\n구글이 나노바나나·오므니 모델의 반짝이 워터마크를 끄는 설정을 공개했습니다.\n다만 눈에 안 보이는 SynthID 워터마크와 C2PA 표시는 그대로 남습니다.\nEU와 한국처럼 표시를 의무화한 나라에서는 이 기능이 적용되지 않습니다.\n\n출처 · Engadget, The Verge\n\n#AI #구글 #제미나이 #워터마크 #딥페이크 #테크뉴스 #SynthID #AI규제",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "googlewillnowallowuserst_667w1x",
+      "youcannowturnoffgooglege_7xt4q1"
+    ],
+    "createdAt": "2026-08-14T23:13:34.654Z"
   }
 ]
