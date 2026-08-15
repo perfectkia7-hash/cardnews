@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmss5hxcs",
-    "title": "애플이 제시한 수수료\\n에픽 \"말도 안 돼\"",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T23-31-04/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T23-31-04/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T23-31-04/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T23-31-04/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-13T23-31-04/05.jpg"
-    ],
-    "caption": "애플이 앱스토어 밖 결제에도 수수료를 매기겠다는 안을 냈습니다. 일반 앱 15%, 소규모 사업자 앱 5%입니다.\n\n에픽은 이 제안이 항소법원 가이드라인을 한참 벗어났다며 반박했습니다. 두 회사의 다툼은 60일 뒤 다음 라운드로 이어집니다.\n\n출처 · The Verge\n\n#애플 #에픽게임즈 #앱스토어 #테크뉴스 #IT뉴스 #애플뉴스 #포트나이트 #빅테크",
-    "musicMood": "차분한 시사 브금",
-    "fingerprints": [
-      "appleandepicargueoverhow_1kwy02o"
-    ],
-    "createdAt": "2026-08-13T23:31:14.727Z"
-  },
-  {
     "draftId": "dmssi796u",
     "title": "트럼프, 드론에 관세 폭탄 부품까지 100%",
     "imageUrls": [
@@ -67,5 +50,22 @@
       "youcannowturnoffgooglege_7xt4q1"
     ],
     "createdAt": "2026-08-14T23:13:34.654Z"
+  },
+  {
+    "draftId": "dmstvc5cd",
+    "title": "웨이모가 캘리포니아에서 서비스 지역을 넓혔다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T04-22-23/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T04-22-23/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T04-22-23/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T04-22-23/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T04-22-23/05.jpg"
+    ],
+    "caption": "웨이모의 로봇택시가 새크라멘토와 샌디에이고에도 등장합니다.\n\n캘리포니아 공공요금위원회(CPUC)가 웨이모의 서비스 확장을 승인하면서, 두 도시에서 처음으로 운행이 시작됩니다. 샌프란시스코 베이 지역과 로스앤젤레스에서도 서비스가 늘어나 총 18개 카운티가 대상이 됐습니다. 다만 한 번에 다 열리는 건 아니고, 웨이모는 안전 체계에 따라 점진적으로 확장하겠다고 밝혔습니다.\n\n출처 · Engadget\n\n#웨이모 #Waymo #로봇택시 #자율주행 #캘리포니아 #테크뉴스 #AI뉴스",
+    "musicMood": "잔잔한 로파이",
+    "fingerprints": [
+      "waymoreceivespermissiont_1olz7ib"
+    ],
+    "createdAt": "2026-08-15T04:22:31.462Z"
   }
 ]
