@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmsstuzg9",
-    "title": "중국산 로보택시\\n유럽 거리를 달린다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T10-53-30/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T10-53-30/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T10-53-30/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T10-53-30/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T10-53-30/05.jpg"
-    ],
-    "caption": "중국 로보택시 업체 포니에이아이와 우버가 손잡고 유럽 4개 도시에 로보택시 2000대를 투입하기로 했습니다.\n\n구체적인 도시와 출시 시기는 아직 베일에 싸여 있지만, 포니에이아이가 기술을, 우버가 플랫폼을 맡는 역할 분담은 이미 정해졌습니다.\n\n작년 중동에서 시작된 두 회사의 협력이 이제 유럽까지 번지고 있습니다.\n\n출처 · TechCrunch\n\n#로보택시 #자율주행 #우버 #포니에이아이 #테크뉴스 #유럽 #모빌리티",
-    "musicMood": "경쾌한 테크 신스",
-    "fingerprints": [
-      "uberandponyaiplantobring_1co2q2z"
-    ],
-    "createdAt": "2026-08-14T10:53:39.185Z"
-  },
-  {
     "draftId": "dmstk9tof",
     "title": "AI가 그린 티,\\n이제 지워도 된다",
     "imageUrls": [
@@ -67,5 +50,22 @@
       "nospaceforbookshelfspeak_tyxwfe"
     ],
     "createdAt": "2026-08-15T10:16:16.221Z"
+  },
+  {
+    "draftId": "dmsuznfha",
+    "title": "23년 만에 다시? 심슨 명작 게임",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T23-12-12/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T23-12-12/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T23-12-12/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T23-12-12/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T23-12-12/05.jpg"
+    ],
+    "caption": "맷 그레이닝이 D23 무대에서 무심코 힌트를 흘렸습니다.\n\n《심슨: 히트 앤 런》 후속작 질문에 그는 \"원작 게임이 어떤 형태로든 돌아올 것 같다\"고 답했고, 쇼러너 맷 셀먼은 \"아닐 수도\"라며 웃어넘겼습니다.\n\n2003년 나온 이 컬트 클래식은 지금 최신 콘솔에서 구할 수 없습니다. 이식으로 돌아올지, HD 리마스터로 돌아올지는 아직 알 수 없습니다.\n\n출처 · The Verge\n\n#심슨가족 #심슨게임 #히트앤런 #게임소식 #레트로게임 #D23 #게임리마스터",
+    "musicMood": "경쾌한 레트로 비트",
+    "fingerprints": [
+      "mattgroeningletsslipthat_133eb41"
+    ],
+    "createdAt": "2026-08-15T23:12:19.681Z"
   }
 ]
