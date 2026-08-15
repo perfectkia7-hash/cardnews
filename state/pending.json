@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmssi796u",
-    "title": "트럼프, 드론에 관세 폭탄 부품까지 100%",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T05-27-02/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T05-27-02/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T05-27-02/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T05-27-02/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T05-27-02/05.jpg"
-    ],
-    "caption": "트럼프 대통령이 드론과 항공기 부품에 최고 100% 관세를 선언했습니다.\n\n열화상 카메라가 달린 드론, 무게 25kg 넘는 드론과 부품에는 관세 100%가 붙습니다. 나머지 드론에는 25%, 250g 미만 미니 드론도 예외는 아닙니다.\n\n다만 미국에서 일부 생산을 약속하면 관세를 면제받을 수 있고, EU·일본·한국 등 동맹국은 15%, 영국은 10%로 낮춰줍니다.\n\n대법원과 국제무역법원이 이미 트럼프의 관세가 위법이라고 판결했지만, 관세 선언은 계속되고 있습니다.\n\n(출처: The Verge)\n\n출처 · The Verge\n\n#트럼프 #관세 #드론 #무역전쟁 #DJI #테크뉴스 #글로벌이슈",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "trumpdeclares100percentt_zinwx0"
-    ],
-    "createdAt": "2026-08-14T05:27:11.779Z"
-  },
-  {
     "draftId": "dmsstuzg9",
     "title": "중국산 로보택시\\n유럽 거리를 달린다",
     "imageUrls": [
@@ -67,5 +50,22 @@
       "waymoreceivespermissiont_1olz7ib"
     ],
     "createdAt": "2026-08-15T04:22:31.462Z"
+  },
+  {
+    "draftId": "dmsu7zfnm",
+    "title": "턴테이블 밑에\\n스피커가 들어간다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T10-16-08/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T10-16-08/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T10-16-08/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T10-16-08/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T10-16-08/05.jpg"
+    ],
+    "caption": "턴테이블 아래 쏙 들어가는 스피커가 있습니다.\\nZDNET이 빅트롤라 사운드스테이지를 리뷰했습니다.\\n북쉘프 스피커 놓을 자리가 없는 바이닐 애호가라면 눈여겨볼 만합니다.\\n장단점과 가격까지 카드에 정리했습니다.\n\n출처 · Latest news\n\n#바이닐 #턴테이블 #오디오 #스피커 #ZDNET #홈오디오 #가전리뷰",
+    "musicMood": "잔잔한 재즈 무드",
+    "fingerprints": [
+      "nospaceforbookshelfspeak_tyxwfe"
+    ],
+    "createdAt": "2026-08-15T10:16:16.221Z"
   }
 ]
