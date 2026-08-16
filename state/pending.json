@@ -1,40 +1,5 @@
 [
   {
-    "draftId": "dmstk9tof",
-    "title": "AI가 그린 티,\\n이제 지워도 된다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T23-13-28/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T23-13-28/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T23-13-28/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T23-13-28/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-14T23-13-28/05.jpg"
-    ],
-    "caption": "AI로 만든 이미지, 이제 그 표시를 지울 수 있게 됩니다.\n\n구글이 나노바나나·오므니 모델의 반짝이 워터마크를 끄는 설정을 공개했습니다.\n다만 눈에 안 보이는 SynthID 워터마크와 C2PA 표시는 그대로 남습니다.\nEU와 한국처럼 표시를 의무화한 나라에서는 이 기능이 적용되지 않습니다.\n\n출처 · Engadget, The Verge\n\n#AI #구글 #제미나이 #워터마크 #딥페이크 #테크뉴스 #SynthID #AI규제",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "googlewillnowallowuserst_667w1x",
-      "youcannowturnoffgooglege_7xt4q1"
-    ],
-    "createdAt": "2026-08-14T23:13:34.654Z"
-  },
-  {
-    "draftId": "dmstvc5cd",
-    "title": "웨이모가 캘리포니아에서 서비스 지역을 넓혔다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T04-22-23/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T04-22-23/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T04-22-23/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T04-22-23/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-15T04-22-23/05.jpg"
-    ],
-    "caption": "웨이모의 로봇택시가 새크라멘토와 샌디에이고에도 등장합니다.\n\n캘리포니아 공공요금위원회(CPUC)가 웨이모의 서비스 확장을 승인하면서, 두 도시에서 처음으로 운행이 시작됩니다. 샌프란시스코 베이 지역과 로스앤젤레스에서도 서비스가 늘어나 총 18개 카운티가 대상이 됐습니다. 다만 한 번에 다 열리는 건 아니고, 웨이모는 안전 체계에 따라 점진적으로 확장하겠다고 밝혔습니다.\n\n출처 · Engadget\n\n#웨이모 #Waymo #로봇택시 #자율주행 #캘리포니아 #테크뉴스 #AI뉴스",
-    "musicMood": "잔잔한 로파이",
-    "fingerprints": [
-      "waymoreceivespermissiont_1olz7ib"
-    ],
-    "createdAt": "2026-08-15T04:22:31.462Z"
-  },
-  {
     "draftId": "dmsu7zfnm",
     "title": "턴테이블 밑에\\n스피커가 들어간다",
     "imageUrls": [
@@ -67,5 +32,22 @@
       "mattgroeningletsslipthat_133eb41"
     ],
     "createdAt": "2026-08-15T23:12:19.681Z"
+  },
+  {
+    "draftId": "dmsvaz5hw",
+    "title": "72달러 폴라로이드 카메라, 필름까지 공짜",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-16T04-27-58/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-16T04-27-58/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-16T04-27-58/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-16T04-27-58/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-16T04-27-58/05.jpg"
+    ],
+    "caption": "작은 필름, 작은 가격.\n아마존이 폴라로이드 고 2세대 카메라와 필름 16장을 묶어 71.99달러에 팔고 있습니다.\n정가는 109.99달러, 필름팩만 따로 사도 21.99달러인데 훨씬 저렴합니다.\n클래식 폴라로이드보다 작은 필름 크기, USB-C 충전, 필름 15팩까지 가는 배터리까지 특징을 정리했습니다.\n\n출처 · The Verge\n\n#폴라로이드 #인스타카메라 #필름카메라 #테크딜 #아마존딜 #IT뉴스 #빈티지감성",
+    "musicMood": "레트로한 팝",
+    "fingerprints": [
+      "polaroidstinyinstantcame_1wgcggz"
+    ],
+    "createdAt": "2026-08-16T04:28:07.435Z"
   }
 ]
