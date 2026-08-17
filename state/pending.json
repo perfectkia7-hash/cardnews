@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmsvngi7o",
-    "title": "50년간 줄여온 공기질 산불 연기가 되돌리고 있다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-16T10-17-36/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-16T10-17-36/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-16T10-17-36/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-16T10-17-36/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-16T10-17-36/05.jpg"
-    ],
-    "caption": "산불 연기가 50년간 줄여온 공기질 개선 효과를 되돌리고 있습니다.\n\n미국 메릴랜드대 연구팀이 2003~2019년 출생기록 6500만명분을 분석한 결과, 산불 연기에 많이 노출된 임산부의 아기일수록 조산·저체중 위험이 컸습니다. 특히 저소득층·농촌·원주민 인구가 더 크게 노출됐습니다.\n\n연구 결과는 목요일 국제학술지 Frontiers in Environmental Health에 실렸습니다.\n\n출처 · Ars Technica\n\n#산불 #대기오염 #기후변화 #임산부건강 #조산 #환경뉴스 #공중보건 #ArsTechnica",
-    "musicMood": "잔잔하고 진중한",
-    "fingerprints": [
-      "wildfiresmokenowbiggerpr_1j9h4o4"
-    ],
-    "createdAt": "2026-08-16T10:17:44.512Z"
-  },
-  {
     "draftId": "dmswf2iis",
     "title": "오픈AI 안전팀이\\n결국 통째로 사라졌다",
     "imageUrls": [
@@ -49,5 +32,22 @@
       "turnonthesesettingstopro_1fgihnd"
     ],
     "createdAt": "2026-08-17T04:35:01.431Z"
+  },
+  {
+    "draftId": "dmsx37uv6",
+    "title": "땅속에 잠든 수소\\n연료가 될 수 있을까",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-17T10-27-10/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-17T10-27-10/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-17T10-27-10/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-17T10-27-10/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-17T10-27-10/05.jpg"
+    ],
+    "caption": "땅속에 10억 년 넘게 갇혀 있던 물에서, 수소를 먹는 미생물이 발견됐습니다.\n\n캐나다 키드크릭 광산은 지하 3km가 넘는 갱도인데, 이곳 시추공에서는 매년 꾸준히 수소가 나옵니다.\n전 세계 수십 개 기업이 '지질학적 수소'를 찾아 나섰지만, 아직 상업적으로 쓸만한 저장고를 찾았다는 보고는 없습니다.\n\n온실가스 없이 수소를 뽑아 쓸 수 있을지, 그 답을 찾는 탐사는 계속되고 있습니다.\n\n출처 · MIT Technology Review\n\n#수소 #지질학적수소 #청정에너지 #친환경에너지 #기후테크 #과학뉴스 #에너지전환 #MIT테크리뷰",
+    "musicMood": "차분한 다큐멘터리풍",
+    "fingerprints": [
+      "howmuchhydrogenawaitsusu_1gybsyv"
+    ],
+    "createdAt": "2026-08-17T10:27:18.877Z"
   }
 ]
