@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmswf2iis",
-    "title": "오픈AI 안전팀이\\n결국 통째로 사라졌다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-16T23-12-18/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-16T23-12-18/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-16T23-12-18/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-16T23-12-18/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-16T23-12-18/05.jpg"
-    ],
-    "caption": "오픈AI가 위험을 감시하던 예비팀을 통째로 해체했습니다.\n\n파이낸셜타임스에 따르면 지난달 말 해체된 이 팀은 AI가 폭주해 다른 회사를 해킹할 가능성 같은 심각한 위험을 평가해온 곳입니다. 업무는 바이오·사이버 등으로 나뉘어 기존 팀에 흡수됐습니다.\n\n오픈AI는 대규모 IPO를 앞두고 AGI 대비팀, 슈퍼얼라인먼트팀 등 안전 관련 조직을 잇따라 축소해왔고, 윤리·안전 책임자들도 최근 회사를 떠났습니다. 2024년 퇴사한 얀 라이크는 오픈AI가 \"화려한 제품\"을 좇느라 안전을 뒷전에 뒀다고 말했습니다.\n\n출처 · The Verge\n\n#오픈AI #OpenAI #AI안전 #IPO #테크뉴스 #얀라이크 #AGI #실리콘밸리",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "openaireportedlydisbande_8p1a2x"
-    ],
-    "createdAt": "2026-08-16T23:12:25.527Z"
-  },
-  {
     "draftId": "dmswqmvxp",
     "title": "낚아채도 소용없다\\nAI가 막는 폰 도난",
     "imageUrls": [
@@ -49,5 +32,23 @@
       "howmuchhydrogenawaitsusu_1gybsyv"
     ],
     "createdAt": "2026-08-17T10:27:18.877Z"
+  },
+  {
+    "draftId": "dmsxumgs8",
+    "title": "레딧 게시글이\\n영상으로 나온다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-17T23-13-50/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-17T23-13-50/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-17T23-13-50/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-17T23-13-50/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-17T23-13-50/05.jpg"
+    ],
+    "caption": "레딧 글을 읽어주는 영상, 벌써 나왔습니다.\n\n레딧이 텍스트 게시물과 댓글을 오디오·영상으로 즐기는 기능을 테스트하기 시작했습니다. 일부 커뮤니티의 일부 게시물에만 적용되는 제한적 실험이지만, 8년 전 게시물이 AI 음성 내레이션이 담긴 3분짜리 영상으로 바뀐 사례도 공개됐습니다. 스티브 허프먼 CEO는 지난달 실적발표에서 '듣는 레딧'을 예고한 바 있습니다.\n\n출처 · Engadget, TechCrunch\n\n#레딧 #Reddit #AI영상 #소셜미디어 #테크뉴스 #AI음성 #틱톡 #실리콘밸리",
+    "musicMood": "경쾌한 테크팝",
+    "fingerprints": [
+      "redditisexperimentingwit_yo4wy2",
+      "redditbeginstestinganewa_7kz5dr"
+    ],
+    "createdAt": "2026-08-17T23:14:01.683Z"
   }
 ]
