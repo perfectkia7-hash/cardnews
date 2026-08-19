@@ -1,40 +1,5 @@
 [
   {
-    "draftId": "dmsxumgs8",
-    "title": "레딧 게시글이\\n영상으로 나온다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-17T23-13-50/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-17T23-13-50/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-17T23-13-50/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-17T23-13-50/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-17T23-13-50/05.jpg"
-    ],
-    "caption": "레딧 글을 읽어주는 영상, 벌써 나왔습니다.\n\n레딧이 텍스트 게시물과 댓글을 오디오·영상으로 즐기는 기능을 테스트하기 시작했습니다. 일부 커뮤니티의 일부 게시물에만 적용되는 제한적 실험이지만, 8년 전 게시물이 AI 음성 내레이션이 담긴 3분짜리 영상으로 바뀐 사례도 공개됐습니다. 스티브 허프먼 CEO는 지난달 실적발표에서 '듣는 레딧'을 예고한 바 있습니다.\n\n출처 · Engadget, TechCrunch\n\n#레딧 #Reddit #AI영상 #소셜미디어 #테크뉴스 #AI음성 #틱톡 #실리콘밸리",
-    "musicMood": "경쾌한 테크팝",
-    "fingerprints": [
-      "redditisexperimentingwit_yo4wy2",
-      "redditbeginstestinganewa_7kz5dr"
-    ],
-    "createdAt": "2026-08-17T23:14:01.683Z"
-  },
-  {
-    "draftId": "dmsy5uu47",
-    "title": "3천 년 전 무덤 속에 16구의 미라 발견",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-18T04-28-22/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-18T04-28-22/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-18T04-28-22/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-18T04-28-22/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-18T04-28-22/05.jpg"
-    ],
-    "caption": "이집트 테베의 한 무덤에서 미라 16구와 개 한 마리가 발견됐습니다. 뒤섞인 유해처럼 보였지만, 그 안엔 놀라운 질서가 있었습니다.\n\n기원전 8세기부터 쓰인 무덤 209, 그 부속 공간 '사이드 챔버 3'을 정밀 발굴한 결과입니다. 연구진은 이를 \"혼란스러운 축적이 아니라 공간적 논리\"라고 설명했습니다. 새로운 시신이 이전 시신의 위치를 존중하며 안치된, 일종의 '장례의 기억'이었습니다.\n\n수백 년에 걸친 매장 문화, 자세한 내용은 카드에서 확인하세요.\n\n출처 · Ars Technica\n\n#고고학 #이집트 #미라 #테베 #아르스테크니카 #역사 #고대이집트 #무덤",
-    "musicMood": "신비로운 앰비언트",
-    "fingerprints": [
-      "thebantombrevealshowegyp_aqiizf"
-    ],
-    "createdAt": "2026-08-18T04:28:31.989Z"
-  },
-  {
     "draftId": "dmsyiia99",
     "title": "카메라 달린 에어팟\\n베타 영상에 떴다",
     "imageUrls": [
@@ -69,5 +34,22 @@
       "openaiinstitutesnewsafeg_12aa64y"
     ],
     "createdAt": "2026-08-18T23:13:19.146Z"
+  },
+  {
+    "draftId": "dmszlux36",
+    "title": "ICE 요원들에게 메타 안경 금지령",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T04-43-45/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T04-43-45/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T04-43-45/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T04-43-45/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T04-43-45/05.jpg"
+    ],
+    "caption": "ICE가 직원들에게 메타 스마트 글라스 착용을 금지했습니다. 그런데 정작 이 기관은 생체 인식 기능을 갖춘 자체 스마트 안경을 준비 중입니다.\n\n메타 글라스는 이민 단속 현장에서 계속 논란이 되어 왔습니다. 뉴욕타임스가 입수한 내부 메모부터 CBP 요원의 촬영 목격담까지, 무슨 일이 있었는지 정리했습니다.\n\n출처 · Engadget\n\n#ICE #메타 #메타글라스 #스마트글라스 #프라이버시 #빅테크뉴스 #이민단속 #테크뉴스",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "iceagentscantwearmetagla_y5fl53"
+    ],
+    "createdAt": "2026-08-19T04:43:54.472Z"
   }
 ]
