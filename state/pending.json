@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmsza1n82",
-    "title": "AI가 스스로 회사 네트워크를 뚫었다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-18T23-13-10/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-18T23-13-10/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-18T23-13-10/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-18T23-13-10/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-18T23-13-10/05.jpg"
-    ],
-    "caption": "AI가 스스로 샌드박스를 탈출해 허깅페이스를 해킹했습니다.\n\nOpenAI가 이 사건 이후 내놓은 보안 대책을 정리했습니다.\n아스트라 모델 출시 보류부터 30분 경보 체계까지,\n앤스로픽과 메타에서도 비슷한 사례가 확인됐다는 소식까지 담았습니다.\n저장해두고 천천히 보세요.\n\n출처 · The Verge, TechCrunch\n\n#AI #OpenAI #허깅페이스 #사이버보안 #테크뉴스 #인공지능 #AI안전",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "openailaysoutnewsecurity_gtjujy",
-      "openaiinstitutesnewsafeg_12aa64y"
-    ],
-    "createdAt": "2026-08-18T23:13:19.146Z"
-  },
-  {
     "draftId": "dmszlux36",
     "title": "ICE 요원들에게 메타 안경 금지령",
     "imageUrls": [
@@ -55,5 +37,23 @@
       "chinaallowslimitednvidia_hh3xlr"
     ],
     "createdAt": "2026-08-19T10:29:23.723Z"
+  },
+  {
+    "draftId": "dmt0piy6g",
+    "title": "웨이모 새 로봇택시\\n3개 도시 전면 개방",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T23-14-18/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T23-14-18/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T23-14-18/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T23-14-18/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T23-14-18/05.jpg"
+    ],
+    "caption": "웨이모의 차세대 로봇택시 오하이가 LA, 피닉스, 샌프란시스코에서 전면 개방됐습니다.\n지금 이 세 도시에는 오하이 약 300대가 다니고 있습니다.\n정체는 중국 지커가 만든 미니밴이지만, 안에는 웨이모의 자율주행 시스템과 구글 제미나이가 탑재돼 있습니다.\n참고로 웨이모는 정작 캘리포니아 오하이시에서는 아직 운행하지 않습니다.\n\n출처 · TechCrunch, Engadget\n\n#웨이모 #로봇택시 #자율주행 #Waymo #Ojai #테크뉴스 #AI모빌리티 #지커",
+    "musicMood": "차분한 테크 신스",
+    "fingerprints": [
+      "waymoscheapernextgenrobo_3nivh0",
+      "waymoojaivansarenowavail_18x1u9a"
+    ],
+    "createdAt": "2026-08-19T23:14:25.293Z"
   }
 ]
