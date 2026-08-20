@@ -1,45 +1,5 @@
 [
   {
-    "draftId": "dmszy6ytr",
-    "title": "금지됐던 엔비디아 칩\\n중국에 다시 들어왔다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T10-29-14/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T10-29-14/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T10-29-14/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T10-29-14/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T10-29-14/05.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T10-29-14/06.jpg"
-    ],
-    "caption": "막혔던 엔비디아 H200 칩이 중국 빅테크로 흘러들어가기 시작했습니다.\n\n바이트댄스·텐센트가 최근 몇 주 사이 각각 1만 개씩 받았습니다. 파이낸셜타임스에 따르면 중국은 프론티어 AI 경쟁을 위해 이를 허용했습니다. 미국은 군사기술 우려로 막았다가 2025년 12월에야 승인 고객사에 판매를 열었습니다. 두 회사는 각각 최대 10만 개까지 살 수 있지만, 중국은 물량 대부분을 홍콩으로 보내라고 했습니다. 정작 홍콩엔 데이터센터가 없습니다.\n\n출처 · Engadget\n\n#AI #엔비디아 #H200 #바이트댄스 #텐센트 #반도체 #중국테크 #테크뉴스",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "chinareportedlyallowsbyt_1skqcw1",
-      "chinaeasesimportsasbyted_bq49ep",
-      "bytedanceandtencentrecei_1k93o68",
-      "chinaletsbytedancetencen_1vs3dv0",
-      "chinaallowslimitednvidia_hh3xlr"
-    ],
-    "createdAt": "2026-08-19T10:29:23.723Z"
-  },
-  {
-    "draftId": "dmt0piy6g",
-    "title": "웨이모 새 로봇택시\\n3개 도시 전면 개방",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T23-14-18/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T23-14-18/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T23-14-18/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T23-14-18/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-19T23-14-18/05.jpg"
-    ],
-    "caption": "웨이모의 차세대 로봇택시 오하이가 LA, 피닉스, 샌프란시스코에서 전면 개방됐습니다.\n지금 이 세 도시에는 오하이 약 300대가 다니고 있습니다.\n정체는 중국 지커가 만든 미니밴이지만, 안에는 웨이모의 자율주행 시스템과 구글 제미나이가 탑재돼 있습니다.\n참고로 웨이모는 정작 캘리포니아 오하이시에서는 아직 운행하지 않습니다.\n\n출처 · TechCrunch, Engadget\n\n#웨이모 #로봇택시 #자율주행 #Waymo #Ojai #테크뉴스 #AI모빌리티 #지커",
-    "musicMood": "차분한 테크 신스",
-    "fingerprints": [
-      "waymoscheapernextgenrobo_3nivh0",
-      "waymoojaivansarenowavail_18x1u9a"
-    ],
-    "createdAt": "2026-08-19T23:14:25.293Z"
-  },
-  {
     "draftId": "dmt10stc6",
     "title": "아이폰도 이제 리스로 빌려 쓴다",
     "imageUrls": [
@@ -73,5 +33,23 @@
       "nasacallsoffmissiontores_12uk09v"
     ],
     "createdAt": "2026-08-20T10:24:35.978Z"
+  },
+  {
+    "draftId": "dmt251a2g",
+    "title": "9개월 만에 개발 중단 라이엇 격투게임 2XKO",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T23-16-24/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T23-16-24/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T23-16-24/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T23-16-24/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T23-16-24/05.jpg"
+    ],
+    "caption": "라이엇 게임즈의 첫 격투게임 2XKO가 출시 9개월 만에 개발 중단을 발표했습니다.\n\n서버는 계속 열려 있지만, 새 콘텐츠는 12월이 마지막입니다. 라이엇은 이유를 솔직하게 밝혔습니다. \"운영 비용이 버는 돈보다 훨씬 많다.\"\n\n지난 1월 정식 출시 후 2월엔 이미 개발팀 인력을 절반으로 줄였던 만큼, 조짐은 있었던 셈입니다.\n\n출처 · Engadget, The Verge\n\n#2XKO #라이엇게임즈 #리그오브레전드 #격투게임 #라이브서비스 #게임뉴스 #서비스종료",
+    "musicMood": "잔잔한 로파이",
+    "fingerprints": [
+      "riotisendingactivedevelo_10vw3hv",
+      "riotisendingdevelopmento_1gwd8rt"
+    ],
+    "createdAt": "2026-08-20T23:16:32.985Z"
   }
 ]
