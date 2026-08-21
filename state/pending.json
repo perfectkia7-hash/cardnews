@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmt10stc6",
-    "title": "아이폰도 이제 리스로 빌려 쓴다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T04-29-37/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T04-29-37/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T04-29-37/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T04-29-37/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T04-29-37/05.jpg"
-    ],
-    "caption": "아이폰을 '산다'가 아니라 '빌린다'로 바꾼 회사가 있습니다.\n\n애플이 핀테크기업 클라나와 손잡고 업그레이드 프로그램을 개편했습니다. 아이폰, 아이패드, 맥, 애플워치를 정해진 기간 리스로 쓰고, 기간이 끝나면 반납하거나 구매 수수료를 내고 가질 수 있습니다. 다만 애플케어는 포함되지 않아 파손·분실·도난은 소비자 책임입니다.\n\n나에게 맞는 방식인지 저장해두고 천천히 따져보세요.\n\n출처 · Latest news\n\n#애플 #아이폰 #클라나 #애플업그레이드프로그램 #테크뉴스 #IT뉴스 #스마트폰리스",
-    "musicMood": "잔잔한 로파이",
-    "fingerprints": [
-      "isleasinganiphonerightfo_bck96s"
-    ],
-    "createdAt": "2026-08-20T04:29:46.218Z"
-  },
-  {
     "draftId": "dmt1dfezi",
     "title": "우주선이 스스로 돌았다 NASA, 망원경 구조 포기",
     "imageUrls": [
@@ -51,5 +34,22 @@
       "riotisendingdevelopmento_1gwd8rt"
     ],
     "createdAt": "2026-08-20T23:16:32.985Z"
+  },
+  {
+    "draftId": "dmt2g9oms",
+    "title": "버튼 깊이까지 조절?\\n그런 컨트롤러가 떴다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-21T04-30-34/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-21T04-30-34/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-21T04-30-34/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-21T04-30-34/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-21T04-30-34/05.jpg"
+    ],
+    "caption": "버튼을 얼마나 깊게 눌러야 반응할지도 내가 정할 수 있는 컨트롤러가 나왔습니다.\n\n젠키가 8비트두와 협업한 지 2년 만에 처음 자체 설계한 컨트롤러 '맨타'를 오늘 킥스타터에 공개했습니다. 2.9인치 화면과 라즈베리파이 RP2350 칩으로 구동되는 설정 인터페이스를 갖췄고, 세 번째 트리거 모드는 빠른 연타에 최적화됐습니다.\n\n얼리버드 가격은 189달러, 정가는 279달러입니다. 젠키의 아홉 번째 크라우드펀딩 프로젝트입니다.\n\n출처 · The Verge\n\n#테크 #게임 #게임패드 #킥스타터 #젠키 #IT뉴스 #테크뉴스",
+    "musicMood": "경쾌한 로파이",
+    "fingerprints": [
+      "genkisnewcustomizablecon_1bzi977"
+    ],
+    "createdAt": "2026-08-21T04:30:45.167Z"
   }
 ]
