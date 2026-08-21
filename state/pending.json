@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmt1dfezi",
-    "title": "우주선이 스스로 돌았다 NASA, 망원경 구조 포기",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T10-24-26/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T10-24-26/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T10-24-26/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T10-24-26/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T10-24-26/05.jpg"
-    ],
-    "caption": "미국의 감마선 관측위성 스위프트를 구하려던 계획이 결국 무산됐습니다.\n지난 7월 발사된 구조선 링크가 갑자기 통제 불능 상태에 빠졌기 때문입니다.\n반작용 휠 3개 중 2개가 고장 나면서, 궤도를 끌어올리는 대신 접근만 시도하기로 했습니다.\n2004년부터 감마선 폭발을 관측해온 스위프트는 올해 안에 대기권에서 불타 사라질 것으로 보입니다.\n\nNASA 아이작먼 국장은 \"이번 임무를 시도할 가치가 있었다\"고 밝혔습니다.\n\n출처 · Engadget, Ars Technica\n\n#NASA #우주뉴스 #스위프트관측위성 #위성구조 #카탈리스트 #스페이스뉴스 #감마선폭발",
-    "musicMood": "긴장감 있는 앰비언트",
-    "fingerprints": [
-      "nasacallsoffmissiontores_gym9wc",
-      "nasacallsoffmissiontores_12uk09v"
-    ],
-    "createdAt": "2026-08-20T10:24:35.978Z"
-  },
-  {
     "draftId": "dmt251a2g",
     "title": "9개월 만에 개발 중단 라이엇 격투게임 2XKO",
     "imageUrls": [
@@ -69,5 +51,24 @@
       "teslauberandwaymoallgett_c7iru6"
     ],
     "createdAt": "2026-08-21T10:24:10.848Z"
+  },
+  {
+    "draftId": "dmt3kev32",
+    "title": "틱톡이 낸 4억 달러 역대급 아동보호 합의",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-21T23-15-02/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-21T23-15-02/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-21T23-15-02/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-21T23-15-02/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-21T23-15-02/05.jpg"
+    ],
+    "caption": "틱톡이 아동 개인정보 소송에 4억 달러를 냅니다. 미국 법무부는 역대 COPPA 사건 중 최대 규모 합의 중 하나라고 밝혔습니다.\n\n2024년 제기된 이 소송에서 틱톡은 13세 미만 어린이 계정을 방치하고, 부모 동의 없이 정보를 모았다는 혐의를 받았습니다. 사실 이 회사가 아동 개인정보 문제로 걸린 건 처음이 아닙니다. 2019년 전신 뮤지컬리 시절에도 한 번 적발됐었죠.\n\n저장해두고 자세히 읽어보세요.\n\n출처 · The Verge, Engadget, TechCrunch\n\n#틱톡 #TikTok #아동보호 #개인정보 #COPPA #미국법무부 #테크뉴스 #빅테크",
+    "musicMood": "차분하지만 무거운 톤",
+    "fingerprints": [
+      "tiktokwillpay400milliont_zt7b26",
+      "tiktokwillpay400milliont_m4r7h3",
+      "tiktokreaches400msettlem_eir7y6"
+    ],
+    "createdAt": "2026-08-21T23:15:11.121Z"
   }
 ]
