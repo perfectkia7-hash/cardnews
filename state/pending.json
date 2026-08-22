@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmt251a2g",
-    "title": "9개월 만에 개발 중단 라이엇 격투게임 2XKO",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T23-16-24/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T23-16-24/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T23-16-24/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T23-16-24/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-20T23-16-24/05.jpg"
-    ],
-    "caption": "라이엇 게임즈의 첫 격투게임 2XKO가 출시 9개월 만에 개발 중단을 발표했습니다.\n\n서버는 계속 열려 있지만, 새 콘텐츠는 12월이 마지막입니다. 라이엇은 이유를 솔직하게 밝혔습니다. \"운영 비용이 버는 돈보다 훨씬 많다.\"\n\n지난 1월 정식 출시 후 2월엔 이미 개발팀 인력을 절반으로 줄였던 만큼, 조짐은 있었던 셈입니다.\n\n출처 · Engadget, The Verge\n\n#2XKO #라이엇게임즈 #리그오브레전드 #격투게임 #라이브서비스 #게임뉴스 #서비스종료",
-    "musicMood": "잔잔한 로파이",
-    "fingerprints": [
-      "riotisendingactivedevelo_10vw3hv",
-      "riotisendingdevelopmento_1gwd8rt"
-    ],
-    "createdAt": "2026-08-20T23:16:32.985Z"
-  },
-  {
     "draftId": "dmt2g9oms",
     "title": "버튼 깊이까지 조절?\\n그런 컨트롤러가 떴다",
     "imageUrls": [
@@ -70,5 +52,24 @@
       "tiktokreaches400msettlem_eir7y6"
     ],
     "createdAt": "2026-08-21T23:15:11.121Z"
+  },
+  {
+    "draftId": "dmt3vis19",
+    "title": "애플이 손을 뗀 건\\n게임과 영상이었다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-22T04-26-06/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-22T04-26-06/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-22T04-26-06/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-22T04-26-06/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-22T04-26-06/05.jpg"
+    ],
+    "caption": "애플이 비전프로와 시리 팀에서 200명 넘는 직원을 내보냈습니다.\n\n비전프로 게임팀은 사실상 정리됐고, 몰입형 영상 제작팀도 줄었습니다. 대신 애플은 스마트글래스와 새로운 AI 시리에 힘을 싣고 있습니다.\n\n애플은 비전프로를 완전히 접는 건 아니라며 2028년 새 모델을 예고했습니다. 블룸버그 보도를 애플도 사실로 확인했습니다.\n\n출처 · Engadget, TechCrunch, The Verge\n\n#애플 #Apple #비전프로 #VisionPro #시리 #Siri #스마트글래스 #테크뉴스",
+    "musicMood": "잔잔한 다큐풍",
+    "fingerprints": [
+      "applereportedlycutmoreth_19a8211",
+      "appleisreportedlycutting_rauzgm",
+      "appleislayingoffstaffers_hcal8z"
+    ],
+    "createdAt": "2026-08-22T04:26:14.305Z"
   }
 ]
