@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmt5b4dkl",
-    "title": "스마트폰 카메라 시대에\\n그래도 디카가 필요할까",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-23T04-29-58/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-23T04-29-58/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-23T04-29-58/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-23T04-29-58/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-23T04-29-58/05.jpg"
-    ],
-    "caption": "스마트폰 카메라가 아무리 좋아져도, 디지털카메라를 찾는 사람들은 여전히 있습니다.\n\n가격 장벽부터 용도별 추천 모델까지, 2026년 디지털카메라 구매 가이드를 정리했습니다.\n저장해두고 필요할 때 참고하세요.\n\n출처 · Engadget\n\n#디지털카메라 #카메라추천 #미러리스카메라 #브이로그카메라 #테크뉴스 #캐논 #소니 #고프로",
-    "musicMood": "차분한 로파이",
-    "fingerprints": [
-      "aredigitalcamerasstillwo_mob07n",
-      "isnintendoswitchonlinest_1896pge"
-    ],
-    "createdAt": "2026-08-23T04:30:07.139Z"
-  },
-  {
     "draftId": "dmt5njr82",
     "title": "월마트의 플립카트\\n인도 퀵커머스 추격전",
     "imageUrls": [
@@ -50,5 +32,22 @@
       "whatisavesamountandhowto_3c3p33"
     ],
     "createdAt": "2026-08-23T23:11:51.369Z"
+  },
+  {
+    "draftId": "dmt6qugwb",
+    "title": "안드로이드 오토와 안드로이드 오토모티브",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T04-37-36/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T04-37-36/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T04-37-36/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T04-37-36/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T04-37-36/05.jpg"
+    ],
+    "caption": "안드로이드 오토와 안드로이드 오토모티브, 이름만 보면 똑같아 보입니다.\n\n하나는 폰 화면을 차에 띄우는 방식이고, 다른 하나는 차 자체에 깔리는 운영체제입니다.\n구글 지도와 플레이스토어를 폰 없이 쓰려면 또 다른 계약이 필요합니다.\n헷갈렸던 두 이름, 이번에 정리해봤어요.\n\n출처 · Engadget\n\n#안드로이드오토 #안드로이드오토모티브 #구글 #카플레이 #테크뉴스 #자동차IT #Engadget",
+    "musicMood": "잔잔한 로파이",
+    "fingerprints": [
+      "howisandroidautodifferen_18rx5l1"
+    ],
+    "createdAt": "2026-08-24T04:37:45.319Z"
   }
 ]
