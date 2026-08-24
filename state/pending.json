@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmt6f79ix",
-    "title": "TV 벽걸이 사기 전\\n이 숫자부터 확인하세요",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-23T23-11-43/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-23T23-11-43/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-23T23-11-43/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-23T23-11-43/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-23T23-11-43/05.jpg"
-    ],
-    "caption": "TV를 벽에 걸려는데 마운트가 맞을지 걱정되시나요.\\n답은 TV 뒷면 나사 구멍 사이 간격, VESA 규격에 있습니다.\\n화면 크기만 보고 고르면 안 되는 이유와 직접 재는 법을 정리했습니다.\n\n출처 · Engadget\n\n#VESA #TV마운트 #홈테크 #전자제품꿀팁 #IT상식 #Engadget #테크뉴스",
-    "musicMood": "잔잔한 로파이",
-    "fingerprints": [
-      "whatisavesamountandhowto_3c3p33"
-    ],
-    "createdAt": "2026-08-23T23:11:51.369Z"
-  },
-  {
     "draftId": "dmt6qugwb",
     "title": "안드로이드 오토와 안드로이드 오토모티브",
     "imageUrls": [
@@ -49,5 +32,23 @@
       "taiwanreportedlyindicted_16t9i61"
     ],
     "createdAt": "2026-08-24T10:31:43.271Z"
+  },
+  {
+    "draftId": "dmt7uqcpj",
+    "title": "스타트업이 모이는 곳\\n디스럽트 2026 부스전",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T23-14-35/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T23-14-35/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T23-14-35/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T23-14-35/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T23-14-35/05.jpg"
+    ],
+    "caption": "테크크런치 디스럽트 2026이 10월 13일 샌프란시스코에서 열립니다.\n\n스타트업을 위한 전시 부스와 사이드 이벤트 신청이 시작됐습니다.\n1만 명 넘는 혁신가와 투자자가 한자리에 모이는 자리인 만큼, 신청은 서두르는 게 좋겠습니다.\n\n전시 부스는 9월 25일 밤 11시 59분(또는 매진 시), 사이드 이벤트는 9월 4일이 신청 마감입니다.\n\n출처 · TechCrunch\n\n#테크크런치 #TechCrunchDisrupt #스타트업 #실리콘밸리 #스타트업뉴스 #IT뉴스 #샌프란시스코 #투자",
+    "musicMood": "경쾌한 팝비트",
+    "fingerprints": [
+      "showcaseyourstartupattec_1xg621p",
+      "applynowtohostasideevent_7hsa38"
+    ],
+    "createdAt": "2026-08-24T23:14:44.873Z"
   }
 ]
