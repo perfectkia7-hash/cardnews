@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmt5njr82",
-    "title": "월마트의 플립카트\\n인도 퀵커머스 추격전",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-23T10-17-23/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-23T10-17-23/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-23T10-17-23/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-23T10-17-23/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-23T10-17-23/05.jpg"
-    ],
-    "caption": "인도 퀵커머스 3위 자리를 놓고 진짜 승부가 벌어지고 있습니다.\n\n월마트가 만든 플립카트 미니츠가 2년 만에 스위기의 인스타마트를 턱밑까지 추격했습니다. 하루 주문량이 8개월 만에 39만~40만건에서 110만~120만건으로 뛰었습니다. 1위 블링킷(340만~360만건), 2위 제프토(240만~260만건)와는 아직 격차가 있지만, 소형 물류센터를 한 달에 100개씩 늘리며 연말까지 1,500개를 채우겠다는 계획입니다.\n\n여기에 아마존까지 즉시배송 시장에 뛰어들면서 인도 퀵커머스 경쟁은 더 치열해질 전망입니다.\n\n출처 · TechCrunch\n\n#인도경제 #퀵커머스 #플립카트 #월마트 #스위기 #아마존 #유통뉴스 #스타트업",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "twoyearsafterlaunchwalma_12alpss"
-    ],
-    "createdAt": "2026-08-23T10:17:31.810Z"
-  },
-  {
     "draftId": "dmt6f79ix",
     "title": "TV 벽걸이 사기 전\\n이 숫자부터 확인하세요",
     "imageUrls": [
@@ -49,5 +32,22 @@
       "howisandroidautodifferen_18rx5l1"
     ],
     "createdAt": "2026-08-24T04:37:45.319Z"
+  },
+  {
+    "draftId": "dmt73hxo5",
+    "title": "엔비디아 직원 9명\\n대만서 기소됐다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T10-31-34/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T10-31-34/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T10-31-34/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T10-31-34/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T10-31-34/05.jpg"
+    ],
+    "caption": "대만 검찰이 엔비디아와 슈퍼마이크로 직원을 포함한 9명을 AI 서버 불법 수출 혐의로 기소했습니다.\n\n검찰은 이들이 국가 이미지를 심각히 훼손했다고 밝혔는데요, 미국의 대중 AI칩 수출 규제 이후에도 이런 우회 수출 정황이 계속 드러나고 있습니다.\n\n이번 사건, 저장해두고 확인하세요.\n\n출처 · Engadget\n\n#엔비디아 #슈퍼마이크로 #대만 #AI칩 #수출규제 #반도체뉴스 #테크뉴스",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "taiwanreportedlyindicted_16t9i61"
+    ],
+    "createdAt": "2026-08-24T10:31:43.271Z"
   }
 ]
