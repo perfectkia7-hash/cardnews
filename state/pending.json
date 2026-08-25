@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmt6qugwb",
-    "title": "안드로이드 오토와 안드로이드 오토모티브",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T04-37-36/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T04-37-36/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T04-37-36/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T04-37-36/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-24T04-37-36/05.jpg"
-    ],
-    "caption": "안드로이드 오토와 안드로이드 오토모티브, 이름만 보면 똑같아 보입니다.\n\n하나는 폰 화면을 차에 띄우는 방식이고, 다른 하나는 차 자체에 깔리는 운영체제입니다.\n구글 지도와 플레이스토어를 폰 없이 쓰려면 또 다른 계약이 필요합니다.\n헷갈렸던 두 이름, 이번에 정리해봤어요.\n\n출처 · Engadget\n\n#안드로이드오토 #안드로이드오토모티브 #구글 #카플레이 #테크뉴스 #자동차IT #Engadget",
-    "musicMood": "잔잔한 로파이",
-    "fingerprints": [
-      "howisandroidautodifferen_18rx5l1"
-    ],
-    "createdAt": "2026-08-24T04:37:45.319Z"
-  },
-  {
     "draftId": "dmt73hxo5",
     "title": "엔비디아 직원 9명\\n대만서 기소됐다",
     "imageUrls": [
@@ -67,5 +50,22 @@
       "howtowatchthenancygracer_os1c8p"
     ],
     "createdAt": "2026-08-25T04:31:47.892Z"
+  },
+  {
+    "draftId": "dmt8ipadf",
+    "title": "가족을 알아보는 로봇\\n집 안으로 들어왔다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-25T10-24-47/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-25T10-24-47/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-25T10-24-47/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-25T10-24-47/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-25T10-24-47/05.jpg"
+    ],
+    "caption": "가족이 집에 오면 로봇이 먼저 반깁니다.\n어르신을 따라다니고, 아이에게 휴식을 알려주고, 조용해진 사람에게 먼저 말을 겁니다.\n\n올로봇의 신형 컴패니언 로봇 OlloNi SS1, 집 안 풍경이 조금씩 달라지고 있습니다.\n\n출처 · IEEE Spectrum\n\n#AI #로봇 #컴패니언로봇 #스마트홈 #돌봄로봇 #테크뉴스 #IEEESpectrum",
+    "musicMood": "따뜻한 어쿠스틱",
+    "fingerprints": [
+      "aicompanionrobotsareclos_1o8dotk"
+    ],
+    "createdAt": "2026-08-25T10:24:56.300Z"
   }
 ]
