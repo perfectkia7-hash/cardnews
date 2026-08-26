@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmt862qmw",
-    "title": "허블보다 100배 넓은 눈 로만 우주망원경, 곧 발사",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-25T04-31-39/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-25T04-31-39/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-25T04-31-39/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-25T04-31-39/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-25T04-31-39/05.jpg"
-    ],
-    "caption": "허블보다 시야가 100배 넓은 우주망원경이 곧 발사됩니다.\n\n낸시 그레이스 로만 우주망원경이 8월 30일 미국 동부시간 오전 7시 26분, 팰컨헤비 로켓에 실려 발사됩니다. 예비 발사일은 8월 31일이고, NASA는 8월 29일 임무 브리핑도 진행합니다.\n\n'허블의 어머니'로 불린 낸시 그레이스 로만의 이름을 딴 이 망원경은 암흑에너지 연구와 외계행성 관측에 활용됩니다.\n\n출처 · Engadget\n\n#NASA #로만우주망원경 #스페이스X #허블망원경 #암흑에너지 #외계행성 #우주뉴스 #팰컨헤비",
-    "musicMood": "설레는 우주 신스",
-    "fingerprints": [
-      "howtowatchthenancygracer_os1c8p"
-    ],
-    "createdAt": "2026-08-25T04:31:47.892Z"
-  },
-  {
     "draftId": "dmt8ipadf",
     "title": "가족을 알아보는 로봇\\n집 안으로 들어왔다",
     "imageUrls": [
@@ -49,5 +32,22 @@
       "adammosserisaysitsnewsto_1a2i6io"
     ],
     "createdAt": "2026-08-25T23:16:38.235Z"
+  },
+  {
+    "draftId": "dmt9ljjua",
+    "title": "매달 2000만 통\\n전화 받는 AI",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-26T04-33-11/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-26T04-33-11/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-26T04-33-11/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-26T04-33-11/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-26T04-33-11/05.jpg"
+    ],
+    "caption": "매달 2000만 건. 인도 음성AI 스타트업 링그가 처리하는 통화 수입니다.\n\n원래는 음성합성 스타트업으로 시작했지만, 자체 모델 학습 비용 부담에 사업 방향을 바꿨습니다. 지금은 병원 예약부터 이커머스 장바구니 회수, 핀테크 KYC까지 맡는 '에이전트 플랫폼'을 지향합니다.\n\n피크 XV 파트너스로부터 1000만 달러를 추가로 유치하며, 시리즈A 누적 투자액은 1550만 달러가 됐습니다.\n\n출처 · TechCrunch\n\n#인도스타트업 #음성AI #AI에이전트 #스타트업투자 #테크크런치 #보이스AI #피크XV",
+    "musicMood": "경쾌한 테크비트",
+    "fingerprints": [
+      "indiasringggetsbackingfr_h9jlbf"
+    ],
+    "createdAt": "2026-08-26T04:33:20.744Z"
   }
 ]
