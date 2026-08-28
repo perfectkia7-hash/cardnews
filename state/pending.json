@@ -1,24 +1,5 @@
 [
   {
-    "draftId": "dmtbn6ho9",
-    "title": "폰 없이도 녹음하는\\n이어폰이 나왔다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-27T14-55-13/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-27T14-55-13/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-27T14-55-13/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-27T14-55-13/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-27T14-55-13/05.jpg"
-    ],
-    "caption": "이어폰인데 회의 내용을 다 기억합니다.\n\n플라우드가 폰 없이도 작동하는 AI 이어폰 '플라우드 원'을 공개했습니다. 가격은 249.99달러, 오늘부터 예약 판매를 시작했고 9월 말 출시됩니다.\n\n귀에 꽂거나 케이스만 책상에 올려두면 대화를 자동으로 듣고, 지메일과 캘린더, 노션, 슬랙까지 연동해 이메일과 문서를 대신 만들어줍니다.\n\n챗GPT 등장 후 스마트폰을 대체하려던 래빗과 휴메인은 실패했습니다. 이번엔 다를 수 있을지가 관전 포인트입니다.\n\n출처 · The Verge, Latest news, Engadget\n\n#AI #플라우드 #AI이어폰 #웨어러블테크 #AI에이전트 #테크뉴스 #스마트기기",
-    "musicMood": "경쾌한 일렉트로닉",
-    "fingerprints": [
-      "plaudislaunchingaiearbud_h7aym7",
-      "plaudsfirstaiearbudshave_1f13ibq",
-      "plaudmadeearbudsforpeopl_1pmds3o"
-    ],
-    "createdAt": "2026-08-27T14:55:22.427Z"
-  },
-  {
     "draftId": "dmtbyc401",
     "title": "18조 합의금 뒤에\\n숨겨진 예외 조항",
     "imageUrls": [
@@ -56,5 +37,22 @@
       "uscourtrulespentagonbano_1hn8q90"
     ],
     "createdAt": "2026-08-28T06:28:39.306Z"
+  },
+  {
+    "draftId": "dmtd4lsls",
+    "title": "빨간 불만 가리면 몰래 촬영 끝났다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T15-49-51/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T15-49-51/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T15-49-51/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T15-49-51/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T15-49-51/05.jpg"
+    ],
+    "caption": "빨간 불만 가리면 몰래 촬영이 가능했던 메타 AI 글래스의 허점, 메타가 막았습니다.\n하지만 완전히 막힌 건 아닙니다. 안경을 개조하거나 스티커로 불빛을 흐리는 우회는 여전히 가능할 수 있습니다.\n유럽에서는 금지 이야기까지 나오고, 미국에서는 집단소송이 진행 중입니다.\n\n출처 · Ars Technica\n\n#메타 #AI글래스 #스마트글래스 #프라이버시 #빅테크 #테크뉴스 #EU규제",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "metatweaksaiglassestoblo_13oiuow"
+    ],
+    "createdAt": "2026-08-28T15:49:59.083Z"
   }
 ]
