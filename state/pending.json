@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmtb050w3",
-    "title": "23살 창업자의 AI비서\\n몸값 2.5조원 됐다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-27T04-12-33/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-27T04-12-33/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-27T04-12-33/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-27T04-12-33/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-27T04-12-33/05.jpg"
-    ],
-    "caption": "23살 창업자가 만든 AI 비서 앱이 몸값 2.5조원짜리 스타트업이 됐습니다.\n\n인스팅트(Instinct)는 이용자의 일정과 소비, 구독 서비스까지 대신 관리해주는 AI 에이전트입니다. 설립 1년 만에 시리즈B로 2억5000만달러를 유치하며 누적 투자액 3억5000만달러, 기업가치 25억달러를 기록했습니다.\n\n투자자들의 기대와 달리 이용자들 사이에선 앱이 요구하는 과도한 권한과 이용약관을 둘러싼 사생활 우려도 함께 커지고 있습니다.\n\n출처 · TechCrunch\n\n#AI #스타트업 #인스팅트 #실리콘밸리 #투자유치 #테크뉴스 #프라이버시",
-    "musicMood": "경쾌한 신스팝",
-    "fingerprints": [
-      "viralaistartupinstinctha_1304nmx"
-    ],
-    "createdAt": "2026-08-27T04:12:41.251Z"
-  },
-  {
     "draftId": "dmtbn6ho9",
     "title": "폰 없이도 녹음하는\\n이어폰이 나왔다",
     "imageUrls": [
@@ -51,5 +34,27 @@
       "buriedinmetas18bsettleme_phba3x"
     ],
     "createdAt": "2026-08-27T20:06:42.339Z"
+  },
+  {
+    "draftId": "dmtckiitu",
+    "title": "펜타곤의 앤트로픽 퇴출\\n법원이 제동을 걸었다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T06-28-30/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T06-28-30/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T06-28-30/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T06-28-30/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T06-28-30/05.jpg"
+    ],
+    "caption": "미 연방법원이 국방부의 앤트로픽 제재를 '불법적이고 근거 없다'며 뒤집었습니다.\n\n지난 2월 국방장관의 압박에서 시작된 이 갈등, 트럼프 대통령의 전면 사용 중단 지시로까지 번졌었죠.\n하지만 앤트로픽은 아직 완전히 자유롭지 않습니다 — 두 번째 소송이 남아있고, 국방부가 다시 협력해야 할 의무도 없습니다.\n\n이번 판결이 남긴 질문들을 카드로 정리했습니다.\n\n출처 · Engadget, Latest news from Azerbai, The Washington Post, The Times of India, NPR, The Australian\n\n#앤트로픽 #Anthropic #AI #펜타곤 #국방부 #클로드 #트럼프 #AI뉴스",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "judgerulesthatthepentago_1r5apzc",
+      "usjudgerulespentagonblac_lwy810",
+      "aifirmanthropicwinscasec_9irkuw",
+      "anthropicgetslegalshield_1vncfl9",
+      "judgesayspentagonsmeasur_e9nhyf",
+      "uscourtrulespentagonbano_1hn8q90"
+    ],
+    "createdAt": "2026-08-28T06:28:39.306Z"
   }
 ]
