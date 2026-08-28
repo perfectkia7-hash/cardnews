@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmtbyc401",
-    "title": "18조 합의금 뒤에\\n숨겨진 예외 조항",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-27T20-06-31/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-27T20-06-31/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-27T20-06-31/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-27T20-06-31/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-27T20-06-31/05.jpg"
-    ],
-    "caption": "18조원짜리 합의금 뒤에 아동 데이터 조항 하나가 숨어 있었습니다.\n\n메타가 29개 주와 합의하며 아동 안전 조치를 추가하기로 했는데, 그 대가로 주정부들은 관련 소송을 포기하기로 했습니다. 나이 확인 모델을 훈련시키기 위해서라지만, COPPA를 주로 감독하는 FTC는 이 합의에서 빠져 있어 허점이 남았다는 지적도 나옵니다.\n\n출처 · TechCrunch\n\n#메타 #Meta #아동안전 #개인정보 #COPPA #빅테크 #테크뉴스",
-    "musicMood": "차분한 시사톤",
-    "fingerprints": [
-      "buriedinmetas18bsettleme_phba3x"
-    ],
-    "createdAt": "2026-08-27T20:06:42.339Z"
-  },
-  {
     "draftId": "dmtckiitu",
     "title": "펜타곤의 앤트로픽 퇴출\\n법원이 제동을 걸었다",
     "imageUrls": [
@@ -54,5 +37,22 @@
       "metatweaksaiglassestoblo_13oiuow"
     ],
     "createdAt": "2026-08-28T15:49:59.083Z"
+  },
+  {
+    "draftId": "dmtdfutau",
+    "title": "AI클라우드 회사가 10억 달러를 빌렸다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T21-04-36/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T21-04-36/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T21-04-36/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T21-04-36/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T21-04-36/05.jpg"
+    ],
+    "caption": "AI 클라우드 기업 람다가 엔비디아 칩을 사려고 10억 달러 단기 사채를 조달했습니다. 산 칩은 마이크로소프트에 임대할 계획입니다.\n\n이번이 처음이 아닙니다. 5월엔 10억 달러 신용시설을, 이번 주엔 9억2600만 달러를 엔비디아 GB300 GPU 조달에 썼습니다. 이번 거래는 JP모건체이스가 주선했습니다.\n\n람다는 30억 달러 규모 상장 전 투자 유치도 논의 중입니다. 블룸버그 집계에 따르면 올해 전 세계 AI 관련 부채는 이미 4000억 달러를 넘었습니다.\n\n출처 · TechCrunch\n\n#AI #람다 #엔비디아 #마이크로소프트 #테크뉴스 #AI투자 #부채조달",
+    "musicMood": "긴장감 도는 신스",
+    "fingerprints": [
+      "neocloudlambdasecures1bi_18ziqnc"
+    ],
+    "createdAt": "2026-08-28T21:04:44.952Z"
   }
 ]
