@@ -1,27 +1,5 @@
 [
   {
-    "draftId": "dmtckiitu",
-    "title": "펜타곤의 앤트로픽 퇴출\\n법원이 제동을 걸었다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T06-28-30/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T06-28-30/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T06-28-30/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T06-28-30/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T06-28-30/05.jpg"
-    ],
-    "caption": "미 연방법원이 국방부의 앤트로픽 제재를 '불법적이고 근거 없다'며 뒤집었습니다.\n\n지난 2월 국방장관의 압박에서 시작된 이 갈등, 트럼프 대통령의 전면 사용 중단 지시로까지 번졌었죠.\n하지만 앤트로픽은 아직 완전히 자유롭지 않습니다 — 두 번째 소송이 남아있고, 국방부가 다시 협력해야 할 의무도 없습니다.\n\n이번 판결이 남긴 질문들을 카드로 정리했습니다.\n\n출처 · Engadget, Latest news from Azerbai, The Washington Post, The Times of India, NPR, The Australian\n\n#앤트로픽 #Anthropic #AI #펜타곤 #국방부 #클로드 #트럼프 #AI뉴스",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "judgerulesthatthepentago_1r5apzc",
-      "usjudgerulespentagonblac_lwy810",
-      "aifirmanthropicwinscasec_9irkuw",
-      "anthropicgetslegalshield_1vncfl9",
-      "judgesayspentagonsmeasur_e9nhyf",
-      "uscourtrulespentagonbano_1hn8q90"
-    ],
-    "createdAt": "2026-08-28T06:28:39.306Z"
-  },
-  {
     "draftId": "dmtd4lsls",
     "title": "빨간 불만 가리면 몰래 촬영 끝났다",
     "imageUrls": [
@@ -71,5 +49,22 @@
       "chineseautomakersarefoll_1e4i3h0"
     ],
     "createdAt": "2026-08-29T03:59:14.980Z"
+  },
+  {
+    "draftId": "dmte8wens",
+    "title": "속기 쓰던 시절은 갔다\\n이제는 AI가 받아적는다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-29T10-37-13/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-29T10-37-13/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-29T10-37-13/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-29T10-37-13/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-29T10-37-13/05.jpg"
+    ],
+    "caption": "속기와 받아쓰기, 이제는 옛날 이야기가 됐습니다.\nZDNET이 AI 음성 녹음기 **'Comulytic Note Pro'**를 직접 써보고 별점 4점을 매겼습니다.\n마이크와 배터리는 합격점, 충전 케이블과 개인정보는 아쉬움으로 남았습니다.\n저장해두고 찬찬히 살펴보세요.\n\n출처 · Latest news\n\n#AI #테크뉴스 #가젯리뷰 #AI녹음기 #ZDNET #음성인식 #신제품",
+    "musicMood": "잔잔한 로파이",
+    "fingerprints": [
+      "thispocketaivoicerecorde_1qsr00k"
+    ],
+    "createdAt": "2026-08-29T10:37:22.089Z"
   }
 ]
