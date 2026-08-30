@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmte8wens",
-    "title": "속기 쓰던 시절은 갔다\\n이제는 AI가 받아적는다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-29T10-37-13/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-29T10-37-13/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-29T10-37-13/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-29T10-37-13/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-29T10-37-13/05.jpg"
-    ],
-    "caption": "속기와 받아쓰기, 이제는 옛날 이야기가 됐습니다.\nZDNET이 AI 음성 녹음기 **'Comulytic Note Pro'**를 직접 써보고 별점 4점을 매겼습니다.\n마이크와 배터리는 합격점, 충전 케이블과 개인정보는 아쉬움으로 남았습니다.\n저장해두고 찬찬히 살펴보세요.\n\n출처 · Latest news\n\n#AI #테크뉴스 #가젯리뷰 #AI녹음기 #ZDNET #음성인식 #신제품",
-    "musicMood": "잔잔한 로파이",
-    "fingerprints": [
-      "thispocketaivoicerecorde_1qsr00k"
-    ],
-    "createdAt": "2026-08-29T10:37:22.089Z"
-  },
-  {
     "draftId": "dmtei15jk",
     "title": "휴대폰 느려지면 캐시부터 지운다고?",
     "imageUrls": [
@@ -70,5 +53,23 @@
       "sonyandwarnersueanthropi_1hbumnh"
     ],
     "createdAt": "2026-08-30T09:37:20.857Z"
+  },
+  {
+    "draftId": "dmtfwxbui",
+    "title": "TV는 정말 4K일까\\n오토는 왜 안 붙나",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T14-37-55/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T14-37-55/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T14-37-55/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T14-37-55/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T14-37-55/05.jpg"
+    ],
+    "caption": "TV가 진짜 4K로 나오는지, 안드로이드 오토가 왜 안 붙는지 — 알아두면 바로 써먹는 테크 점검법 두 가지를 모았습니다.\n\n둘 다 복잡한 기술 지식 없이 설정 몇 개만 확인하면 해결됩니다.\n\n출처 · Engadget\n\n#테크팁 #4KTV #안드로이드오토 #IT꿀팁 #스마트홈설정 #테크뉴스",
+    "musicMood": "차분한 로파이",
+    "fingerprints": [
+      "howtocheckifyourtvisplay_1fuy6vz",
+      "androidautonotworkingher_x3oxe6"
+    ],
+    "createdAt": "2026-08-30T14:38:04.649Z"
   }
 ]
