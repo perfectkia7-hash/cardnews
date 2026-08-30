@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmtdun5iq",
-    "title": "테슬라 좇던 중국차, 로봇에 올인했다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-29T03-59-07/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-29T03-59-07/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-29T03-59-07/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-29T03-59-07/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-29T03-59-07/05.jpg"
-    ],
-    "caption": "테슬라가 로봇으로 승부를 보려 하자, 중국 자동차 업계 전체가 따라나섰습니다.\n\n샤오펑 로보틱스는 이번 주 9억 달러 이상을 새로 유치하며 기업가치 63억 달러를 넘겼습니다. 창업자 허샤오펑과 브라이언 구 사장은 사비 1억 달러를 직접 투자했습니다. 체리차 아이모가는 IPO를 준비 중이고, BYD·창안·GAC·리오토·SAIC·세레스도 저마다 휴머노이드 로봇을 개발하고 있습니다.\n\n\"자동차 수익은 얇아지지만 로봇은 유망하다\" — 업계 전문가의 평가입니다.\n\n출처 · TechCrunch\n\n#테슬라 #샤오펑 #휴머노이드로봇 #중국자동차 #임바디드AI #BYD #로보틱스 #테크뉴스",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "chineseautomakersarefoll_1e4i3h0"
-    ],
-    "createdAt": "2026-08-29T03:59:14.980Z"
-  },
-  {
     "draftId": "dmte8wens",
     "title": "속기 쓰던 시절은 갔다\\n이제는 AI가 받아적는다",
     "imageUrls": [
@@ -67,5 +50,25 @@
       "bluetoothorwifihowdoeswi_1ofv50j"
     ],
     "createdAt": "2026-08-30T00:53:50.959Z"
+  },
+  {
+    "draftId": "dmtfm6dk9",
+    "title": "소니·워너가 앤트로픽을 저작권 침해로 고소했다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T09-37-12/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T09-37-12/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T09-37-12/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T09-37-12/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T09-37-12/05.jpg"
+    ],
+    "caption": "소니뮤직과 워너채플이 앤트로픽을 상대로 소송을 냈습니다. 저작물 1건당 최대 15만 달러, 수십억 달러 규모가 될 수 있는 소송입니다.\n\n이번이 처음도 아닙니다. 지난 1월엔 콩코드·UMG가, 그전엔 작가들이 소송을 걸었고 앤트로픽은 15억 달러에 합의한 적도 있습니다.\n\n'불법 토렌팅과 스크레이핑' 캠페인이라는 주장, 앤트로픽은 법정에서 반박하겠다는 입장입니다.\n\n출처 · Engadget, TechCrunch\n\n#앤트로픽 #Anthropic #클로드AI #저작권소송 #소니뮤직 #워너채플 #AI뉴스 #테크뉴스",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "sonyandwarnersueanthropi_1nvzoh6",
+      "sonymusicwarnersueanthro_orli9h",
+      "musicpublisherssueanthro_1gpy129",
+      "sonyandwarnersueanthropi_1hbumnh"
+    ],
+    "createdAt": "2026-08-30T09:37:20.857Z"
   }
 ]
