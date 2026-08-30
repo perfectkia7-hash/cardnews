@@ -1,39 +1,5 @@
 [
   {
-    "draftId": "dmtd4lsls",
-    "title": "빨간 불만 가리면 몰래 촬영 끝났다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T15-49-51/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T15-49-51/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T15-49-51/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T15-49-51/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T15-49-51/05.jpg"
-    ],
-    "caption": "빨간 불만 가리면 몰래 촬영이 가능했던 메타 AI 글래스의 허점, 메타가 막았습니다.\n하지만 완전히 막힌 건 아닙니다. 안경을 개조하거나 스티커로 불빛을 흐리는 우회는 여전히 가능할 수 있습니다.\n유럽에서는 금지 이야기까지 나오고, 미국에서는 집단소송이 진행 중입니다.\n\n출처 · Ars Technica\n\n#메타 #AI글래스 #스마트글래스 #프라이버시 #빅테크 #테크뉴스 #EU규제",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "metatweaksaiglassestoblo_13oiuow"
-    ],
-    "createdAt": "2026-08-28T15:49:59.083Z"
-  },
-  {
-    "draftId": "dmtdfutau",
-    "title": "AI클라우드 회사가 10억 달러를 빌렸다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T21-04-36/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T21-04-36/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T21-04-36/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T21-04-36/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-28T21-04-36/05.jpg"
-    ],
-    "caption": "AI 클라우드 기업 람다가 엔비디아 칩을 사려고 10억 달러 단기 사채를 조달했습니다. 산 칩은 마이크로소프트에 임대할 계획입니다.\n\n이번이 처음이 아닙니다. 5월엔 10억 달러 신용시설을, 이번 주엔 9억2600만 달러를 엔비디아 GB300 GPU 조달에 썼습니다. 이번 거래는 JP모건체이스가 주선했습니다.\n\n람다는 30억 달러 규모 상장 전 투자 유치도 논의 중입니다. 블룸버그 집계에 따르면 올해 전 세계 AI 관련 부채는 이미 4000억 달러를 넘었습니다.\n\n출처 · TechCrunch\n\n#AI #람다 #엔비디아 #마이크로소프트 #테크뉴스 #AI투자 #부채조달",
-    "musicMood": "긴장감 도는 신스",
-    "fingerprints": [
-      "neocloudlambdasecures1bi_18ziqnc"
-    ],
-    "createdAt": "2026-08-28T21:04:44.952Z"
-  },
-  {
     "draftId": "dmtdun5iq",
     "title": "테슬라 좇던 중국차, 로봇에 올인했다",
     "imageUrls": [
@@ -83,5 +49,23 @@
       "whyclearingcachewontalwa_xf9h2y"
     ],
     "createdAt": "2026-08-29T14:52:55.991Z"
+  },
+  {
+    "draftId": "dmtf3gxtw",
+    "title": "블루투스는 조연이다 킨들과 카플레이가 증명",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T00-53-43/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T00-53-43/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T00-53-43/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T00-53-43/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T00-53-43/05.jpg"
+    ],
+    "caption": "블루투스가 켜져 있어도, 정작 그 일을 안 할 때가 있습니다.\n\n킨들의 블루투스는 오디오북을 들려줄 뿐 페이지는 못 넘기고, 무선 카플레이의 블루투스는 아이폰과 차를 연결해줄 뿐 실제 화면과 음악은 와이파이가 나릅니다.\n\n두 기기를 나란히 보면, 블루투스의 진짜 역할이 보입니다.\n\n출처 · Engadget\n\n#블루투스 #킨들 #카플레이 #테크상식 #와이파이 #아이폰 #IT트리비아",
+    "musicMood": "잔잔한 로파이",
+    "fingerprints": [
+      "whydoesyourkindleevenhav_p03bt7",
+      "bluetoothorwifihowdoeswi_1ofv50j"
+    ],
+    "createdAt": "2026-08-30T00:53:50.959Z"
   }
 ]
