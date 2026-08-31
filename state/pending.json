@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmtfwxbui",
-    "title": "TV는 정말 4K일까\\n오토는 왜 안 붙나",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T14-37-55/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T14-37-55/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T14-37-55/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T14-37-55/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T14-37-55/05.jpg"
-    ],
-    "caption": "TV가 진짜 4K로 나오는지, 안드로이드 오토가 왜 안 붙는지 — 알아두면 바로 써먹는 테크 점검법 두 가지를 모았습니다.\n\n둘 다 복잡한 기술 지식 없이 설정 몇 개만 확인하면 해결됩니다.\n\n출처 · Engadget\n\n#테크팁 #4KTV #안드로이드오토 #IT꿀팁 #스마트홈설정 #테크뉴스",
-    "musicMood": "차분한 로파이",
-    "fingerprints": [
-      "howtocheckifyourtvisplay_1fuy6vz",
-      "androidautonotworkingher_x3oxe6"
-    ],
-    "createdAt": "2026-08-30T14:38:04.649Z"
-  },
-  {
     "draftId": "dmtgj4o4o",
     "title": "카플레이 음질이\\n별로였던 이유",
     "imageUrls": [
@@ -51,5 +33,23 @@
       "pocketsaimademygameideas_1xojdis"
     ],
     "createdAt": "2026-08-31T10:18:30.818Z"
+  },
+  {
+    "draftId": "dmthib5f7",
+    "title": "팀 쿡 시대가 끝났다\\n다음은 하드웨어 맨",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T17-25-26/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T17-25-26/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T17-25-26/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T17-25-26/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T17-25-26/05.jpg"
+    ],
+    "caption": "오늘은 팀 쿡이 애플 CEO로 근무하는 마지막 날입니다.\\n후임은 하드웨어 총괄 존 터너스, 아이폰 에어와 맥북 네오를 이끈 인물입니다.\\n쿡은 직원들에게 편지를 남기며 \"애플을 떠나는 게 아니다\"라고 했습니다.\\n그는 회장으로 남아 트럼프 대통령, 중국 정부와의 관계를 계속 챙길 예정입니다.\n\n출처 · TechCrunch, The Verge\n\n#팀쿡 #애플 #AppleCEO #존터너스 #테크뉴스 #글로벌테크 #IT뉴스",
+    "musicMood": "잔잔한 피아노",
+    "fingerprints": [
+      "timcookspartingmessageap_8wtmsl",
+      "readtimcooksfinalmessage_10u2zeo"
+    ],
+    "createdAt": "2026-08-31T17:25:36.715Z"
   }
 ]
