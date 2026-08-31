@@ -1,25 +1,5 @@
 [
   {
-    "draftId": "dmtfm6dk9",
-    "title": "소니·워너가 앤트로픽을 저작권 침해로 고소했다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T09-37-12/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T09-37-12/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T09-37-12/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T09-37-12/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-30T09-37-12/05.jpg"
-    ],
-    "caption": "소니뮤직과 워너채플이 앤트로픽을 상대로 소송을 냈습니다. 저작물 1건당 최대 15만 달러, 수십억 달러 규모가 될 수 있는 소송입니다.\n\n이번이 처음도 아닙니다. 지난 1월엔 콩코드·UMG가, 그전엔 작가들이 소송을 걸었고 앤트로픽은 15억 달러에 합의한 적도 있습니다.\n\n'불법 토렌팅과 스크레이핑' 캠페인이라는 주장, 앤트로픽은 법정에서 반박하겠다는 입장입니다.\n\n출처 · Engadget, TechCrunch\n\n#앤트로픽 #Anthropic #클로드AI #저작권소송 #소니뮤직 #워너채플 #AI뉴스 #테크뉴스",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "sonyandwarnersueanthropi_1nvzoh6",
-      "sonymusicwarnersueanthro_orli9h",
-      "musicpublisherssueanthro_1gpy129",
-      "sonyandwarnersueanthropi_1hbumnh"
-    ],
-    "createdAt": "2026-08-30T09:37:20.857Z"
-  },
-  {
     "draftId": "dmtfwxbui",
     "title": "TV는 정말 4K일까\\n오토는 왜 안 붙나",
     "imageUrls": [
@@ -54,5 +34,22 @@
       "howtoimproveyouraudioqua_1d7tpxy"
     ],
     "createdAt": "2026-08-31T00:59:18.693Z"
+  },
+  {
+    "draftId": "dmth33jv8",
+    "title": "프롬프트 몇 줄로\\n게임이 뚝딱 나왔다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T10-18-22/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T10-18-22/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T10-18-22/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T10-18-22/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T10-18-22/05.jpg"
+    ],
+    "caption": "타이핑 몇 줄로 게임을 완성했는데, 정작 그 게임은 내 것이 아니었습니다.\n\n메타가 지난 8월21일 미국에 출시한 앱 '포켓'은 프롬프트만 입력하면 코드 없이도 인터랙티브 게임 '기즈모'를 만들어줍니다. Ars Technica 기자는 슬링 게임을 프롬프트로 설명했고, 거의 2분 만에 작동하는 프로토타입을 받았습니다. 100번 넘는 프롬프트로 완성도를 높였지만, 결과물은 메타의 서비스 안에서만 존재했습니다.\n\n출처 · Ars Technica\n\n#메타 #포켓 #AI코딩 #바이브코딩 #기즈모 #ArsTechnica #실리콘밸리 #테크뉴스",
+    "musicMood": "몰입감 있는 신스팝",
+    "fingerprints": [
+      "pocketsaimademygameideas_1xojdis"
+    ],
+    "createdAt": "2026-08-31T10:18:30.818Z"
   }
 ]
