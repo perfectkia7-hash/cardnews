@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmtgj4o4o",
-    "title": "카플레이 음질이\\n별로였던 이유",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T00-59-10/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T00-59-10/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T00-59-10/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T00-59-10/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T00-59-10/05.jpg"
-    ],
-    "caption": "차 안에서 듣는 음악, 왜 이렇게 별로였을까요?\n\n엔가젯이 애플 카플레이와 안드로이드 오토의 음질 개선법을 각각 소개했습니다.\n핵심은 케이블 스펙이 아니라 연결 방식과 코덱, 그리고 EQ 설정이었습니다.\n저장해두고 다음 드라이브에서 하나씩 적용해보세요.\n\n출처 · Engadget\n\n#카플레이 #안드로이드오토 #애플 #구글 #스마트카 #오디오 #테크뉴스 #엔가젯",
-    "musicMood": "드라이브 감성 팝",
-    "fingerprints": [
-      "howtoimproveyouraudioqua_lo4ynq",
-      "howtoimproveyouraudioqua_1d7tpxy"
-    ],
-    "createdAt": "2026-08-31T00:59:18.693Z"
-  },
-  {
     "draftId": "dmth33jv8",
     "title": "프롬프트 몇 줄로\\n게임이 뚝딱 나왔다",
     "imageUrls": [
@@ -51,5 +33,23 @@
       "readtimcooksfinalmessage_10u2zeo"
     ],
     "createdAt": "2026-08-31T17:25:36.715Z"
+  },
+  {
+    "draftId": "dmthzplxu",
+    "title": "아마존, 광고비를\\n몰래 부풀렸다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-01T01-31-51/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-01T01-31-51/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-01T01-31-51/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-01T01-31-51/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-01T01-31-51/05.jpg"
+    ],
+    "caption": "아마존이 6년 넘게 광고비를 몰래 부풀렸다는 혐의를 받고 있습니다.\n\nFTC와 22개 주가 함께 소송을 제기했습니다. 아마존의 광고 경매에서 실제 2등 입찰가 대신 자체적으로 계산한 '가짜 2등 가격'을 끼워넣어, 광고주들이 모르는 채 더 비싼 값을 치르게 했다는 주장입니다. FTC는 이렇게 부당하게 챙긴 돈이 200억 달러가 넘는다고 봅니다.\n\n아마존은 FTC가 광고주들의 행태를 오해했다며, 2019년부터 2024년 사이 광고 낙찰가가 오히려 50% 떨어졌다고 반박했습니다.\n\n출처 · Engadget, The Verge\n\n#아마존 #FTC #빅테크 #광고 #테크뉴스 #소송 #독점규제 #아마존광고",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "amazonissuedbytheftcand2_dmjrlc",
+      "ftclawsuitallegesamazonh_1ksa77w"
+    ],
+    "createdAt": "2026-09-01T01:32:00.250Z"
   }
 ]
