@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmthib5f7",
-    "title": "팀 쿡 시대가 끝났다\\n다음은 하드웨어 맨",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T17-25-26/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T17-25-26/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T17-25-26/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T17-25-26/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-08-31T17-25-26/05.jpg"
-    ],
-    "caption": "오늘은 팀 쿡이 애플 CEO로 근무하는 마지막 날입니다.\\n후임은 하드웨어 총괄 존 터너스, 아이폰 에어와 맥북 네오를 이끈 인물입니다.\\n쿡은 직원들에게 편지를 남기며 \"애플을 떠나는 게 아니다\"라고 했습니다.\\n그는 회장으로 남아 트럼프 대통령, 중국 정부와의 관계를 계속 챙길 예정입니다.\n\n출처 · TechCrunch, The Verge\n\n#팀쿡 #애플 #AppleCEO #존터너스 #테크뉴스 #글로벌테크 #IT뉴스",
-    "musicMood": "잔잔한 피아노",
-    "fingerprints": [
-      "timcookspartingmessageap_8wtmsl",
-      "readtimcooksfinalmessage_10u2zeo"
-    ],
-    "createdAt": "2026-08-31T17:25:36.715Z"
-  },
-  {
     "draftId": "dmthzplxu",
     "title": "아마존, 광고비를\\n몰래 부풀렸다",
     "imageUrls": [
@@ -70,5 +52,24 @@
       "nvidiasdlss5launcheswith_1ps5he1"
     ],
     "createdAt": "2026-09-01T14:28:07.044Z"
+  },
+  {
+    "draftId": "dmtjdb6l5",
+    "title": "온타리오 호수가 하루아침에 사라졌다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-02T00-40-40/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-02T00-40-40/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-02T00-40-40/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-02T00-40-40/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-02T00-40-40/05.jpg"
+    ],
+    "caption": "온타리오 호수가 미국에서 '레이크 아메리카'로 바뀌었습니다.\n\n구글에 이어 애플도 트럼프 대통령의 행정명령을 따랐습니다.\n캐나다에서는 여전히 '온타리오 호수'입니다.\n\n이름을 바꾸지 않겠다고 한 맵퀘스트만 앱스토어 1위에 올랐습니다.\n\n출처 · Engadget, TechCrunch, The Verge\n\n#애플 #애플맵스 #구글맵스 #트럼프 #레이크아메리카 #맵퀘스트 #테크뉴스",
+    "musicMood": "가볍고 유쾌한 브금",
+    "fingerprints": [
+      "lakeontarioisnowlakeamer_15hxztu",
+      "applefollowsgoogleinadop_1xhmk7t",
+      "applemapsfollowsgooglein_1suaynn"
+    ],
+    "createdAt": "2026-09-02T00:40:50.213Z"
   }
 ]
