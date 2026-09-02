@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmtifv20a",
-    "title": "건반 위에 와이파이라니\\n롤랜드 새 디지털피아노",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-01T09-03-03/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-01T09-03-03/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-01T09-03-03/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-01T09-03-03/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-01T09-03-03/05.jpg"
-    ],
-    "caption": "피아노에 와이파이가 들어갔습니다. 흔치 않은 조합이지만, 롤랜드는 진심입니다.\n\n새 디지털피아노 FP-40은 블루투스 대신 와이파이로 교습 앱과 연결됩니다.\n지연이 줄고, 앱과 피아노 소프트웨어는 자동으로 업데이트됩니다.\n가격은 750달러, 롤랜드 플래그십보다 훨씬 저렴합니다.\n\n디지털피아노도 이제 스마트홈 기기처럼 진화하고 있습니다.\n\n출처 · Engadget\n\n#롤랜드 #디지털피아노 #FP40 #피아노교습 #스마트기기 #테크뉴스 #Engadget",
-    "musicMood": "잔잔한 피아노 선율",
-    "fingerprints": [
-      "rolandsnewdigitalpianoha_17mp5af"
-    ],
-    "createdAt": "2026-09-01T09:03:12.498Z"
-  },
-  {
     "draftId": "dmtirg6p0",
     "title": "엔비디아 DLSS 5\\n결국 이렇게 나왔다",
     "imageUrls": [
@@ -71,5 +54,23 @@
       "thedell14sisyetanotherch_pf8jik"
     ],
     "createdAt": "2026-09-02T08:28:25.362Z"
+  },
+  {
+    "draftId": "dmtk5xdb9",
+    "title": "에이서가 또 발명했다 그 정체는 노트북",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-02T14-01-02/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-02T14-01-02/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-02T14-01-02/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-02T14-01-02/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-02T14-01-02/05.jpg"
+    ],
+    "caption": "에이서가 IFA 2026에서 신제품 두 가지를 공개했습니다.\n\n더 작아진 플래그십 게임 핸드헬드 프리데터 아틀라스 7, 그리고 화면을 돌리면 키보드가 나오는 콘셉트 기기 프로젝트 듀얼플레이 미니입니다.\n\n더 버지는 이 콘셉트를 두고 \"노트북을 발명했다\"고 표현했습니다. 정식 출시 계획은 없지만, 게임 핸드헬드의 다음 방향을 보여주는 시도입니다.\n\n출처 · The Verge, Engadget\n\n#에이서 #Acer #IFA2026 #게임핸드헬드 #프리데터아틀라스7 #듀얼플레이미니 #테크뉴스 #게이밍기어",
+    "musicMood": "경쾌한 신스팝",
+    "fingerprints": [
+      "acersnewconcepthardwarei_uw8wx8",
+      "acerspredatoratlas7isthe_et7u8a"
+    ],
+    "createdAt": "2026-09-02T14:01:13.427Z"
   }
 ]
