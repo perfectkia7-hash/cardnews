@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmthzplxu",
-    "title": "아마존, 광고비를\\n몰래 부풀렸다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-01T01-31-51/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-01T01-31-51/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-01T01-31-51/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-01T01-31-51/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-01T01-31-51/05.jpg"
-    ],
-    "caption": "아마존이 6년 넘게 광고비를 몰래 부풀렸다는 혐의를 받고 있습니다.\n\nFTC와 22개 주가 함께 소송을 제기했습니다. 아마존의 광고 경매에서 실제 2등 입찰가 대신 자체적으로 계산한 '가짜 2등 가격'을 끼워넣어, 광고주들이 모르는 채 더 비싼 값을 치르게 했다는 주장입니다. FTC는 이렇게 부당하게 챙긴 돈이 200억 달러가 넘는다고 봅니다.\n\n아마존은 FTC가 광고주들의 행태를 오해했다며, 2019년부터 2024년 사이 광고 낙찰가가 오히려 50% 떨어졌다고 반박했습니다.\n\n출처 · Engadget, The Verge\n\n#아마존 #FTC #빅테크 #광고 #테크뉴스 #소송 #독점규제 #아마존광고",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "amazonissuedbytheftcand2_dmjrlc",
-      "ftclawsuitallegesamazonh_1ksa77w"
-    ],
-    "createdAt": "2026-09-01T01:32:00.250Z"
-  },
-  {
     "draftId": "dmtifv20a",
     "title": "건반 위에 와이파이라니\\n롤랜드 새 디지털피아노",
     "imageUrls": [
@@ -71,5 +53,23 @@
       "applemapsfollowsgooglein_1suaynn"
     ],
     "createdAt": "2026-09-02T00:40:50.213Z"
+  },
+  {
+    "draftId": "dmtju0yxs",
+    "title": "델이 내놓은 노트북\\n맥북 네오 겨냥했다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-02T08-28-15/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-02T08-28-15/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-02T08-28-15/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-02T08-28-15/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-02T08-28-15/05.jpg"
+    ],
+    "caption": "델이 맥북 네오를 정조준한 노트북 '14S'를 공개했습니다.\n\nIFA 2026에서 공개된 이 노트북은 학생을 겨냥해 4가지 색상으로 나옵니다.\n가격은 아직 미정이지만, 델은 XPS 13의 700달러 선에 가까울 거라 밝혔습니다.\n배터리는 넷플릭스 기준 최대 23시간, 무게는 2.5파운드로 가볍습니다.\n\n정확한 가격과 출시일은 올가을 공개됩니다.\n\n출처 · The Verge, Engadget\n\n#델 #Dell #맥북네오 #노트북 #IFA2026 #테크뉴스 #가젯",
+    "musicMood": "발랄한 테크팝",
+    "fingerprints": [
+      "dellsnewestlaptopsoundsa_z3lfz8",
+      "thedell14sisyetanotherch_pf8jik"
+    ],
+    "createdAt": "2026-09-02T08:28:25.362Z"
   }
 ]
