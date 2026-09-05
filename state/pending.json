@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmtm80kq1",
-    "title": "D&D 최고 악당의 기원\\n넷플릭스가 시리즈로",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-04T00-34-55/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-04T00-34-55/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-04T00-34-55/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-04T00-34-55/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-04T00-34-55/05.jpg"
-    ],
-    "caption": "던전앤드래곤 최고의 악당, 뱀파이어 다크로드 스트라드의 기원이 넷플릭스 시리즈로 만들어집니다.\n\n거장 알폰소 쿠아론이 총괄 프로듀서로 참여하고, 각본은 존 어거스트가 맡습니다.\n\n다만 넷플릭스가 준비하던 또 다른 D&D 시리즈 '포가튼 렐름즈'는 개발이 중단됐습니다.\n\n출처 · Engadget, The Verge\n\n#던전앤드래곤 #DND #넷플릭스 #라벤로프트 #알폰소쿠아론 #스트라드 #넷플릭스시리즈 #판타지드라마",
-    "musicMood": "고딕풍 오케스트라",
-    "fingerprints": [
-      "netflixhasorderedaliveac_70e20m",
-      "dungeonsdragonsisgetting_8jkcyc"
-    ],
-    "createdAt": "2026-09-04T00:35:03.478Z"
-  },
-  {
     "draftId": "dmtmoxoln",
     "title": "카메라를 뜯어내면 액션캠이 된다",
     "imageUrls": [
@@ -69,5 +51,22 @@
       "xdofjustthreemonthsoutof_dgh15f"
     ],
     "createdAt": "2026-09-05T00:29:31.294Z"
+  },
+  {
+    "draftId": "dmto3a5ab",
+    "title": "PC 용량이 꽉 찼다\\n범인은 이렇게 찾는다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-05T07-58-03/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-05T07-58-03/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-05T07-58-03/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-05T07-58-03/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-05T07-58-03/05.jpg"
+    ],
+    "caption": "컴퓨터 용량이 자꾸 차는데 뭘 지워야 할지 모르겠다면 이 글이 도움이 됩니다.\\n\\n윈도우 설정 안에 있는 저장공간 관리 기능 하나로 용량을 잡아먹는 범인을 바로 찾을 수 있습니다.\\n설치된 앱부터 임시 파일까지, 지우기 전에 짚고 넘어가야 할 것들을 정리했습니다.\n\n출처 · Engadget\n\n#윈도우 #PC꿀팁 #저장공간 #윈도우설정 #컴퓨터관리 #IT꿀팁 #테크뉴스",
+    "musicMood": "잔잔한 로파이",
+    "fingerprints": [
+      "howtoseewhatstakingupspa_fhqo4"
+    ],
+    "createdAt": "2026-09-05T07:58:11.223Z"
   }
 ]
