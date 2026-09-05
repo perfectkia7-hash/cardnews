@@ -1,26 +1,5 @@
 [
   {
-    "draftId": "dmtllg2r3",
-    "title": "오픈소스의 자존심이 엔비디아 품에 안겼다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-03T14-05-05/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-03T14-05-05/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-03T14-05-05/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-03T14-05-05/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-03T14-05-05/05.jpg"
-    ],
-    "caption": "오픈소스 AI의 상징 허깅페이스가 결국 엔비디아 품으로 들어갑니다.\n\n인수 금액은 129.3억 달러, 엔비디아 역대 최대 규모입니다. 젠슨 황 CEO는 오픈소스 생태계 확장을 강조하며, 엔비디아 컴퓨팅이 필수는 아니라고 약속했습니다.\n\n1년 전 투자를 거절했던 허깅페이스가 왜 마음을 바꿨는지, 카드로 정리했습니다.\n\n출처 · Ars Technica, Business Latest, TechCrunch, Engadget, The Verge\n\n#AI #엔비디아 #Nvidia #허깅페이스 #오픈소스AI #테크뉴스 #빅테크 #M&A",
-    "musicMood": "묵직한 시네마틱",
-    "fingerprints": [
-      "nvidiabuyshuggingfacethe_12h15zz",
-      "nvidiashuggingfaceacquis_8z5768",
-      "nvidiaconfirmsitwillbuyh_ihn6rf",
-      "nvidiaisbuyinghuggingfac_thf3zi",
-      "nvidiaisbuyinghuggingfac_1m01x15"
-    ],
-    "createdAt": "2026-09-03T14:05:13.430Z"
-  },
-  {
     "draftId": "dmtm80kq1",
     "title": "D&D 최고 악당의 기원\\n넷플릭스가 시리즈로",
     "imageUrls": [
@@ -73,5 +52,22 @@
       "whyaifoodlookslikethat_lixdd0"
     ],
     "createdAt": "2026-09-04T13:56:53.936Z"
+  },
+  {
+    "draftId": "dmtnn8u6v",
+    "title": "스텔스 나온 지 3개월\\n몸값은 12억 달러",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-05T00-29-23/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-05T00-29-23/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-05T00-29-23/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-05T00-29-23/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-05T00-29-23/05.jpg"
+    ],
+    "caption": "스텔스에서 나온 지 석 달 만에 몸값이 12억 달러로 뛰었습니다.\n\n로봇 스타트업 XDOF 이야기입니다. 대학원생이 만든 저비용 원격조종 장치에서 출발해, 이제는 투자자들이 '물리 로봇용 스케일AI'라 부르는 회사가 됐습니다.\n\n연매출은 5000만 달러에 가깝고, 이번엔 8VC가 투자를 주도하는 것으로 전해졌습니다.\n\n출처 · TechCrunch\n\n#로봇 #AI #스타트업 #XDOF #시리즈B #테크뉴스 #로보틱스",
+    "musicMood": "잔잔한 신스",
+    "fingerprints": [
+      "xdofjustthreemonthsoutof_dgh15f"
+    ],
+    "createdAt": "2026-09-05T00:29:31.294Z"
   }
 ]
