@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmtoegsxx",
-    "title": "메인스트림 헤드폰은\\n이제 지루해졌다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-05T13-11-18/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-05T13-11-18/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-05T13-11-18/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-05T13-11-18/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-05T13-11-18/05.jpg"
-    ],
-    "caption": "애플도 보스도 안 보이는 오디오 행사가 있습니다.\n\n지난 8월 29일, 미국 캘리포니아 어바인에서 캔잼 소콜 2026이 열렸습니다.\n젠하이저, 포칼, 하이파이맨 같은 브랜드들이 모여 마니아들과 만났습니다.\n20년 넘게 오디오를 리뷰해온 기자에게도 이번이 첫 캔잼이었다고 합니다.\n\nThe Verge 보도를 바탕으로 정리했습니다.\n\n출처 · The Verge\n\n#오디오 #헤드폰 #캔잼 #오디오파일 #테크뉴스 #헤드폰추천 #더버지",
-    "musicMood": "잔잔한 재즈",
-    "fingerprints": [
-      "theweirdandwonderfulhead_fb2trf"
-    ],
-    "createdAt": "2026-09-05T13:11:27.031Z"
-  },
-  {
     "draftId": "dmtp2fjph",
     "title": "뉴스를 먹은 AI\\n언론사가 되갚았다",
     "imageUrls": [
@@ -49,5 +32,22 @@
       "howtosideloadappsontoand_ybr7uy"
     ],
     "createdAt": "2026-09-06T08:15:19.912Z"
+  },
+  {
+    "draftId": "dmtpu9gvl",
+    "title": "SSD엔 경고음이 없다 고장 신호 확인법",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-06T13-21-31/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-06T13-21-31/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-06T13-21-31/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-06T13-21-31/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-06T13-21-31/05.jpg"
+    ],
+    "caption": "SSD는 고장 직전까지 아무 신호도 주지 않습니다.\n\n윈도우 기본 기능과 파워셸 명령어 하나로 내 드라이브 상태를 확인하는 법을 정리했습니다. 건강하다는 결과가 나와도 백업은 계속하는 게 안전합니다.\n\n출처 · Engadget\n\n#IT정보 #꿀팁 #SSD #하드디스크 #윈도우11 #파워셸 #테크뉴스 #데이터백업",
+    "musicMood": "잔잔한 로파이",
+    "fingerprints": [
+      "howtocheckyourpcsharddri_1tqkn7v"
+    ],
+    "createdAt": "2026-09-06T13:21:40.656Z"
   }
 ]
