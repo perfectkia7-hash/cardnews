@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmtqzx0mj",
-    "title": "월마트 리퍼 아이폰\\n등급부터 확인하세요",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-07T08-47-04/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-07T08-47-04/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-07T08-47-04/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-07T08-47-04/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-07T08-47-04/05.jpg"
-    ],
-    "caption": "월마트에서 파는 리퍼비시 아이폰, 등급에 따라 배터리 성능까지 다릅니다.\n\n가장 높은 '리스토어드 프리미엄'은 새 제품 배터리의 90%, 한 단계 아래인 '리스토어드'는 80%까지 떨어집니다.\n\n둘 다 월마트가 아니라 마켓플레이스에 입점한 제3자 판매자가 파는 제품이라, 사기 전에 상품 페이지의 '컨디션' 항목부터 꼭 확인하세요.\n\n출처 · Engadget\n\n#아이폰 #리퍼폰 #월마트 #애플 #리퍼비시 #스마트폰꿀팁 #테크뉴스",
-    "musicMood": "잔잔한 로파이",
-    "fingerprints": [
-      "isitsafetobuyarefurbishe_7m11fa"
-    ],
-    "createdAt": "2026-09-07T08:47:13.890Z"
-  },
-  {
     "draftId": "dmtre7eg1",
     "title": "앱이 갑자기 사라졌다\\n안드로이드 오토 미스터리",
     "imageUrls": [
@@ -67,5 +50,22 @@
       "renaultisbuildingits1790_hw0uzh"
     ],
     "createdAt": "2026-09-08T08:28:27.382Z"
+  },
+  {
+    "draftId": "dmtsqnog1",
+    "title": "스틸시리즈가 던졌다\\n259달러 컨트롤러",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T14-03-10/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T14-03-10/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T14-03-10/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T14-03-10/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T14-03-10/05.jpg"
+    ],
+    "caption": "스틸시리즈는 헤드셋으로 유명하지만 컨트롤러는 처음입니다.\n그런데 첫 제품가가 **259.99달러**입니다.\n\n배터리 교체형 무선 시스템, 홀 이펙트 스틱, 기계식 스위치까지 프로급 사양을 담은 ‘에이언 프로’가 오늘부터 Xbox·PC용으로 판매를 시작했습니다.\n\n출처 · The Verge\n\n#스틸시리즈 #Xbox #게이밍기어 #컨트롤러 #게임테크 #TheVerge #신제품",
+    "musicMood": "경쾌한 테크팝",
+    "fingerprints": [
+      "steelseriesprogradewirel_kgc303"
+    ],
+    "createdAt": "2026-09-08T14:03:20.493Z"
   }
 ]
