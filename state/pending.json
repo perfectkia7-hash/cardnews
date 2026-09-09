@@ -1,40 +1,5 @@
 [
   {
-    "draftId": "dmtre7eg1",
-    "title": "앱이 갑자기 사라졌다\\n안드로이드 오토 미스터리",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-07T15-27-19/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-07T15-27-19/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-07T15-27-19/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-07T15-27-19/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-07T15-27-19/05.jpg"
-    ],
-    "caption": "안드로이드 오토를 쓰다가 앱이 갑자기 사라진 적 있으신가요.\n\n범인은 오토가 아니라 폰의 배터리 절전 기능이었습니다. 삼성 등 일부 기기는 안 쓰는 앱을 자동으로 꺼버리는데, 이때 오토 런처에서도 앱이 함께 사라집니다. 다행히 해결법은 간단합니다. 폰에서 앱을 한 번 열고 오토에 다시 연결하면, 설정 메뉴를 건드리지 않아도 앱이 돌아옵니다.\n\n출처 · Engadget\n\n#안드로이드오토 #안드로이드 #스마트폰꿀팁 #구글 #테크뉴스 #모바일팁 #디지털라이프",
-    "musicMood": "경쾌한 어쿠스틱",
-    "fingerprints": [
-      "howtofindandhideanappona_11g7co0"
-    ],
-    "createdAt": "2026-09-07T15:27:27.254Z"
-  },
-  {
-    "draftId": "dmtry93cm",
-    "title": "왜 속였겠냐고 물었다 홈즈, 다시 카메라 앞에",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T00-50-05/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T00-50-05/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T00-50-05/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T00-50-05/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T00-50-05/05.jpg"
-    ],
-    "caption": "엘리자베스 홈즈가 카메라 앞에 다시 섰습니다.\n\n지난 일요일, 텔루라이드영화제에서 정보 없이 공개된 다큐멘터리가 화제입니다.\n감옥에 가기 34일 전, 남편과 함께한 시간을 담은 이 작품은 10월 A24 배급으로 공개됩니다.\n홈즈의 감형 청원은 아직 심사 중입니다.\n\n출처 · Engadget, TechCrunch\n\n#엘리자베스홈즈 #테라노스 #A24 #다큐멘터리 #나단필더 #텔루라이드영화제 #실리콘밸리",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "anewelizabethholmesdocum_w2u3l",
-      "asecretnewelizabethholme_163rgfd"
-    ],
-    "createdAt": "2026-09-08T00:50:13.744Z"
-  },
-  {
     "draftId": "dmtseofw6",
     "title": "1만2200유로, 유럽에서\\n가장 싼 전기차 나온다",
     "imageUrls": [
@@ -67,5 +32,23 @@
       "steelseriesprogradewirel_kgc303"
     ],
     "createdAt": "2026-09-08T14:03:20.493Z"
+  },
+  {
+    "draftId": "dmttdqyor",
+    "title": "테트리스 짝퉁 게임\\n결국 백악관이 내렸다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T00-50-45/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T00-50-45/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T00-50-45/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T00-50-45/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T00-50-45/05.jpg"
+    ],
+    "caption": "백악관 홈페이지에 올라온 게임 하나가 결국 조용히 사라졌습니다.\n\n'Build the Wall'은 블록을 쌓아 국경장벽을 세우는 게임으로, 테트리스와 똑같은 방식이라 논란이 됐습니다. 테트리스 저작권사는 \"이 게임 제작에 관여하지 않았다\"며 \"저작권 침해를 매우 심각하게 받아들인다\"고 밝혔고, 얼마 뒤 게임 페이지는 404 오류로 사라졌습니다. 백악관 사이트에는 여전히 다른 게임들이 남아 있습니다.\n\n출처 · TechCrunch, Engadget\n\n#테트리스 #백악관 #저작권 #게임뉴스 #트럼프행정부 #TechCrunch #Engadget",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "whitehousetakesdownbuild_5jmn6w",
+      "thewhitehouseremoveditsb_8w084e"
+    ],
+    "createdAt": "2026-09-09T00:50:52.620Z"
   }
 ]
