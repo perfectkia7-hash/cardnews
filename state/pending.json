@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmtseofw6",
-    "title": "1만2200유로, 유럽에서\\n가장 싼 전기차 나온다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T08-28-19/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T08-28-19/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T08-28-19/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T08-28-19/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T08-28-19/05.jpg"
-    ],
-    "caption": "르노의 저가 브랜드 다시아가 스프링 EV 생산지를 중국에서 유럽으로 옮깁니다. 프랑스 보조금을 받기 위해서인데, 보조금을 적용하면 가격이 1만2200유로까지 내려갑니다.\n\n2021년 이후 전 세계에서 21만대가 팔린 스프링은 이번 이전과 함께 크기도 커지고 디자인도 달라졌습니다. 르노는 2030년까지 유럽 판매 전량을 전동화하겠다는 목표를 갖고 있습니다.\n\n출처 · Engadget\n\n#전기차 #EV #다시아 #르노 #스프링EV #유럽전기차 #보조금 #테크뉴스",
-    "musicMood": "경쾌한 로파이",
-    "fingerprints": [
-      "renaultisbuildingits1790_hw0uzh"
-    ],
-    "createdAt": "2026-09-08T08:28:27.382Z"
-  },
-  {
     "draftId": "dmtsqnog1",
     "title": "스틸시리즈가 던졌다\\n259달러 컨트롤러",
     "imageUrls": [
@@ -50,5 +33,22 @@
       "thewhitehouseremoveditsb_8w084e"
     ],
     "createdAt": "2026-09-09T00:50:52.620Z"
+  },
+  {
+    "draftId": "dmttu7j0o",
+    "title": "딥마인드 나와서 핵융합 회사를 차렸다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T08-30-51/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T08-30-51/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T08-30-51/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T08-30-51/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T08-30-51/05.jpg"
+    ],
+    "caption": "구글 딥마인드 출신 두 명이 핵융합 발전소의 '두뇌'를 만드는 회사를 차렸습니다.\n\n페데리코 펠리치와 요나스 부클리는 그동안 여러 핵융합 스타트업과 일하며 똑같은 얘기를 반복해서 들었다고 합니다. 제어 시스템을 살 곳도, 그 언어를 아는 곳도 없다는 것이었습니다.\n\n둘은 스위스 로잘란느에 **퓨전앨리티**를 세우고 프리시드로 **370만 달러**(CHF 300만)를 모았습니다. 펠리치는 '각 회사 제어 시스템의 80%는 사실상 같다'고 말했습니다.\n\n플라즈마는 온도와 모양이 순간순간 바뀌는 까다로운 존재입니다. 이걸 다루는 소프트웨어 시장이 이제 막 생기고 있습니다.\n\n출처 · TechCrunch\n\n#핵융합 #딥마인드 #스타트업뉴스 #클린테크 #에너지전환 #테크크런치",
+    "musicMood": "잔잔한 신스웨이브",
+    "fingerprints": [
+      "googledeepmindalumniareb_126919h"
+    ],
+    "createdAt": "2026-09-09T08:30:59.844Z"
   }
 ]
