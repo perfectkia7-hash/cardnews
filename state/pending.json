@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmtsqnog1",
-    "title": "스틸시리즈가 던졌다\\n259달러 컨트롤러",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T14-03-10/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T14-03-10/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T14-03-10/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T14-03-10/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-08T14-03-10/05.jpg"
-    ],
-    "caption": "스틸시리즈는 헤드셋으로 유명하지만 컨트롤러는 처음입니다.\n그런데 첫 제품가가 **259.99달러**입니다.\n\n배터리 교체형 무선 시스템, 홀 이펙트 스틱, 기계식 스위치까지 프로급 사양을 담은 ‘에이언 프로’가 오늘부터 Xbox·PC용으로 판매를 시작했습니다.\n\n출처 · The Verge\n\n#스틸시리즈 #Xbox #게이밍기어 #컨트롤러 #게임테크 #TheVerge #신제품",
-    "musicMood": "경쾌한 테크팝",
-    "fingerprints": [
-      "steelseriesprogradewirel_kgc303"
-    ],
-    "createdAt": "2026-09-08T14:03:20.493Z"
-  },
-  {
     "draftId": "dmttdqyor",
     "title": "테트리스 짝퉁 게임\\n결국 백악관이 내렸다",
     "imageUrls": [
@@ -50,5 +33,23 @@
       "googledeepmindalumniareb_126919h"
     ],
     "createdAt": "2026-09-09T08:30:59.844Z"
+  },
+  {
+    "draftId": "dmtu66jc7",
+    "title": "오늘 저녁 뭐 먹지?\\n이제 AI가 답한다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T14-05-27/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T14-05-27/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T14-05-27/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T14-05-27/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T14-05-27/05.jpg"
+    ],
+    "caption": "오늘 저녁 뭐 먹지? 인스타카트가 그 질문에 AI로 답하기 시작했습니다.\n\n클레멘타인은 대화나 레시피, 심지어 손글씨 목록까지 장바구니로 바꿔주는 AI 비서입니다. 우버이츠와 도어대시도 비슷한 기능을 내놓으면서, 배달앱들은 이제 '무엇을 살지 결정해주는 도구' 자리를 놓고 경쟁하고 있습니다. 클레멘타인으로 주문하면 장바구니 금액이 평균 115달러를 넘는다는 점도 눈에 띕니다.\n\n출처 · TechCrunch, Engadget\n\n#인스타카트 #AI비서 #클레멘타인 #장보기 #테크뉴스 #AI #그로서리테크",
+    "musicMood": "가볍고 경쾌한 팝",
+    "fingerprints": [
+      "instacartlaunchesanaigro_5nqn60",
+      "instacartnowhasitsownaia_xc59gc"
+    ],
+    "createdAt": "2026-09-09T14:05:35.855Z"
   }
 ]
