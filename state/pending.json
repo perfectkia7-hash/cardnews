@@ -1,73 +1,20 @@
 [
   {
-    "draftId": "dmttdqyor",
-    "title": "테트리스 짝퉁 게임\\n결국 백악관이 내렸다",
+    "draftId": "dmvkqkrft",
+    "title": "패밀리 요금제\\n몰래 쓰면 걸린다",
     "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T00-50-45/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T00-50-45/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T00-50-45/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T00-50-45/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T00-50-45/05.jpg"
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-23T08-58-15/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-23T08-58-15/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-23T08-58-15/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-23T08-58-15/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-23T08-58-15/05.jpg"
     ],
-    "caption": "백악관 홈페이지에 올라온 게임 하나가 결국 조용히 사라졌습니다.\n\n'Build the Wall'은 블록을 쌓아 국경장벽을 세우는 게임으로, 테트리스와 똑같은 방식이라 논란이 됐습니다. 테트리스 저작권사는 \"이 게임 제작에 관여하지 않았다\"며 \"저작권 침해를 매우 심각하게 받아들인다\"고 밝혔고, 얼마 뒤 게임 페이지는 404 오류로 사라졌습니다. 백악관 사이트에는 여전히 다른 게임들이 남아 있습니다.\n\n출처 · TechCrunch, Engadget\n\n#테트리스 #백악관 #저작권 #게임뉴스 #트럼프행정부 #TechCrunch #Engadget",
-    "musicMood": "긴장감 있는 신스",
+    "caption": "같이 안 살아도 패밀리 요금제를 같이 썼던 분들, 이제 조심해야 합니다.\n\n스포티파이가 QR 코드로 '같은 집에 사는지' 확인하기 시작했습니다. 코드는 몇 초마다 바뀌고, 7일 안에 스캔하지 않으면 다른 패밀리·듀오 요금제에 1년간 가입할 수 없습니다.\n\n회사는 \"단속이 아니라 루틴 개선\"이라는 입장입니다. 패밀리 요금제는 스포티파이 역사에서 12~13년째 이어진 상품이라고 하네요.\n\n출처 · The Verge, Engadget\n\n#스포티파이 #Spotify #패밀리요금제 #QR코드 #스트리밍 #테크뉴스 #구독경제",
+    "musicMood": "긴장감 있는 비트",
     "fingerprints": [
-      "whitehousetakesdownbuild_5jmn6w",
-      "thewhitehouseremoveditsb_8w084e"
+      "spotifysaysyesitisbustin_1qzr8no",
+      "spotifysfamilyplanqrcode_16ediu"
     ],
-    "createdAt": "2026-09-09T00:50:52.620Z"
-  },
-  {
-    "draftId": "dmttu7j0o",
-    "title": "딥마인드 나와서 핵융합 회사를 차렸다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T08-30-51/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T08-30-51/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T08-30-51/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T08-30-51/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T08-30-51/05.jpg"
-    ],
-    "caption": "구글 딥마인드 출신 두 명이 핵융합 발전소의 '두뇌'를 만드는 회사를 차렸습니다.\n\n페데리코 펠리치와 요나스 부클리는 그동안 여러 핵융합 스타트업과 일하며 똑같은 얘기를 반복해서 들었다고 합니다. 제어 시스템을 살 곳도, 그 언어를 아는 곳도 없다는 것이었습니다.\n\n둘은 스위스 로잘란느에 **퓨전앨리티**를 세우고 프리시드로 **370만 달러**(CHF 300만)를 모았습니다. 펠리치는 '각 회사 제어 시스템의 80%는 사실상 같다'고 말했습니다.\n\n플라즈마는 온도와 모양이 순간순간 바뀌는 까다로운 존재입니다. 이걸 다루는 소프트웨어 시장이 이제 막 생기고 있습니다.\n\n출처 · TechCrunch\n\n#핵융합 #딥마인드 #스타트업뉴스 #클린테크 #에너지전환 #테크크런치",
-    "musicMood": "잔잔한 신스웨이브",
-    "fingerprints": [
-      "googledeepmindalumniareb_126919h"
-    ],
-    "createdAt": "2026-09-09T08:30:59.844Z"
-  },
-  {
-    "draftId": "dmtu66jc7",
-    "title": "오늘 저녁 뭐 먹지?\\n이제 AI가 답한다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T14-05-27/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T14-05-27/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T14-05-27/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T14-05-27/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-09T14-05-27/05.jpg"
-    ],
-    "caption": "오늘 저녁 뭐 먹지? 인스타카트가 그 질문에 AI로 답하기 시작했습니다.\n\n클레멘타인은 대화나 레시피, 심지어 손글씨 목록까지 장바구니로 바꿔주는 AI 비서입니다. 우버이츠와 도어대시도 비슷한 기능을 내놓으면서, 배달앱들은 이제 '무엇을 살지 결정해주는 도구' 자리를 놓고 경쟁하고 있습니다. 클레멘타인으로 주문하면 장바구니 금액이 평균 115달러를 넘는다는 점도 눈에 띕니다.\n\n출처 · TechCrunch, Engadget\n\n#인스타카트 #AI비서 #클레멘타인 #장보기 #테크뉴스 #AI #그로서리테크",
-    "musicMood": "가볍고 경쾌한 팝",
-    "fingerprints": [
-      "instacartlaunchesanaigro_5nqn60",
-      "instacartnowhasitsownaia_xc59gc"
-    ],
-    "createdAt": "2026-09-09T14:05:35.855Z"
-  },
-  {
-    "draftId": "dmtusyppe",
-    "title": "내 회사인데 쫓겨났다 워드프레스 CEO 전격 휴직",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-10T00-44-02/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-10T00-44-02/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-10T00-44-02/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-10T00-44-02/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-09-10T00-44-02/05.jpg"
-    ],
-    "caption": "워드프레스를 만든 사람이, 자기 회사 이사회에 의해 자리에서 밀려났습니다.\n\n창업자 매트 멀렌웨그가 오토매틱 CEO직에서 유급 휴직 처리됐습니다. 본인은 사내 슬랙에 이사회 4명이 '공모'했다며 반발했지만, 회사는 임시 CEO 체제로 전환을 확정했습니다. 정확한 사유는 아직 공개되지 않았습니다.\n\n출처 · TechCrunch, The Verge\n\n#워드프레스 #오토매틱 #매트멀렌웨그 #테크뉴스 #스타트업뉴스 #실리콘밸리 #CEO교체",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "automatticsboardforcesce_1nu283y",
-      "automatticceomattmullenw_b7khsn"
-    ],
-    "createdAt": "2026-09-10T00:44:09.797Z"
+    "createdAt": "2026-10-23T08:58:23.447Z"
   }
 ]
