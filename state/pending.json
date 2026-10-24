@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmvkqkrft",
-    "title": "패밀리 요금제\\n몰래 쓰면 걸린다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-23T08-58-15/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-23T08-58-15/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-23T08-58-15/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-23T08-58-15/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-23T08-58-15/05.jpg"
-    ],
-    "caption": "같이 안 살아도 패밀리 요금제를 같이 썼던 분들, 이제 조심해야 합니다.\n\n스포티파이가 QR 코드로 '같은 집에 사는지' 확인하기 시작했습니다. 코드는 몇 초마다 바뀌고, 7일 안에 스캔하지 않으면 다른 패밀리·듀오 요금제에 1년간 가입할 수 없습니다.\n\n회사는 \"단속이 아니라 루틴 개선\"이라는 입장입니다. 패밀리 요금제는 스포티파이 역사에서 12~13년째 이어진 상품이라고 하네요.\n\n출처 · The Verge, Engadget\n\n#스포티파이 #Spotify #패밀리요금제 #QR코드 #스트리밍 #테크뉴스 #구독경제",
-    "musicMood": "긴장감 있는 비트",
-    "fingerprints": [
-      "spotifysaysyesitisbustin_1qzr8no",
-      "spotifysfamilyplanqrcode_16ediu"
-    ],
-    "createdAt": "2026-10-23T08:58:23.447Z"
-  },
-  {
     "draftId": "dmvl2mc8z",
     "title": "오큘러스 창업자가\\n이번엔 '슈퍼 군견'",
     "imageUrls": [
@@ -70,5 +52,22 @@
       "fromtoasttobessemerwhofo_5efyet"
     ],
     "createdAt": "2026-10-24T08:32:49.101Z"
+  },
+  {
+    "draftId": "dmvmgbqpm",
+    "title": "충전기에 적힌 IQ,\\n그 정체는 뭘까",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-24T13-46-48/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-24T13-46-48/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-24T13-46-48/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-24T13-46-48/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-24T13-46-48/05.jpg"
+    ],
+    "caption": "충전기에 적힌 PowerIQ, 그냥 마케팅 문구가 아니었습니다.\n\n앤커의 자체 충전 기술인 PowerIQ는 연결된 기기를 인식해 전압을 조절합니다.\n과도한 전력으로 인한 손상을 막아준다는 설명인데요.\n다만 충전기 와트가 높다고 무조건 빠른 건 아니라는 점은 꼭 알아두면 좋겠습니다.\n\n출처 · Engadget\n\n#앤커 #PowerIQ #충전기팁 #가젯테크 #스마트폰충전 #테크뉴스",
+    "musicMood": "경쾌한 로파이",
+    "fingerprints": [
+      "thebeneficialpurposeofiq_1t4koxc"
+    ],
+    "createdAt": "2026-10-24T13:46:57.033Z"
   }
 ]
