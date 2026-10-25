@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmvmgbqpm",
-    "title": "충전기에 적힌 IQ,\\n그 정체는 뭘까",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-24T13-46-48/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-24T13-46-48/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-24T13-46-48/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-24T13-46-48/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-24T13-46-48/05.jpg"
-    ],
-    "caption": "충전기에 적힌 PowerIQ, 그냥 마케팅 문구가 아니었습니다.\n\n앤커의 자체 충전 기술인 PowerIQ는 연결된 기기를 인식해 전압을 조절합니다.\n과도한 전력으로 인한 손상을 막아준다는 설명인데요.\n다만 충전기 와트가 높다고 무조건 빠른 건 아니라는 점은 꼭 알아두면 좋겠습니다.\n\n출처 · Engadget\n\n#앤커 #PowerIQ #충전기팁 #가젯테크 #스마트폰충전 #테크뉴스",
-    "musicMood": "경쾌한 로파이",
-    "fingerprints": [
-      "thebeneficialpurposeofiq_1t4koxc"
-    ],
-    "createdAt": "2026-10-24T13:46:57.033Z"
-  },
-  {
     "draftId": "dmvn3nmn3",
     "title": "무선 카플레이 어댑터,\\n이것만 확인하세요",
     "imageUrls": [
@@ -49,5 +32,23 @@
       "whatisthecheapestnewgami_1g4keii"
     ],
     "createdAt": "2026-10-25T08:53:00.657Z"
+  },
+  {
+    "draftId": "dmvnwdgu5",
+    "title": "오래된 기기\\n버리지 마세요",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T14-04-00/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T14-04-00/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T14-04-00/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T14-04-00/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T14-04-00/05.jpg"
+    ],
+    "caption": "오래된 크롬북과 스피커, 버리지 말고 다시 써보세요.\n\nEngadget이 소개한 재활용 가이드 두 가지를 정리했습니다.\n전자 쓰레기도 줄이고 비용도 아낄 수 있는 방법들입니다.\n저장해두고 집에 있는 기기부터 확인해보세요.\n\n출처 · Engadget\n\n#테크뉴스 #IT #전자제품 #크롬북 #스피커 #업사이클링 #에코테크 #Engadget",
+    "musicMood": "잔잔한 로파이",
+    "fingerprints": [
+      "dontthrowawayyouroldchro_u3wos4",
+      "dontthrowawayyouroldspea_oh4wx1"
+    ],
+    "createdAt": "2026-10-25T14:04:08.242Z"
   }
 ]
