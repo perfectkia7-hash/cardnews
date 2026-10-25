@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmvl2mc8z",
-    "title": "오큘러스 창업자가\\n이번엔 '슈퍼 군견'",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-23T14-36-10/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-23T14-36-10/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-23T14-36-10/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-23T14-36-10/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-23T14-36-10/05.jpg"
-    ],
-    "caption": "오큘러스를 만든 팔머 러키가 이번엔 '슈퍼 군견'을 만듭니다.\n\n텍사스 스타트업 워하운드가 2억 달러 투자를 받았습니다. 콜로설의 벤 램과 안두릴의 팔머 러키가 함께 세웠습니다. 미군 군용견의 80%는 유럽산인데, 훈련을 마쳐도 절반 미만만 임무에 적합합니다. 워하운드는 유전자 편집으로 이 문제를 풀어보겠다는 계획입니다. 첫 강아지는 2027년 초 태어날 예정입니다.\n\n출처 · The Verge, Engadget\n\n#워하운드 #팔머러키 #안두릴 #유전자편집 #군사기술 #테크뉴스",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "startupequipsgenetically_1ry2n4x",
-      "astartupcalledwarhoundis_1vugypl"
-    ],
-    "createdAt": "2026-10-23T14:36:19.463Z"
-  },
-  {
     "draftId": "dmvlppdt0",
     "title": "오픈AI가 두려워한 것\\nAI 학습, 인터넷과 끊었다",
     "imageUrls": [
@@ -69,5 +51,22 @@
       "thebeneficialpurposeofiq_1t4koxc"
     ],
     "createdAt": "2026-10-24T13:46:57.033Z"
+  },
+  {
+    "draftId": "dmvn3nmn3",
+    "title": "무선 카플레이 어댑터,\\n이것만 확인하세요",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T00-40-14/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T00-40-14/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T00-40-14/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T00-40-14/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T00-40-14/05.jpg"
+    ],
+    "caption": "유선으로만 되던 카플레이, 사실 저렴한 어댑터 하나면 무선으로 바꿀 수 있습니다.\n\n다만 아무 제품이나 사면 안 됩니다.\n차량 호환 여부, USB 포트 규격, 펌웨어 업데이트 지원까지 확인해야 제대로 씁니다.\n저장해두고 구매 전에 다시 확인하세요.\n\n출처 · Engadget\n\n#카플레이 #무선카플레이 #애플카플레이 #아이폰 #테크가젯 #자동차테크 #가젯리뷰",
+    "musicMood": "가벼운 테크 비트",
+    "fingerprints": [
+      "hereswhatyouneedtoknowbe_1b5rr1z"
+    ],
+    "createdAt": "2026-10-25T00:40:22.998Z"
   }
 ]
