@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmvnwdgu5",
-    "title": "오래된 기기\\n버리지 마세요",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T14-04-00/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T14-04-00/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T14-04-00/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T14-04-00/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T14-04-00/05.jpg"
-    ],
-    "caption": "오래된 크롬북과 스피커, 버리지 말고 다시 써보세요.\n\nEngadget이 소개한 재활용 가이드 두 가지를 정리했습니다.\n전자 쓰레기도 줄이고 비용도 아낄 수 있는 방법들입니다.\n저장해두고 집에 있는 기기부터 확인해보세요.\n\n출처 · Engadget\n\n#테크뉴스 #IT #전자제품 #크롬북 #스피커 #업사이클링 #에코테크 #Engadget",
-    "musicMood": "잔잔한 로파이",
-    "fingerprints": [
-      "dontthrowawayyouroldchro_u3wos4",
-      "dontthrowawayyouroldspea_oh4wx1"
-    ],
-    "createdAt": "2026-10-25T14:04:08.242Z"
-  },
-  {
     "draftId": "dmvojhf5w",
     "title": "이름은 터프해 보이는데 실외에 깔면 안 되는 이유",
     "imageUrls": [
@@ -50,5 +32,23 @@
       "thebestappsfortrackingyo_omvdbg"
     ],
     "createdAt": "2026-10-26T09:32:00.002Z"
+  },
+  {
+    "draftId": "dmvpgvb1k",
+    "title": "마이크로소프트가\\n6만 명에게 건넨 선택",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T16-26-52/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T16-26-52/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T16-26-52/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T16-26-52/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T16-26-52/05.jpg"
+    ],
+    "caption": "마이크로소프트가 직원 6만 명에게 희망퇴직을 제안했습니다. 전체 직원 약 22만3000명 중 상당수에게 해고 대신 '선택지'를 준 셈입니다.\n\n몇 달 전엔 4800명을 해고했고, 올해 초엔 퇴직 연령대 직원 8750명 중 30% 넘게 희망퇴직을 받아들였습니다. AI 중심으로 조직을 재편하는 빅테크의 흐름, 저장해두고 다시 보세요.\n\n출처 · The Verge, TechCrunch\n\n#마이크로소프트 #MS #빅테크 #희망퇴직 #정리해고 #AI #테크뉴스 #Xbox",
+    "musicMood": "묵직한 로파이",
+    "fingerprints": [
+      "microsoftoffersbuyoutsto_pwpb80",
+      "microsoftoffersbuyoutsto_vugyjt"
+    ],
+    "createdAt": "2026-10-26T16:27:03.540Z"
   }
 ]
