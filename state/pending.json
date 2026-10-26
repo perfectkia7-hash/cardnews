@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmvnl7d70",
-    "title": "게임이 사치가 됐다 2026년 콘솔 가격 정리",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T08-52-52/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T08-52-52/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T08-52-52/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T08-52-52/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-25T08-52-52/05.jpg"
-    ],
-    "caption": "게임기 하나 사는 것도 이제 계산이 필요합니다.\n\nPS5 프로는 2년 전 700달러였지만 지금은 900달러, 리셀러는 1400달러까지 부릅니다.\n관세와 메모리값 상승이 원인입니다.\n\n디스크 없는 PS5 디지털 에디션(600달러)과 엑스박스 시리즈 S(500달러)는 중고 게임조차 살 수 없습니다.\n\n그나마 스위치 2는 500달러에 중고 카트리지도 살 수 있어 상대적으로 숨통이 트입니다.\n\n출처 · Engadget\n\n#게임기 #PS5 #닌텐도스위치2 #엑스박스 #게임가격 #테크뉴스 #Engadget #GTA6",
-    "musicMood": "묘하게 긴장되는 비트",
-    "fingerprints": [
-      "whatisthecheapestnewgami_1g4keii"
-    ],
-    "createdAt": "2026-10-25T08:53:00.657Z"
-  },
-  {
     "draftId": "dmvnwdgu5",
     "title": "오래된 기기\\n버리지 마세요",
     "imageUrls": [
@@ -50,5 +33,22 @@
       "canyourunregularethernet_2oilaw"
     ],
     "createdAt": "2026-10-26T00:51:39.528Z"
+  },
+  {
+    "draftId": "dmvp23ng2",
+    "title": "굿리즈 말고 뭐 쓰지\\n새 독서 앱 3종 비교",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T09-31-51/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T09-31-51/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T09-31-51/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T09-31-51/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T09-31-51/05.jpg"
+    ],
+    "caption": "굿리즈 하나로 버티던 독서 앱 시장에 새 얼굴들이 등장했습니다.\\n\\n테크크런치가 소개한 독서 앱 중 눈에 띄는 두 곳을 정리했습니다.\\n**페이블**은 독서모임과 커뮤니티를 앞세운 소셜 독서 앱이고,\\n**북셸프**는 AI 요약과 인사이트로 승부하는 앱입니다.\\n다음 읽을 책, 어떤 앱으로 관리할지 저장해두고 골라보세요.\n\n출처 · TechCrunch\n\n#독서앱 #북셸프 #페이블 #굿리즈 #테크크런치 #독서스타그램 #IT뉴스",
+    "musicMood": "잔잔한 어쿠스틱",
+    "fingerprints": [
+      "thebestappsfortrackingyo_omvdbg"
+    ],
+    "createdAt": "2026-10-26T09:32:00.002Z"
   }
 ]
