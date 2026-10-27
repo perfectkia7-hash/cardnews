@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmvp23ng2",
-    "title": "굿리즈 말고 뭐 쓰지\\n새 독서 앱 3종 비교",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T09-31-51/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T09-31-51/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T09-31-51/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T09-31-51/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T09-31-51/05.jpg"
-    ],
-    "caption": "굿리즈 하나로 버티던 독서 앱 시장에 새 얼굴들이 등장했습니다.\\n\\n테크크런치가 소개한 독서 앱 중 눈에 띄는 두 곳을 정리했습니다.\\n**페이블**은 독서모임과 커뮤니티를 앞세운 소셜 독서 앱이고,\\n**북셸프**는 AI 요약과 인사이트로 승부하는 앱입니다.\\n다음 읽을 책, 어떤 앱으로 관리할지 저장해두고 골라보세요.\n\n출처 · TechCrunch\n\n#독서앱 #북셸프 #페이블 #굿리즈 #테크크런치 #독서스타그램 #IT뉴스",
-    "musicMood": "잔잔한 어쿠스틱",
-    "fingerprints": [
-      "thebestappsfortrackingyo_omvdbg"
-    ],
-    "createdAt": "2026-10-26T09:32:00.002Z"
-  },
-  {
     "draftId": "dmvpgvb1k",
     "title": "마이크로소프트가\\n6만 명에게 건넨 선택",
     "imageUrls": [
@@ -68,5 +51,24 @@
       "openaiannouncesthreebigs_17i052x"
     ],
     "createdAt": "2026-10-27T09:29:52.324Z"
+  },
+  {
+    "draftId": "dmvquojdy",
+    "title": "맥북 프로가\\nM6로 업그레이드",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-27T15-39-12/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-27T15-39-12/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-27T15-39-12/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-27T15-39-12/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-27T15-39-12/05.jpg"
+    ],
+    "caption": "애플이 14인치 맥북 프로를 M6 칩으로 새로 단장했습니다.\n\n그래픽 30%, AI 작업 25% 빨라졌고 와이파이7·블루투스6도 처음 들어갔습니다.\n\n가격은 작년과 똑같이 1999달러.\n대신 메모리·저장공간 업그레이드 비용은 더 비싸졌습니다.\n\n예약판매는 10월 28일, 정식 출시는 11월 6일입니다.\n\n출처 · TechCrunch, Engadget, The Verge\n\n#애플 #맥북프로 #M6칩 #애플신제품 #테크뉴스 #AI칩 #맥북",
+    "musicMood": "깔끔한 테크 비트",
+    "fingerprints": [
+      "appleunveilsnew14inchmac_1r7py3z",
+      "applehasupdatedthe14inch_1iolg4g",
+      "appleupdatesthemacbookpr_19q1wgy"
+    ],
+    "createdAt": "2026-10-27T15:39:22.249Z"
   }
 ]
