@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmvpgvb1k",
-    "title": "마이크로소프트가\\n6만 명에게 건넨 선택",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T16-26-52/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T16-26-52/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T16-26-52/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T16-26-52/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-26T16-26-52/05.jpg"
-    ],
-    "caption": "마이크로소프트가 직원 6만 명에게 희망퇴직을 제안했습니다. 전체 직원 약 22만3000명 중 상당수에게 해고 대신 '선택지'를 준 셈입니다.\n\n몇 달 전엔 4800명을 해고했고, 올해 초엔 퇴직 연령대 직원 8750명 중 30% 넘게 희망퇴직을 받아들였습니다. AI 중심으로 조직을 재편하는 빅테크의 흐름, 저장해두고 다시 보세요.\n\n출처 · The Verge, TechCrunch\n\n#마이크로소프트 #MS #빅테크 #희망퇴직 #정리해고 #AI #테크뉴스 #Xbox",
-    "musicMood": "묵직한 로파이",
-    "fingerprints": [
-      "microsoftoffersbuyoutsto_pwpb80",
-      "microsoftoffersbuyoutsto_vugyjt"
-    ],
-    "createdAt": "2026-10-26T16:27:03.540Z"
-  },
-  {
     "draftId": "dmvq1e1g0",
     "title": "알리바바 AI가\\n베이징과 몰래 통신?",
     "imageUrls": [
@@ -70,5 +52,23 @@
       "appleupdatesthemacbookpr_19q1wgy"
     ],
     "createdAt": "2026-10-27T15:39:22.249Z"
+  },
+  {
+    "draftId": "dmvrgm9kk",
+    "title": "비밀글은 없었다\\n디스코드도 구글에 뜬다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-28T01-53-52/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-28T01-53-52/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-28T01-53-52/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-28T01-53-52/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-28T01-53-52/05.jpg"
+    ],
+    "caption": "디스코드에 올린 글이 구글 검색에 뜰 수 있습니다.\n\n11월 16일부터 공개 서버마다 전용 웹페이지가 생기고, 12월 중순부터는 메시지가 검색 결과에도 나옵니다. 이름과 프로필은 가려지지만, 비공개 서버와 DM은 그대로 안전합니다.\n\n한국 등 일부 지역은 기본값이 꺼져 있어 직접 켜야 하고, 미성년자에게는 적용되지 않습니다. 발표 직후 맥락 밖 노출과 AI 학습 활용 우려가 나오고 있습니다.\n\n출처 · Engadget, TechCrunch\n\n#디스코드 #Discord #구글검색 #프라이버시 #AI학습 #빅테크 #테크뉴스",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "discordpublicservermessa_g42ejb",
+      "discordismakingitspublic_1clwj5d"
+    ],
+    "createdAt": "2026-10-28T01:54:00.919Z"
   }
 ]
