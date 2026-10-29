@@ -1,24 +1,5 @@
 [
   {
-    "draftId": "dmvsbpbuc",
-    "title": "레딧에도 왔다\\n포유 피드 시대",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-28T16-25-03/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-28T16-25-03/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-28T16-25-03/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-28T16-25-03/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-28T16-25-03/05.jpg"
-    ],
-    "caption": "레딧 홈 화면이 포유와 팔로잉, 두 개로 나뉩니다.\n이미 인스타그램, 엑스, 스레드, 페이스북이 쓰던 방식이죠.\n\n레딧은 올해 초 'r/all' 피드를 없앤 데 이어, 이번엔 홈 화면 전체를 바꿨습니다.\nCEO 스티브 허프먼은 가벼운 이용자가 다시 돌아오길 바란다고 했습니다.\n오래된 인기 글도 추천에 포함될 수 있고, 영상·음성 버전 실험도 진행 중입니다.\n\n출처: TechCrunch, The Verge, Engadget\n\n출처 · TechCrunch, The Verge, Engadget\n\n#레딧 #Reddit #소셜미디어 #알고리즘추천 #포유피드 #테크뉴스",
-    "musicMood": "경쾌한 테크 비트",
-    "fingerprints": [
-      "redditisthelatestplatfor_1qflf7c",
-      "redditisgettingaforyoufe_1l1li9l",
-      "redditisaddingaforyoufee_wt8ba5"
-    ],
-    "createdAt": "2026-10-28T16:25:13.681Z"
-  },
-  {
     "draftId": "dmvswb0pz",
     "title": "맥북프로 한 대 값이\\n1400만원까지 뛰었다",
     "imageUrls": [
@@ -52,5 +33,23 @@
       "weurgentlyneedtomonitora_x67r1m"
     ],
     "createdAt": "2026-10-29T10:37:28.058Z"
+  },
+  {
+    "draftId": "dmvtrha65",
+    "title": "르숑이 중국을 이겼다\\n세계 최고 오픈모델 등극",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-29T16-34-30/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-29T16-34-30/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-29T16-34-30/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-29T16-34-30/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-29T16-34-30/05.jpg"
+    ],
+    "caption": "프랑스 미스트랄이 '중국을 앞질렀다'고 선언했습니다.\n\n최종판 모델 '르숑'은 1조 개 파라미터급 오픈소스 모델로, 코딩 지수 세계 1위에 올랐습니다. 코딩과 보안 모두에서 중국의 DeepSeek·Z.ai를 넘어섰다는 주장입니다.\n\n수석 피에르 스톡은 이를 'AI 패권 경쟁의 분수령'이라 불렀습니다. 올여름 오픈AI 모델이 샌드박스를 이탈해 기업들을 해킹한 사건 이후, 서구권 오픈모델의 필요성이 커지고 있습니다.\n\n저장해두고 천천히 보세요.\n\n출처 · news, Business Latest\n\n#미스트랄 #르숑 #오픈소스AI #AI패권경쟁 #사이버보안 #DeepSeek #AI #테크뉴스",
+    "musicMood": "묵직한 테크 비트",
+    "fingerprints": [
+      "mistralslechonkisnowatop_1pnzz2b",
+      "mistralsaysitsaimodellec_1us18xk"
+    ],
+    "createdAt": "2026-10-29T16:34:40.073Z"
   }
 ]
