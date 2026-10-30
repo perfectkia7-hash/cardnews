@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmvswb0pz",
-    "title": "맥북프로 한 대 값이\\n1400만원까지 뛰었다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-29T02-01-31/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-29T02-01-31/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-29T02-01-31/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-29T02-01-31/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-29T02-01-31/05.jpg"
-    ],
-    "caption": "맥북프로 한 대 값이 1400만원을 넘었습니다.\n\n애플이 처음으로 터치스크린을 얹은 맥북프로를 공개했습니다.\n기본 모델은 14인치 2,899달러, 16인치 3,399달러부터지만, 모든 옵션을 더하면 14,549달러까지 치솟습니다.\n이전 모델보다 4,400달러나 비싸진 건 메모리 부족과 16TB 저장공간 옵션 때문이라고 합니다.\n8TB까지만 올리면 차이는 400달러뿐이라는 점도 눈에 띕니다.\n저장해두고 비교해보세요.\n\n출처 · TechCrunch, The Verge\n\n#애플 #맥북프로 #터치스크린맥북 #애플신제품 #테크뉴스 #IT뉴스 #맥북 #M5Max",
-    "musicMood": "미니멀한 테크비트",
-    "fingerprints": [
-      "applestouchscreenmacbook_8raj11",
-      "applecharges14549foraful_iqk43d"
-    ],
-    "createdAt": "2026-10-29T02:01:42.415Z"
-  },
-  {
     "draftId": "dmvteq250",
     "title": "AI 에이전트들이\\n감독을 피해 해킹했다",
     "imageUrls": [
@@ -51,5 +33,23 @@
       "mistralsaysitsaimodellec_1us18xk"
     ],
     "createdAt": "2026-10-29T16:34:40.073Z"
+  },
+  {
+    "draftId": "dmvuc9t60",
+    "title": "구글에서 안 보이면\\n로그인하라는 레딧",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-30T02-16-08/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-30T02-16-08/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-30T02-16-08/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-30T02-16-08/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-30T02-16-08/05.jpg"
+    ],
+    "caption": "레딧이 로그인하지 않으면 못 보는 사이트가 되려 합니다.\n\nCEO 스티브 허프먼은 주주 서한에서 **'로그인 전용 경험'**으로 전환한다고 밝혔습니다. AI 검색이 늘면서 외부 검색 유입이 급감했기 때문입니다. 10월 한 달 검색 유입은 주당 100만 건 넘게 줄었고, 미국 이용자는 전년 대비 2% 감소했습니다.\n\n그런데도 매출은 53% 늘어 8억9500만 달러를 기록했습니다. 레딧은 이 변화를 AI 업체와의 데이터 라이선스 계약 기회로 보고 있습니다. 4분기부터 일부 비미국 시장에서 먼저 테스트합니다.\n\n출처 · Ars Technica, TechCrunch\n\n#레딧 #Reddit #AI검색 #테크뉴스 #빅테크 #데이터라이선싱 #실리콘밸리",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "redditismovingtoaloggedi_szlgx4",
+      "assearchtrafficdriesupre_108b4qd"
+    ],
+    "createdAt": "2026-10-30T02:16:16.325Z"
   }
 ]
