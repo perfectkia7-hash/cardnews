@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmvuu7ufc",
-    "title": "도요타가 만든다\\n웨이모의 로보택시",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-30T10-37-51/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-30T10-37-51/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-30T10-37-51/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-30T10-37-51/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-30T10-37-51/05.jpg"
-    ],
-    "caption": "웨이모가 로보택시에 도요타 차를 쓰기로 했습니다.\n\n2027년 일본에서 **bZ4X** 전기차로 자율주행 시범 테스트를 시작하고, 이후 영국 등 우측 운전 국가로 확대합니다.\n\n도요타는 아이치현 다카오카 공장에서 차량을 만들고 웨이모의 자율주행 하드웨어까지 장착합니다.\n웨이모는 이미 런던과 도쿄에서 시범 운행 중이며, 두 회사는 로보택시를 넘어 개인 소유 차량과 교통 인프라로도 협력을 넓힐 계획입니다.\n\n출처 · Engadget, TechCrunch\n\n#웨이모 #도요타 #로보택시 #자율주행 #테크뉴스 #bZ4X #전기차",
-    "musicMood": "기대감 있는 신스",
-    "fingerprints": [
-      "waymoandtoyotawillsoonst_1g72xyp",
-      "waymotapstoyotatosupplyr_187f71r"
-    ],
-    "createdAt": "2026-10-30T10:37:59.723Z"
-  },
-  {
     "draftId": "dmvv6mdtz",
     "title": "사상 최대 해킹\\n63억 달러 증발",
     "imageUrls": [
@@ -68,5 +50,22 @@
       "pileinspayoutsandpacingp_cak79z"
     ],
     "createdAt": "2026-10-31T10:05:23.802Z"
+  },
+  {
+    "draftId": "dmvwka5sy",
+    "title": "영화 대화가 안 들려서\\n볼륨 올린 적 있다면",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-31T15-35-48/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-31T15-35-48/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-31T15-35-48/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-31T15-35-48/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-10-31T15-35-48/05.jpg"
+    ],
+    "caption": "영화 대화가 안 들려서 볼륨을 올렸다 내렸다 하신 적 있나요?\n\n파이어 TV 스틱에 **Dialogue Boost** 기능이 생겼습니다. 설정에서 켜면 볼륨을 키우지 않아도 대화가 또렷해집니다.\n\n대화가 뭉개지는 건 최신 마이크와 TV 스피커 구조 때문이라고 합니다. 이번 버전은 AI 모델을 원본의 1% 미만으로 줄여 기기에서 실시간으로 돌리기 때문에, 프라임 비디오뿐 아니라 다른 스트리밍 서비스에서도 쓸 수 있습니다.\n\n출처 · Engadget\n\n#파이어TV #아마존 #FireTV #AI #스트리밍 #테크뉴스 #얼리어답터",
+    "musicMood": "잔잔한 로파이",
+    "fingerprints": [
+      "theamazonfiretvsticksett_1ucug2b"
+    ],
+    "createdAt": "2026-10-31T15:35:57.358Z"
   }
 ]
