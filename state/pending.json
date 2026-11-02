@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmvy1rwpf",
-    "title": "63억 달러 털린 거래소,\\n입출금을 다시 열었다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-01T16-32-32/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-01T16-32-32/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-01T16-32-32/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-01T16-32-32/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-01T16-32-32/05.jpg"
-    ],
-    "caption": "바이낸스가 역대급 해킹을 딛고 입출금을 다시 열었습니다.\n해커들은 바이낸스 지갑에서 63억 달러를 훔쳤고, 거래소는 입출금을 전면 중단했습니다.\n바이낸스는 도난 자산의 95%를 복구했다며, 손실은 전부 회사가 떠안고 이용자에게는 전가하지 않겠다고 밝혔습니다.\nFBI는 이번 해킹의 배후로 북한 해킹조직 TraderTraitor를 지목했습니다.\n\n출처 · TechCrunch\n\n#바이낸스 #해킹 #암호화폐 #비트코인 #이더리움 #북한해킹 #크립토뉴스 #TechCrunch",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "binanceresumeswithdrawal_cn2dwy"
-    ],
-    "createdAt": "2026-11-01T16:32:41.276Z"
-  },
-  {
     "draftId": "dmvylzz62",
     "title": "299달러짜리 애플TV, 몇 년 쓸 수 있을까",
     "imageUrls": [
@@ -49,5 +32,23 @@
       "appleisreportedlylaunchi_oabi5z"
     ],
     "createdAt": "2026-11-02T11:53:16.001Z"
+  },
+  {
+    "draftId": "dmvzohcu6",
+    "title": "뉴욕타임스가\\n브라우저를 고소했다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-02T19-56-01/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-02T19-56-01/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-02T19-56-01/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-02T19-56-01/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-02T19-56-01/05.jpg"
+    ],
+    "caption": "브레이브 브라우저가 AI 기업들에 뉴스를 팔아넘겼다는 의혹으로 법정에 섰습니다.\n\n뉴욕타임스, 데일리뉴스, 시카고트리뷴, 올랜도 센티널이 월요일 맨해튼 연방법원에 소송을 제기했습니다.\n브레이브가 300억 개 넘는 웹페이지를 무단 수집해 앤트로픽, 퍼플렉시티, 미스트랄, xAI, 코히어 등에 팔았다는 주장입니다.\n페이월 우회 기능과 발행사 광고 차단 관행도 함께 지적됐습니다.\n\n출처 · TechCrunch, The Verge\n\n#브레이브 #뉴욕타임스 #AI소송 #저작권 #빅테크 #생성AI #테크뉴스",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "newyorktimesandotheroutl_pzcwm9",
+      "thenewyorktimessuesbrave_1b3zl6v"
+    ],
+    "createdAt": "2026-11-02T19:56:10.056Z"
   }
 ]
