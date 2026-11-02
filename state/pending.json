@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmvx5sapk",
-    "title": "3D프린터 하나면 취미 비용이 준다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-01T01-37-13/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-01T01-37-13/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-01T01-37-13/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-01T01-37-13/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-01T01-37-13/05.jpg"
-    ],
-    "caption": "3D프린터, 사봐야 할까 말아야 할까 고민된다면 이 글이 답이 될 수 있습니다.\n입문형은 **170달러**부터, 필라멘트는 **kg당 20달러**부터입니다.\n드론 부품처럼 자주 깨지는 것들은 직접 뽑아 쓰면 돈을 아낄 수 있습니다.\n단, 프로펠러처럼 비행 핵심 부품은 검증 전까지 출력하지 않는 게 안전합니다.\n\n출처 · Engadget\n\n#3D프린터 #메이커 #DIY테크 #드론 #적층제조 #테크뉴스 #가젯",
-    "musicMood": "잔잔한 로파이",
-    "fingerprints": [
-      "5expensivehobbieswhereow_u0etzf"
-    ],
-    "createdAt": "2026-11-01T01:37:21.947Z"
-  },
-  {
     "draftId": "dmvxprpyq",
     "title": "데이터센터가 떴다 미국 중간선거 쟁점으로",
     "imageUrls": [
@@ -49,5 +32,22 @@
       "binanceresumeswithdrawal_cn2dwy"
     ],
     "createdAt": "2026-11-01T16:32:41.276Z"
+  },
+  {
+    "draftId": "dmvylzz62",
+    "title": "299달러짜리 애플TV, 몇 년 쓸 수 있을까",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-02T02-00-13/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-02T02-00-13/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-02T02-00-13/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-02T02-00-13/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-02T02-00-13/05.jpg"
+    ],
+    "caption": "299달러짜리 새 애플TV, 몇 년이나 쓸 수 있을까요.\n\n애플은 정확한 햇수를 약속하지 않습니다. 다만 과거 기록을 보면 감이 옵니다.\n\n2015년 나온 애플TV HD는 10년 가까이, 2017년 첫 4K 모델은 8년간 주요 업데이트를 받았습니다. 그런데 올해 9월 tvOS 27부터 이 흐름이 끊겼습니다. 2021년 이후 기기만 새 운영체제를 받습니다.\n\n아마존은 파이어TV에 최소 4년의 보안 업데이트를 글로 약속하지만, 애플엔 이런 약속이 없습니다. 그래도 넷플릭스는 구형 애플TV를 아직 지원하고 있다고 합니다.\n\n출처 · Engadget\n\n#애플 #애플TV #AppleTV #tvOS #테크뉴스 #IT뉴스 #디지털기기 #OTT",
+    "musicMood": "잔잔한 로파이",
+    "fingerprints": [
+      "howlongisanewappletvactu_rx0prs"
+    ],
+    "createdAt": "2026-11-02T02:00:22.590Z"
   }
 ]
