@@ -51,5 +51,22 @@
       "appleisnotabletopredictw_rc88vc"
     ],
     "createdAt": "2026-11-03T03:47:59.164Z"
+  },
+  {
+    "draftId": "dmw0lv06y",
+    "title": "AI가 거짓말을 한다면\\n규칙을 바꿔보자",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-03T11-30-44/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-03T11-30-44/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-03T11-30-44/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-03T11-30-44/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-03T11-30-44/05.jpg"
+    ],
+    "caption": "AI한테 \"착하게 행동해\"라고 설득하는 대신, 거짓말하면 손해 보는 규칙을 만들면 어떨까요?\n\nMIT를 비롯한 연구자들이 제안한 '역발상 게임이론(메커니즘 설계)'은 AI의 속마음을 들여다보는 대신, 거짓을 말하면 불리해지는 규칙을 설계하자는 접근입니다.\n모델들을 서로 비교하고 경쟁시켜서, 일부러 못하는 척하는 게(사배깅) 손해가 되도록 만드는 식입니다.\n\n저장해두고 AI 안전 이슈가 어디로 가는지 지켜보세요.\n\n출처 · MIT Technology Review\n\n#AI #AI안전 #AI얼라인먼트 #게임이론 #메커니즘설계 #테크뉴스 #MIT",
+    "musicMood": "잔잔한 로파이",
+    "fingerprints": [
+      "howreversegametheorycoul_y128ds"
+    ],
+    "createdAt": "2026-11-03T11:30:53.212Z"
   }
 ]
