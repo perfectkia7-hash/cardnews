@@ -1,24 +1,5 @@
 [
   {
-    "draftId": "dmw0yo1a9",
-    "title": "학교가 AI를 끄면\\n검색도 함께 꺼진다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-03T17-29-16/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-03T17-29-16/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-03T17-29-16/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-03T17-29-16/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-03T17-29-16/05.jpg"
-    ],
-    "caption": "학교가 AI를 끄려면 검색도 같이 꺼야 합니다.\n\n구글이 11월 3일 K-12 학생 계정의 제미나이, 제미나이 노트북, 클래스룸, 검색을 기본값 '꺼짐'으로 바꿨습니다. 관리자가 직접 켜야만 쓸 수 있습니다.\n\n문제는 검색과 AI가 묶여 있다는 점입니다. 구글 교육 부사장 크리스 필립스는 \"검색과 AI는 깊이 통합돼 있다\"고 했습니다. AI를 막은 학교 학생은 검색 자체를 못 쓰게 됩니다.\n\n지난 8월 구글이 클래스룸에 AI를 기본으로 켰다가 교사 반발로 되돌린 지 몇 달 만입니다. 같은 시기 뉴욕시와 LA는 AI 사용을 금지했고, 뉴욕 주지사는 미성년자 챗봇 제한법에 서명했습니다.\n\n출처 · Engadget, The Verge, TechCrunch\n\n#구글 #Google #AI교육 #구글검색 #제미나이 #에듀테크 #AI규제 #빅테크뉴스",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "googlesaysstudentsinscho_104qgxo",
-      "googleisentirelydisablin_11reywu",
-      "googlewillletschoolsdisa_1orvzf"
-    ],
-    "createdAt": "2026-11-03T17:29:25.559Z"
-  },
-  {
     "draftId": "dmw1ip523",
     "title": "AMD 사상 최대 실적 그 뒤엔 데이터센터",
     "imageUrls": [
@@ -53,5 +34,24 @@
       "allthenewsaboutthelegend_1yxr6ix"
     ],
     "createdAt": "2026-11-04T11:47:56.132Z"
+  },
+  {
+    "draftId": "dmw2eljuo",
+    "title": "5억 달러도 못 막은 유권자의 반란",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T17-43-51/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T17-43-51/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T17-43-51/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T17-43-51/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T17-43-51/05.jpg"
+    ],
+    "caption": "일론 머스크는 이번 중간선거에 거의 5억 달러를 쏟아부었지만, 특정 후보에게 쓴 돈의 98%가 결국 패배로 돌아왔습니다. 고향 텍사스에서도 주지사와 상원을 모두 내줬습니다.\n\n같은 날 미국 전역에서는 데이터센터 확장에 반대하는 투표가 쏟아졌습니다. 45개 지역 투표 중 33개가 이미 규제 쪽으로 통과됐고, 오하이오에서는 20개 투표 전부가 규제 방향으로 기울었습니다.\n\n돈과 인프라, 둘 다 유권자의 심판을 피하지 못했습니다.\n\n출처 · Engadget, The Verge\n\n#중간선거 #일론머스크 #데이터센터 #미국정치 #테슬라 #AI뉴스 #텍사스 #오하이오",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "elonmuskspentnearly500mi_1ajhfu7",
+      "datacenterslostthemidter_1tua8jc",
+      "americansoverwhelminglyv_ihgo4f"
+    ],
+    "createdAt": "2026-11-04T17:44:02.129Z"
   }
 ]
