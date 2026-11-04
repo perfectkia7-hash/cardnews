@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmvzohcu6",
-    "title": "뉴욕타임스가\\n브라우저를 고소했다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-02T19-56-01/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-02T19-56-01/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-02T19-56-01/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-02T19-56-01/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-02T19-56-01/05.jpg"
-    ],
-    "caption": "브레이브 브라우저가 AI 기업들에 뉴스를 팔아넘겼다는 의혹으로 법정에 섰습니다.\n\n뉴욕타임스, 데일리뉴스, 시카고트리뷴, 올랜도 센티널이 월요일 맨해튼 연방법원에 소송을 제기했습니다.\n브레이브가 300억 개 넘는 웹페이지를 무단 수집해 앤트로픽, 퍼플렉시티, 미스트랄, xAI, 코히어 등에 팔았다는 주장입니다.\n페이월 우회 기능과 발행사 광고 차단 관행도 함께 지적됐습니다.\n\n출처 · TechCrunch, The Verge\n\n#브레이브 #뉴욕타임스 #AI소송 #저작권 #빅테크 #생성AI #테크뉴스",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "newyorktimesandotheroutl_pzcwm9",
-      "thenewyorktimessuesbrave_1b3zl6v"
-    ],
-    "createdAt": "2026-11-02T19:56:10.056Z"
-  },
-  {
     "draftId": "dmw05axnd",
     "title": "아이폰 듀오 못 구해요\\n애플조차 예측 불가",
     "imageUrls": [
@@ -70,5 +52,22 @@
       "googlewillletschoolsdisa_1orvzf"
     ],
     "createdAt": "2026-11-03T17:29:25.559Z"
+  },
+  {
+    "draftId": "dmw1ip523",
+    "title": "AMD 사상 최대 실적 그 뒤엔 데이터센터",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T02-49-43/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T02-49-43/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T02-49-43/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T02-49-43/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T02-49-43/05.jpg"
+    ],
+    "caption": "AMD가 분기 매출 134억 달러로 역대 최대 실적을 냈습니다.\n\n데이터센터 매출이 전체의 63%를 차지했고, 2027년엔 80%를 넘을 거란 전망도 나왔습니다.\n그런데 그 뒤에서 게임 매출은 40%나 줄었습니다. AI 서버 수요가 부품 품귀를 부르고, 소비자용 PC·게임기 가격까지 밀어 올리고 있다는 신호입니다.\n\n출처 · The Verge\n\n#AMD #데이터센터 #AI반도체 #실적발표 #반도체뉴스 #테크뉴스 #리사수",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "amdridesdatacenterriches_16d7tei"
+    ],
+    "createdAt": "2026-11-04T02:49:52.489Z"
   }
 ]
