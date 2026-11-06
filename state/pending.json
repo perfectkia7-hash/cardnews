@@ -1,57 +1,21 @@
 [
   {
-    "draftId": "dmw1ip523",
-    "title": "AMD 사상 최대 실적 그 뒤엔 데이터센터",
+    "draftId": "dmw4wmomb",
+    "title": "뉴욕타임스가 영화광 SNS를 품는다",
     "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T02-49-43/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T02-49-43/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T02-49-43/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T02-49-43/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T02-49-43/05.jpg"
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-06T11-43-02/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-06T11-43-02/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-06T11-43-02/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-06T11-43-02/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-06T11-43-02/05.jpg"
     ],
-    "caption": "AMD가 분기 매출 134억 달러로 역대 최대 실적을 냈습니다.\n\n데이터센터 매출이 전체의 63%를 차지했고, 2027년엔 80%를 넘을 거란 전망도 나왔습니다.\n그런데 그 뒤에서 게임 매출은 40%나 줄었습니다. AI 서버 수요가 부품 품귀를 부르고, 소비자용 PC·게임기 가격까지 밀어 올리고 있다는 신호입니다.\n\n출처 · The Verge\n\n#AMD #데이터센터 #AI반도체 #실적발표 #반도체뉴스 #테크뉴스 #리사수",
-    "musicMood": "긴장감 있는 신스",
+    "caption": "영화 덕후들의 아지트 레터박스드, 뉴욕타임스 품에 안길까요.\n\n뉴욕타임스 모회사가 레터박스드를 3억3천만 달러에 사려고 전속 협상 중입니다. 올초 거론된 2억5천만 달러보다 높은 가격이죠.\n\n2021년 300만 명이던 이용자는 올해 4월 2800만 명으로 늘었고, 소니·A24 등도 눈독을 들였던 곳입니다. 인수가 성사되면 레터박스드는 당분간 독립 운영을 유지하면서 뉴욕타임스의 광고 기술을 들여올 전망입니다.\n\n출처 · Engadget, TechCrunch, The Verge\n\n#뉴욕타임스 #레터박스드 #Letterboxd #영화 #인수합병 #테크뉴스 #미디어",
+    "musicMood": "잔잔한 궁금증",
     "fingerprints": [
-      "amdridesdatacenterriches_16d7tei"
+      "thenewyorktimescompanyis_18kxxhh",
+      "thenewyorktimesreportedl_1wx2991",
+      "thenewyorktimesisintalks_1t05w8"
     ],
-    "createdAt": "2026-11-04T02:49:52.489Z"
-  },
-  {
-    "draftId": "dmw21vs57",
-    "title": "28년 만에 돌아온\\n젤다, 그대로일까",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T11-47-43/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T11-47-43/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T11-47-43/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T11-47-43/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T11-47-43/05.jpg"
-    ],
-    "caption": "GTA6가 나오기 전, 닌텐도가 먼저 움직였습니다.\n\n1998년 N64로 나왔던 오카리나 오브 타임이 28년 만에 스위치2로 돌아왔습니다. 그래픽은 완전히 새로 그렸고 점프·질주·풀보이스까지 더해졌지만, 핵심은 그대로입니다. 오픈월드로 바뀌었던 젤다 시리즈가 왜 다시 던전 중심의 고전 공식을 꺼내들었는지, 개발진이 끝까지 지키고 싶었던 디테일까지 카드에 담았습니다.\n\n출시일은 11월5일입니다.\n\n출처 · The Verge, Engadget\n\n#젤다 #오카리나오브타임 #닌텐도 #스위치2 #게임뉴스 #리메이크 #Zelda",
-    "musicMood": "웅장한 모험 OST",
-    "fingerprints": [
-      "thelegendofzeldaocarinao_dk5x80",
-      "thelegendofzeldaocarinao_193271t",
-      "allthenewsaboutthelegend_1yxr6ix"
-    ],
-    "createdAt": "2026-11-04T11:47:56.132Z"
-  },
-  {
-    "draftId": "dmw2eljuo",
-    "title": "5억 달러도 못 막은 유권자의 반란",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T17-43-51/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T17-43-51/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T17-43-51/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T17-43-51/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-04T17-43-51/05.jpg"
-    ],
-    "caption": "일론 머스크는 이번 중간선거에 거의 5억 달러를 쏟아부었지만, 특정 후보에게 쓴 돈의 98%가 결국 패배로 돌아왔습니다. 고향 텍사스에서도 주지사와 상원을 모두 내줬습니다.\n\n같은 날 미국 전역에서는 데이터센터 확장에 반대하는 투표가 쏟아졌습니다. 45개 지역 투표 중 33개가 이미 규제 쪽으로 통과됐고, 오하이오에서는 20개 투표 전부가 규제 방향으로 기울었습니다.\n\n돈과 인프라, 둘 다 유권자의 심판을 피하지 못했습니다.\n\n출처 · Engadget, The Verge\n\n#중간선거 #일론머스크 #데이터센터 #미국정치 #테슬라 #AI뉴스 #텍사스 #오하이오",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "elonmuskspentnearly500mi_1ajhfu7",
-      "datacenterslostthemidter_1tua8jc",
-      "americansoverwhelminglyv_ihgo4f"
-    ],
-    "createdAt": "2026-11-04T17:44:02.129Z"
+    "createdAt": "2026-11-06T11:43:12.089Z"
   }
 ]
