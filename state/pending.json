@@ -1,24 +1,5 @@
 [
   {
-    "draftId": "dmw4wmomb",
-    "title": "뉴욕타임스가 영화광 SNS를 품는다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-06T11-43-02/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-06T11-43-02/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-06T11-43-02/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-06T11-43-02/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-06T11-43-02/05.jpg"
-    ],
-    "caption": "영화 덕후들의 아지트 레터박스드, 뉴욕타임스 품에 안길까요.\n\n뉴욕타임스 모회사가 레터박스드를 3억3천만 달러에 사려고 전속 협상 중입니다. 올초 거론된 2억5천만 달러보다 높은 가격이죠.\n\n2021년 300만 명이던 이용자는 올해 4월 2800만 명으로 늘었고, 소니·A24 등도 눈독을 들였던 곳입니다. 인수가 성사되면 레터박스드는 당분간 독립 운영을 유지하면서 뉴욕타임스의 광고 기술을 들여올 전망입니다.\n\n출처 · Engadget, TechCrunch, The Verge\n\n#뉴욕타임스 #레터박스드 #Letterboxd #영화 #인수합병 #테크뉴스 #미디어",
-    "musicMood": "잔잔한 궁금증",
-    "fingerprints": [
-      "thenewyorktimescompanyis_18kxxhh",
-      "thenewyorktimesreportedl_1wx2991",
-      "thenewyorktimesisintalks_1t05w8"
-    ],
-    "createdAt": "2026-11-06T11:43:12.089Z"
-  },
-  {
     "draftId": "dmw591yuk",
     "title": "220억 달러짜리 빅딜\\n폭스가 로쿠를 품었다",
     "imageUrls": [
@@ -71,5 +52,22 @@
       "openairaises11billionat1_6pn47f"
     ],
     "createdAt": "2026-11-07T10:49:44.658Z"
+  },
+  {
+    "draftId": "dmw6laqg9",
+    "title": "뉴욕타임스 쿠킹에\\nAI 셰프가 생겼다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-07T16-01-18/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-07T16-01-18/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-07T16-01-18/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-07T16-01-18/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-07T16-01-18/05.jpg"
+    ],
+    "caption": "뉴욕타임스 쿠킹 앱에 AI 셰프가 들어왔습니다. 평일 치킨 요리는 살렸지만, 케이크는 하마터면 망칠 뻔했다고 합니다.\n\n수천 개 레시피와 독자 댓글로 쌓아온 신뢰에 AI가 더해지면서, 레시피 순수주의자들의 회의적인 시선도 함께 따라옵니다. 출시 초기엔 iOS 구독자부터 먼저 만나볼 수 있다고 하네요.\n\n출처 · The Verge\n\n#AI #뉴욕타임스 #NYT쿠킹 #AI어시스턴트 #요리 #테크뉴스 #스마트홈",
+    "musicMood": "잔잔한 재즈",
+    "fingerprints": [
+      "nytcookingsaiassistantsa_1rif07a"
+    ],
+    "createdAt": "2026-11-07T16:01:26.913Z"
   }
 ]
