@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmw591yuk",
-    "title": "220억 달러짜리 빅딜\\n폭스가 로쿠를 품었다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-06T17-32-16/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-06T17-32-16/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-06T17-32-16/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-06T17-32-16/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-06T17-32-16/05.jpg"
-    ],
-    "caption": "폭스가 로쿠를 **220억 달러**에 품었습니다.\\n원래 **2027년 상반기** 완료가 목표였는데 훨씬 빨리 끝났습니다.\\n\\n이제 폭스는 로쿠의 **1억 가구** 시청자에 접근하고, 폭스 스포츠와 뉴스, 지역 방송을 로쿠에 들여옵니다.\\n로쿠의 개방적인 생태계는 그대로 유지될 전망이라고 합니다.\n\n출처 · TechCrunch, The Verge\n\n#폭스 #로쿠 #스트리밍 #인수합병 #테크뉴스 #커넥티드TV #미디어",
-    "musicMood": "묵직한 비즈니스 신스",
-    "fingerprints": [
-      "foxcompletesits22bacquis_1hfot52",
-      "foxboughtroku_vkzxsx"
-    ],
-    "createdAt": "2026-11-06T17:32:26.212Z"
-  },
-  {
     "draftId": "dmw5s8ky2",
     "title": "말만 하면 앱이 생긴다\\n메타 무즈, '스페이스' 출시",
     "imageUrls": [
@@ -69,5 +51,22 @@
       "nytcookingsaiassistantsa_1rif07a"
     ],
     "createdAt": "2026-11-07T16:01:26.913Z"
+  },
+  {
+    "draftId": "dmw76knea",
+    "title": "새 기기로 로그인했는데\\n내 노래가 안 보인다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-08T01-56-44/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-08T01-56-44/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-08T01-56-44/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-08T01-56-44/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-08T01-56-44/05.jpg"
+    ],
+    "caption": "새 기기로 로그인했는데 애플뮤직 노래가 안 보인다면, 설정 하나만 바꾸면 해결됩니다.\n\n원인은 대부분 로그인 계정 불일치입니다. Sync Library 켜기, Wi-Fi·저전력 모드 확인, Update Cloud Library까지 순서대로 따라가 보세요.\n\n저장해두고 필요할 때 다시 보세요.\n\n출처 · Engadget\n\n#애플뮤직 #AppleMusic #아이폰 #맥 #테크팁 #iOS #동기화 #Engadget",
+    "musicMood": "가볍고 깔끔한 비트",
+    "fingerprints": [
+      "syncingapplemusicacrossy_1guhbiu"
+    ],
+    "createdAt": "2026-11-08T01:56:54.204Z"
   }
 ]
