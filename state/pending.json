@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmw7ptx4b",
-    "title": "갤럭시 베타 빌드가\\n서버에 떴습니다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-08T10-56-28/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-08T10-56-28/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-08T10-56-28/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-08T10-56-28/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-08T10-56-28/05.jpg"
-    ],
-    "caption": "삼성 갤럭시 S26 울트라에 원UI 9.5 베타 빌드가 떴습니다. 아직 공식 발표는 없지만, 등록 창구가 열리기 직전 단계로 알려진 신호입니다.\n\n빌드명은 S948BXXU6ZZK3, 대상은 갤럭시 S26 울트라. 등록은 독일·인도·폴란드·한국·영국·미국 6개국에서 삼성 멤버스를 통해 가능할 예정이지만, 통신사 잠금 단말은 제외될 가능성이 있습니다.\n\n원UI 9.5는 안드로이드 17 기반으로, 2027년 초 갤럭시 S27과 함께 나올 것으로 보입니다.\n\n출처 · Engadget\n\n#삼성 #갤럭시 #원UI95 #갤럭시S26울트라 #안드로이드17 #테크뉴스 #스마트폰",
-    "musicMood": "차분한 테크 느낌",
-    "fingerprints": [
-      "samsungoneui95betamaybec_u9b4hk"
-    ],
-    "createdAt": "2026-11-08T10:56:36.514Z"
-  },
-  {
     "draftId": "dmw81qn5o",
     "title": "노래 속에 숨어 있는 AI, 들리나요?",
     "imageUrls": [
@@ -51,5 +34,22 @@
       "nvidiawillinvestigateceo_1496jd"
     ],
     "createdAt": "2026-11-09T02:12:22.172Z"
+  },
+  {
+    "draftId": "dmw98ccp3",
+    "title": "트럼프의 '골든돔'\\n민주당이 벼른다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T12-22-23/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T12-22-23/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T12-22-23/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T12-22-23/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T12-22-23/05.jpg"
+    ],
+    "caption": "트럼프가 **22개월 전** 서명한 미사일 방어 계획 '골든돔'.\n그동안 의회의 제대로 된 검증 없이 **240억 달러**가 먼저 통과됐습니다.\n\n이제 예산권을 쥔 새 민주당 의회가 벼르고 있습니다.\n가장 논쟁적인 부분을 빼고, 이름까지 바꾸는 법안이 거론됩니다.\n\n현직·전직 관료 여섯 명의 전망을 전합니다.\n\n출처 · Ars Technica\n\n#골든돔 #미사일방어 #트럼프 #국방예산 #미국의회 #미국정치 #국방뉴스",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "newdemocraticcongresswil_7ejx2d"
+    ],
+    "createdAt": "2026-11-09T12:22:32.066Z"
   }
 ]
