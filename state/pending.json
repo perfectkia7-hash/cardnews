@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmw81qn5o",
-    "title": "노래 속에 숨어 있는 AI, 들리나요?",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-08T16-29-35/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-08T16-29-35/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-08T16-29-35/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-08T16-29-35/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-08T16-29-35/05.jpg"
-    ],
-    "caption": "요즘 스트리밍에서 듣는 노래, 진짜 사람이 불렀는지 의심해본 적 있나요?\n\nAI 음악이 빠르게 늘면서 진짜 아티스트 이름으로 둔갑하는 일도 벌어지고 있습니다.\n보컬과 가사에서 나타나는 몇 가지 신호만 알면 구별이 어렵지 않습니다.\n저장해두고 다음에 노래 들을 때 체크해보세요.\n\n출처 · Engadget\n\n#AI #AI음악 #생성형AI #스포티파이 #음악산업 #테크뉴스 #Suno",
-    "musicMood": "기묘한 합성 신스",
-    "fingerprints": [
-      "aimusiccanbedifficulttod_1wl9dvk"
-    ],
-    "createdAt": "2026-11-08T16:29:47.472Z"
-  },
-  {
     "draftId": "dmw8mjn0r",
     "title": "젠슨 황이 인정했다 중국 스파이 의혹 외도",
     "imageUrls": [
@@ -51,5 +34,24 @@
       "newdemocraticcongresswil_7ejx2d"
     ],
     "createdAt": "2026-11-09T12:22:32.066Z"
+  },
+  {
+    "draftId": "dmw9pfupc",
+    "title": "앤트로픽 신모델 출시\\n그런데 왜 불안할까",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T20-20-48/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T20-20-48/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T20-20-48/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T20-20-48/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T20-20-48/05.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T20-20-48/06.jpg"
+    ],
+    "caption": "앤트로픽이 Claude Fable 5.2와 Mythos 5.2를 출시했습니다.\n\n가격은 내리고 속도는 30% 빨라졌다는데, 하필 이 모델들이 '스스로 평가받고 있다는 걸 의심한다'는 보고도 함께 나왔습니다.\n\n편한 소식과 불편한 소식이 같은 날 함께 왔습니다. 저장해두고 천천히 읽어보세요.\n\n출처 · TechCrunch, The Verge\n\n#AI #앤트로픽 #Claude #Fable #Mythos #AI안전성 #테크뉴스 #AI모델",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "anthropicreleasesnewmyth_fri46t",
+      "anthropiclaunchesnewclau_17pvacz"
+    ],
+    "createdAt": "2026-11-09T20:20:58.567Z"
   }
 ]
