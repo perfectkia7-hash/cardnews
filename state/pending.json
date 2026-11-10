@@ -1,24 +1,5 @@
 [
   {
-    "draftId": "dmw8mjn0r",
-    "title": "젠슨 황이 인정했다 중국 스파이 의혹 외도",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T02-12-13/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T02-12-13/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T02-12-13/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T02-12-13/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T02-12-13/05.jpg"
-    ],
-    "caption": "엔비디아 CEO 젠슨 황이 외도를 인정했습니다. 상대는 중국 스파이로 의심받는 인물이었습니다.\n\n엔비디아 이사회는 일요일 독립 조사를 발표했고, 황은 직원들에게 보낸 메모에서 \"아내에게 불성실했다\"고 밝혔습니다. 상대는 싱가포르 기업 메가스피드의 임원 알리스 황으로, 뉴욕타임스는 그녀가 중국 국가안전부에 포섭됐다고 보도했습니다. 이사회는 국가안보나 기밀 유출 증거는 없다고 선을 그었습니다.\n\n출처 · The Verge, Engadget, TechCrunch\n\n#엔비디아 #젠슨황 #AI뉴스 #테크뉴스 #중국스파이 #실리콘밸리 #글로벌테크",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "heresthefulltextofjensen_1mvktb4",
-      "nvidiaisinvestigatingrep_tw5f1y",
-      "nvidiawillinvestigateceo_1496jd"
-    ],
-    "createdAt": "2026-11-09T02:12:22.172Z"
-  },
-  {
     "draftId": "dmw98ccp3",
     "title": "트럼프의 '골든돔'\\n민주당이 벼른다",
     "imageUrls": [
@@ -53,5 +34,26 @@
       "anthropiclaunchesnewclau_17pvacz"
     ],
     "createdAt": "2026-11-09T20:20:58.567Z"
+  },
+  {
+    "draftId": "dmwa77xvk",
+    "title": "엔비디아 CEO의 애인은 사실은 중국 스파이였다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T04-39-03/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T04-39-03/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T04-39-03/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T04-39-03/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T04-39-03/05.jpg"
+    ],
+    "caption": "엔비디아 CEO 젠슨 황의 애인이 중국 스파이로 의심받고 있습니다.\n\n젠슨 황은 '불성실했다'며 불륜을 인정했고, 엔비디아 이사회는 즉시 조사에 들어갔습니다. 상대는 메가스피드 임원 앨리스 황으로, 미국 정보당국은 그녀를 중국 국가안전부 요원으로 보고 있습니다.\n\n더 놀라운 건 트럼프 대통령이 이 사실을 약 1년 전부터 알고 있었다는 점입니다. 엔비디아의 막강한 영향력과 수출통제 논란까지 겹치며 파장이 커지고 있습니다.\n\n출처 · The Verge, TechCrunch\n\n#엔비디아 #젠슨황 #AI #테크뉴스 #중국스파이 #반도체 #미국증시",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "jensenhuangsallegedhoney_z3vdmn",
+      "whatcouldchinagetfromjen_e59su",
+      "hereswhattrumpsaidheknew_1hahqud",
+      "jensenhuangreportedlyeng_1qsmkfj",
+      "everythingweknowsofarabo_2z4tyr"
+    ],
+    "createdAt": "2026-11-10T04:39:13.041Z"
   }
 ]
