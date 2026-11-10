@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmw98ccp3",
-    "title": "트럼프의 '골든돔'\\n민주당이 벼른다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T12-22-23/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T12-22-23/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T12-22-23/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T12-22-23/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-09T12-22-23/05.jpg"
-    ],
-    "caption": "트럼프가 **22개월 전** 서명한 미사일 방어 계획 '골든돔'.\n그동안 의회의 제대로 된 검증 없이 **240억 달러**가 먼저 통과됐습니다.\n\n이제 예산권을 쥔 새 민주당 의회가 벼르고 있습니다.\n가장 논쟁적인 부분을 빼고, 이름까지 바꾸는 법안이 거론됩니다.\n\n현직·전직 관료 여섯 명의 전망을 전합니다.\n\n출처 · Ars Technica\n\n#골든돔 #미사일방어 #트럼프 #국방예산 #미국의회 #미국정치 #국방뉴스",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "newdemocraticcongresswil_7ejx2d"
-    ],
-    "createdAt": "2026-11-09T12:22:32.066Z"
-  },
-  {
     "draftId": "dmw9pfupc",
     "title": "앤트로픽 신모델 출시\\n그런데 왜 불안할까",
     "imageUrls": [
@@ -72,5 +55,23 @@
       "louisrossmannwantsmorepe_wzlxwa"
     ],
     "createdAt": "2026-11-10T11:58:20.623Z"
+  },
+  {
+    "draftId": "dmwaymqy9",
+    "title": "자막 끄듯 켤 수 있는 수어 통역사",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T17-26-14/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T17-26-14/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T17-26-14/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T17-26-14/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T17-26-14/05.jpg"
+    ],
+    "caption": "애플TV가 영화에 수어 통역사를 넣었습니다. 자막처럼 켜고 끄는 방식이라 더 자연스럽습니다.\n\n11월 13일 공개되는 '비잉 호이먼'부터 시작해 'F1', '그레이하운드', '워리어 키드'까지 순서대로 확장됩니다. AI 통역사 대신 사람이 직접 영화 분위기에 맞춰 통역을 만든다는 점도 눈에 띕니다.\n\niOS 27.2 업데이트 후 설정에서 바로 켤 수 있습니다.\n\n출처 · TechCrunch, Engadget\n\n#애플 #AppleTV #수어 #접근성 #장애인권 #ASL #테크뉴스",
+    "musicMood": "따뜻한 어쿠스틱",
+    "fingerprints": [
+      "appletvmakessignlanguage_1rp88w0",
+      "applebringssignlanguagei_108biz"
+    ],
+    "createdAt": "2026-11-10T17:26:23.029Z"
   }
 ]
