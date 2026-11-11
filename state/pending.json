@@ -1,40 +1,5 @@
 [
   {
-    "draftId": "dmwamxxdo",
-    "title": "고쳐 쓰고 싶은데\\n법이 막고 있다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T11-58-11/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T11-58-11/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T11-58-11/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T11-58-11/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T11-58-11/05.jpg"
-    ],
-    "caption": "내 돈 주고 산 아이폰인데, 왜 내 마음대로 못 고칠까요.\n\n유튜버 겸 소비자운동가 루이스 로스먼이 던지는 질문입니다. 그는 올해 미국 전역을 돌며 'Own Your Shit' 투어를 열고, 기기 잠금 해제를 금지하는 DMCA 1201조 폐지를 요구했습니다. AI가 기기 해킹을 더 쉽게 만들면서, 수리할 권리를 둘러싼 싸움은 이제 새로운 국면을 맞고 있습니다.\n\n출처 · Business Latest\n\n#수리할권리 #RightToRepair #애플 #아이폰 #루이스로스먼 #DMCA #테크뉴스",
-    "musicMood": "묵직한 로파이",
-    "fingerprints": [
-      "louisrossmannwantsmorepe_wzlxwa"
-    ],
-    "createdAt": "2026-11-10T11:58:20.623Z"
-  },
-  {
-    "draftId": "dmwaymqy9",
-    "title": "자막 끄듯 켤 수 있는 수어 통역사",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T17-26-14/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T17-26-14/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T17-26-14/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T17-26-14/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-10T17-26-14/05.jpg"
-    ],
-    "caption": "애플TV가 영화에 수어 통역사를 넣었습니다. 자막처럼 켜고 끄는 방식이라 더 자연스럽습니다.\n\n11월 13일 공개되는 '비잉 호이먼'부터 시작해 'F1', '그레이하운드', '워리어 키드'까지 순서대로 확장됩니다. AI 통역사 대신 사람이 직접 영화 분위기에 맞춰 통역을 만든다는 점도 눈에 띕니다.\n\niOS 27.2 업데이트 후 설정에서 바로 켤 수 있습니다.\n\n출처 · TechCrunch, Engadget\n\n#애플 #AppleTV #수어 #접근성 #장애인권 #ASL #테크뉴스",
-    "musicMood": "따뜻한 어쿠스틱",
-    "fingerprints": [
-      "appletvmakessignlanguage_1rp88w0",
-      "applebringssignlanguagei_108biz"
-    ],
-    "createdAt": "2026-11-10T17:26:23.029Z"
-  },
-  {
     "draftId": "dmwbhs4a5",
     "title": "디즈니 영화관이\\n헤드셋 속으로",
     "imageUrls": [
@@ -68,5 +33,22 @@
       "a13yearoldaskedaiaboutsu_1c00fci"
     ],
     "createdAt": "2026-11-11T11:37:36.445Z"
+  },
+  {
+    "draftId": "dmwceigki",
+    "title": "픽셀에게만 주는\\n제미나이 운전 비서",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-11T17-38-18/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-11T17-38-18/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-11T17-38-18/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-11T17-38-18/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-11T17-38-18/05.jpg"
+    ],
+    "caption": "운전 중에 문자 찾아줄 사람, 이제 AI가 대신합니다.\n\n구글이 **제미나이 인텔리전스**를 안드로이드 오토에 더했습니다. 다만 아직은 **픽셀 이용자만** 쓸 수 있는 기능입니다.\n\n친구가 약속 장소를 물어보면 제미나이가 확인 이메일을 찾아 한 번에 보내줍니다. 애플 시리와 비슷하지만, 먼저 알려주는 기능까지 될지는 아직 확인 중입니다.\n\n출처 · news\n\n#구글 #제미나이 #안드로이드오토 #픽셀 #AI비서 #테크뉴스 #GeminiAI",
+    "musicMood": "경쾌한 테크 비트",
+    "fingerprints": [
+      "pixelusersaregettingamaj_1pf9471"
+    ],
+    "createdAt": "2026-11-11T17:38:26.874Z"
   }
 ]
