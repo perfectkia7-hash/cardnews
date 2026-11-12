@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmwc1m59f",
-    "title": "학교 노트북 속 AI가\\n석 달을 지켜봤다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-11T11-37-28/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-11T11-37-28/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-11T11-37-28/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-11T11-37-28/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-11T11-37-28/05.jpg"
-    ],
-    "caption": "13살 소녀가 석 달 동안 AI와 나눈 대화, 학교는 몰랐습니다.\n\n자해 감지 시스템의 경보는 9개월 전 퇴사한 직원의 휴대폰으로 갔습니다.\n구글은 제미나이를 둘러싼 소송이 진행되는 와중에도 학교에 생성형 AI 기능을 강제하고 있습니다.\n저장해두고 다시 읽어보세요.\n\n출처 · Business Latest\n\n#AI #구글 #제미나이 #청소년안전 #AI윤리 #에듀테크 #미국뉴스",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "a13yearoldaskedaiaboutsu_1c00fci"
-    ],
-    "createdAt": "2026-11-11T11:37:36.445Z"
-  },
-  {
     "draftId": "dmwceigki",
     "title": "픽셀에게만 주는\\n제미나이 운전 비서",
     "imageUrls": [
@@ -51,5 +34,22 @@
       "nvidiaisreportedlyprepar_14w0fdg"
     ],
     "createdAt": "2026-11-12T03:29:51.485Z"
+  },
+  {
+    "draftId": "dmwdhwgl3",
+    "title": "구글·애플 로그인\\n내년에 사라진다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T12-00-39/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T12-00-39/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T12-00-39/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T12-00-39/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T12-00-39/05.jpg"
+    ],
+    "caption": "닌텐도 계정에서 구글·애플 로그인이 사라집니다.\n\n에겟젯 보도에 따르면 닌텐도는 내년 초부터 구글과 애플 계정으로 로그인하는 기능을 없앨 예정입니다. 대신 비밀번호나 패스키 설정을 요구합니다.\n\n닌텐도는 왜 없애는지 이유를 밝히지 않았습니다. 보안 문제 때문인지도 확인되지 않았습니다.\n\n게임과 eShop을 끊김 없이 쓰려면 지금 로그인 정보를 미리 정리해두는 게 좋겠습니다.\n\n출처 · Engadget\n\n#닌텐도 #Nintendo #구글 #애플 #패스키 #로그인 #eShop #테크뉴스",
+    "musicMood": "차분한 테크 비트",
+    "fingerprints": [
+      "nintendoisendinggooglean_6agwn8"
+    ],
+    "createdAt": "2026-11-12T12:00:47.712Z"
   }
 ]
