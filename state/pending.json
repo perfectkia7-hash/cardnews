@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmwdhwgl3",
-    "title": "구글·애플 로그인\\n내년에 사라진다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T12-00-39/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T12-00-39/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T12-00-39/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T12-00-39/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T12-00-39/05.jpg"
-    ],
-    "caption": "닌텐도 계정에서 구글·애플 로그인이 사라집니다.\n\n에겟젯 보도에 따르면 닌텐도는 내년 초부터 구글과 애플 계정으로 로그인하는 기능을 없앨 예정입니다. 대신 비밀번호나 패스키 설정을 요구합니다.\n\n닌텐도는 왜 없애는지 이유를 밝히지 않았습니다. 보안 문제 때문인지도 확인되지 않았습니다.\n\n게임과 eShop을 끊김 없이 쓰려면 지금 로그인 정보를 미리 정리해두는 게 좋겠습니다.\n\n출처 · Engadget\n\n#닌텐도 #Nintendo #구글 #애플 #패스키 #로그인 #eShop #테크뉴스",
-    "musicMood": "차분한 테크 비트",
-    "fingerprints": [
-      "nintendoisendinggooglean_6agwn8"
-    ],
-    "createdAt": "2026-11-12T12:00:47.712Z"
-  },
-  {
     "draftId": "dmwdueqhg",
     "title": "33년 만에\\n쫓겨났다",
     "imageUrls": [
@@ -73,5 +56,23 @@
       "whoophumansisasocialnetw_a40px0"
     ],
     "createdAt": "2026-11-13T11:45:34.592Z"
+  },
+  {
+    "draftId": "dmwf913c7",
+    "title": "일을 멈춰버린\\n마이크로소프트 장애",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T17-28-30/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T17-28-30/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T17-28-30/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T17-28-30/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T17-28-30/05.jpg"
+    ],
+    "caption": "마이크로소프트 365가 거의 이틀 동안 먹통이었습니다.\n\n목요일 오후 아웃룩, 팀즈, 코파일럿 365가 함께 멈췄고, 응급 신고부터 정부, 법원, 학교까지 영향을 받았습니다.\n\n원인은 애저 VNet 설정 변경으로 추정되며, 마이크로소프트는 사이버공격과는 무관하다고 밝혔습니다. 서비스는 서서히 복구되는 중입니다.\n\n출처 · Engadget, The Verge\n\n#마이크로소프트 #MS365 #아웃룩 #팀즈 #IT장애 #애저 #테크뉴스 #글로벌이슈",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "microsoftservicesareretu_3dq7rg",
+      "microsoftsmassiveoutlook_ia14zx"
+    ],
+    "createdAt": "2026-11-13T17:28:42.707Z"
   }
 ]
