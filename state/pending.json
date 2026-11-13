@@ -1,24 +1,5 @@
 [
   {
-    "draftId": "dmwczmxbk",
-    "title": "4.2조 달러 기업의\\nCEO가 흔들린다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T03-29-42/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T03-29-42/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T03-29-42/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T03-29-42/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T03-29-42/05.jpg"
-    ],
-    "caption": "세계 최대 반도체 기업, 엔비디아의 CEO 자리가 흔들리고 있습니다.\n\n33년간 회사를 이끈 젠슨 황이 두 건의 스캔들에 휘말리며, 이사회가 그의 해임을 검토하고 있다고 합니다. 소식이 전해지자 주가는 하루 만에 8% 넘게 빠졌습니다.\n\n후계자도, 이사회 의장도 없는 엔비디아가 어떤 선택을 할지 지켜봐야 할 것 같습니다.\n\n출처 · TechCrunch, Ars Technica, The Verge\n\n#엔비디아 #젠슨황 #Nvidia #AI반도체 #실리콘밸리 #테크뉴스 #CEO교체 #월스트리트저널",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "nvidiasstockdropsasboard_149jcq9",
-      "ceojensenhuangsjobissudd_dlu1zl",
-      "nvidiaisreportedlyprepar_14w0fdg"
-    ],
-    "createdAt": "2026-11-12T03:29:51.485Z"
-  },
-  {
     "draftId": "dmwdhwgl3",
     "title": "구글·애플 로그인\\n내년에 사라진다",
     "imageUrls": [
@@ -75,5 +56,22 @@
       "jensenhuangisoutwillnvid_ieyemf"
     ],
     "createdAt": "2026-11-13T03:02:28.555Z"
+  },
+  {
+    "draftId": "dmwewsm56",
+    "title": "진짜 인간 인증\\n운동 데이터로 한다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T11-45-26/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T11-45-26/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T11-45-26/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T11-45-26/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T11-45-26/05.jpg"
+    ],
+    "caption": "웨어러블 없이는 올릴 수 없는 SNS가 등장했습니다.\n\nWhoop이 자사 기기로 측정한 수면·회복·운동 데이터만 공유할 수 있는 소셜 네트워크 'Whoop Humans'를 열었습니다. AI가 만든 콘텐츠가 넘치는 시대에, '진짜 인간'임을 증명하는 방식으로 운동 데이터를 택했다는 점이 흥미롭습니다.\n\n출처 · Engadget\n\n#AI #Whoop #웨어러블 #소셜네트워크 #헬스테크 #운동데이터 #테크뉴스",
+    "musicMood": "경쾌한 테크팝",
+    "fingerprints": [
+      "whoophumansisasocialnetw_a40px0"
+    ],
+    "createdAt": "2026-11-13T11:45:34.592Z"
   }
 ]
