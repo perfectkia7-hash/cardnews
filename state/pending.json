@@ -1,23 +1,5 @@
 [
   {
-    "draftId": "dmwee2zge",
-    "title": "창업자가 쫓겨났다\\n직원들은 그를 원한다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T03-02-19/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T03-02-19/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T03-02-19/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T03-02-19/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T03-02-19/05.jpg"
-    ],
-    "caption": "불륜 스캔들로 쫓겨난 창업자를, 직원들은 다시 데려오라고 요구하고 있습니다.\n\n엔비디아 젠슨 황이 결국 사임했습니다. 중국 정보요원 의혹 인물과의 불륜을 인정한 지 며칠 만이었습니다. 하지만 사내 게시판에는 '보스를 돌려달라'는 댓글이 1,600개 넘게 쏟아졌습니다. 회사는 이미 시가총액 1조 달러를 날렸고, 미국 의회와 FBI 조사까지 받고 있습니다. 창업자 한 명의 스캔들이 어디까지 번질지, 아직은 알 수 없습니다.\n\n출처 · Business Latest\n\n#엔비디아 #젠슨황 #AI #테크뉴스 #실리콘밸리 #기업스캔들 #반도체 #글로벌테크",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "bringbackthebossnvidiaem_1a2l3dx",
-      "jensenhuangisoutwillnvid_ieyemf"
-    ],
-    "createdAt": "2026-11-13T03:02:28.555Z"
-  },
-  {
     "draftId": "dmwewsm56",
     "title": "진짜 인간 인증\\n운동 데이터로 한다",
     "imageUrls": [
@@ -69,5 +51,22 @@
       "faaordersthirdnationwide_1a2omz4"
     ],
     "createdAt": "2026-11-14T02:49:22.493Z"
+  },
+  {
+    "draftId": "dmwgav0a1",
+    "title": "AI가 하늘을 맡았다\\n그리고 하늘이 멈췄다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T11-07-14/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T11-07-14/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T11-07-14/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T11-07-14/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T11-07-14/05.jpg"
+    ],
+    "caption": "AI 항공관제 도구를 '게임 체인저'라 소개한 지 3주 만에, 미국 전역 운항이 멈췄습니다.\n\n같은 시기 조비 에비에이션의 비행기는 조종사 없이 3,200마일을 날았습니다.\n하늘을 둘러싼 AI 도입 속도와, 그걸 믿어도 되는지에 대한 질문이 동시에 번지고 있습니다.\n\n저장해두고 지켜보세요.\n\n출처 · Business Latest\n\n#AI #항공뉴스 #항공관제 #FAA #그라운드스톱 #조비에비에이션 #테크뉴스 #인공지능",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "nopilotsfewairtrafficcon_nhnftc"
+    ],
+    "createdAt": "2026-11-14T11:07:23.235Z"
   }
 ]
