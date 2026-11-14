@@ -1,22 +1,5 @@
 [
   {
-    "draftId": "dmwewsm56",
-    "title": "진짜 인간 인증\\n운동 데이터로 한다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T11-45-26/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T11-45-26/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T11-45-26/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T11-45-26/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-13T11-45-26/05.jpg"
-    ],
-    "caption": "웨어러블 없이는 올릴 수 없는 SNS가 등장했습니다.\n\nWhoop이 자사 기기로 측정한 수면·회복·운동 데이터만 공유할 수 있는 소셜 네트워크 'Whoop Humans'를 열었습니다. AI가 만든 콘텐츠가 넘치는 시대에, '진짜 인간'임을 증명하는 방식으로 운동 데이터를 택했다는 점이 흥미롭습니다.\n\n출처 · Engadget\n\n#AI #Whoop #웨어러블 #소셜네트워크 #헬스테크 #운동데이터 #테크뉴스",
-    "musicMood": "경쾌한 테크팝",
-    "fingerprints": [
-      "whoophumansisasocialnetw_a40px0"
-    ],
-    "createdAt": "2026-11-13T11:45:34.592Z"
-  },
-  {
     "draftId": "dmwf913c7",
     "title": "일을 멈춰버린\\n마이크로소프트 장애",
     "imageUrls": [
@@ -68,5 +51,23 @@
       "nopilotsfewairtrafficcon_nhnftc"
     ],
     "createdAt": "2026-11-14T11:07:23.235Z"
+  },
+  {
+    "draftId": "dmwglyth4",
+    "title": "운전대 없는 테슬라 개인에게도 판다",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T16-18-43/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T16-18-43/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T16-18-43/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T16-18-43/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T16-18-43/05.jpg"
+    ],
+    "caption": "테슬라가 운전대 없는 사이버캡을, 드디어 개인에게도 팝니다.\n\n가격표는 2만9,990달러지만, 월 299달러 구독료 없인 작동하지 않습니다. 5년을 타면 실제 비용은 약 4만7,600달러에 달합니다.\n\n탈 수 있는 지역은 테슬라 로보택시가 다니는 곳으로 한정되고, 미국 교통당국(NHTSA)은 자체 인증 절차를 들여다보고 있습니다.\n\n인도 예정일은 2026년 12월, 실제로 소비자 손에 들어갈지는 아직 지켜봐야 합니다.\n\n출처 · The Verge, Engadget\n\n#테슬라 #사이버캡 #로보택시 #일론머스크 #자율주행 #테크뉴스 #전기차",
+    "musicMood": "긴장감 있는 비트",
+    "fingerprints": [
+      "teslaisinvitingsomepeopl_nn3jnt",
+      "teslastartstakingcyberca_1ne188q"
+    ],
+    "createdAt": "2026-11-14T16:18:51.117Z"
   }
 ]
