@@ -1,28 +1,5 @@
 [
   {
-    "draftId": "dmwdueqhg",
-    "title": "33년 만에\\n쫓겨났다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T17-51-24/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T17-51-24/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T17-51-24/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T17-51-24/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-12T17-51-24/05.jpg"
-    ],
-    "caption": "엔비디아의 유일한 CEO가 33년 만에 하루아침에 자리에서 내려왔습니다.\n\n표면적인 이유는 두 번째 불륜설이지만, 진짜 문제는 그보다 훨씬 심각합니다. 젠슨 황의 상대 중 한 명은 중국 스파이로 의심되는 인물이었고, 그가 몸담은 싱가포르 네오클라우드는 엔비디아 칩의 중국 밀반출 의혹까지 받고 있습니다.\n\n젠슨 황은 추수감사절 전까지 의회에서 증언하기로 했고, 트럼프 대통령은 벌써 팀 쿡을 후임으로 띄웠습니다. 오픈소스 AI 진영도 긴장 속에 상황을 지켜보고 있습니다.\n\n출처 · The Verge, TechCrunch\n\n#젠슨황 #엔비디아 #Nvidia #AI뉴스 #테크뉴스 #중국스파이 #실리콘밸리 #CEO교체",
-    "musicMood": "긴장감 있는 다크신스",
-    "fingerprints": [
-      "thejensenhuangscandalish_90mpdh",
-      "huggingfaceceovowstokeep_18lapvi",
-      "jensenhuangagreestotesti_1e2ugor",
-      "fivewaysjensenhuangsoust_1q0wwhx",
-      "jensenhuangisoutwhatdidc_1k9awpi",
-      "trumpfloatsapplechairman_ppmktf",
-      "jensenhuangisoutatnvidia_1p4usqu"
-    ],
-    "createdAt": "2026-11-12T17:51:35.506Z"
-  },
-  {
     "draftId": "dmwee2zge",
     "title": "창업자가 쫓겨났다\\n직원들은 그를 원한다",
     "imageUrls": [
@@ -74,5 +51,23 @@
       "microsoftsmassiveoutlook_ia14zx"
     ],
     "createdAt": "2026-11-13T17:28:42.707Z"
+  },
+  {
+    "draftId": "dmwft1n4h",
+    "title": "하늘길이 멈췄다 미국 전역 이륙 중단",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T02-49-13/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T02-49-13/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T02-49-13/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T02-49-13/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T02-49-13/05.jpg"
+    ],
+    "caption": "미국 전역의 비행기가 4시간 넘게 멈춰 섰습니다.\n\nFAA가 '이례적 상황과 안전'을 이유로 전국 지상대기를 명령했습니다. 2001년 9·11, 2023년 1월에 이어 역대 세 번째입니다. 국토안보부는 악의적 공격의 징후는 없다고 밝혔고, 교통장관은 노후 아날로그 통신장비의 과부하를 원인으로 지목했습니다. CBS는 L3해리스의 통신망 업데이트가 재부팅을 일으켰다고 보도했습니다.\n\n저장해두고 자세히 읽어보세요.\n\n출처 · The Verge, Ars Technica\n\n#FAA #항공뉴스 #미국항공 #지상대기 #항공대란 #테크뉴스 #속보",
+    "musicMood": "긴장감 있는 신스",
+    "fingerprints": [
+      "faaliftsnationwideground_w3phtd",
+      "faaordersthirdnationwide_1a2omz4"
+    ],
+    "createdAt": "2026-11-14T02:49:22.493Z"
   }
 ]
