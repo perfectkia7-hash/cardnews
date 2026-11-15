@@ -1,40 +1,5 @@
 [
   {
-    "draftId": "dmwft1n4h",
-    "title": "하늘길이 멈췄다 미국 전역 이륙 중단",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T02-49-13/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T02-49-13/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T02-49-13/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T02-49-13/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T02-49-13/05.jpg"
-    ],
-    "caption": "미국 전역의 비행기가 4시간 넘게 멈춰 섰습니다.\n\nFAA가 '이례적 상황과 안전'을 이유로 전국 지상대기를 명령했습니다. 2001년 9·11, 2023년 1월에 이어 역대 세 번째입니다. 국토안보부는 악의적 공격의 징후는 없다고 밝혔고, 교통장관은 노후 아날로그 통신장비의 과부하를 원인으로 지목했습니다. CBS는 L3해리스의 통신망 업데이트가 재부팅을 일으켰다고 보도했습니다.\n\n저장해두고 자세히 읽어보세요.\n\n출처 · The Verge, Ars Technica\n\n#FAA #항공뉴스 #미국항공 #지상대기 #항공대란 #테크뉴스 #속보",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "faaliftsnationwideground_w3phtd",
-      "faaordersthirdnationwide_1a2omz4"
-    ],
-    "createdAt": "2026-11-14T02:49:22.493Z"
-  },
-  {
-    "draftId": "dmwgav0a1",
-    "title": "AI가 하늘을 맡았다\\n그리고 하늘이 멈췄다",
-    "imageUrls": [
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T11-07-14/01.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T11-07-14/02.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T11-07-14/03.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T11-07-14/04.jpg",
-      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-14T11-07-14/05.jpg"
-    ],
-    "caption": "AI 항공관제 도구를 '게임 체인저'라 소개한 지 3주 만에, 미국 전역 운항이 멈췄습니다.\n\n같은 시기 조비 에비에이션의 비행기는 조종사 없이 3,200마일을 날았습니다.\n하늘을 둘러싼 AI 도입 속도와, 그걸 믿어도 되는지에 대한 질문이 동시에 번지고 있습니다.\n\n저장해두고 지켜보세요.\n\n출처 · Business Latest\n\n#AI #항공뉴스 #항공관제 #FAA #그라운드스톱 #조비에비에이션 #테크뉴스 #인공지능",
-    "musicMood": "긴장감 있는 신스",
-    "fingerprints": [
-      "nopilotsfewairtrafficcon_nhnftc"
-    ],
-    "createdAt": "2026-11-14T11:07:23.235Z"
-  },
-  {
     "draftId": "dmwglyth4",
     "title": "운전대 없는 테슬라 개인에게도 판다",
     "imageUrls": [
@@ -70,5 +35,23 @@
       "spacexsuccessfullycatche_1q8l7es"
     ],
     "createdAt": "2026-11-15T02:16:31.212Z"
+  },
+  {
+    "draftId": "dmwhrjp6v",
+    "title": "스트리밍 앱이 멈춘다면\\n캐시부터 지워보세요",
+    "imageUrls": [
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-15T11-42-13/01.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-15T11-42-13/02.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-15T11-42-13/03.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-15T11-42-13/04.jpg",
+      "https://raw.githubusercontent.com/perfectkia7-hash/cardnews/main/cards/2026-11-15T11-42-13/05.jpg"
+    ],
+    "caption": "넷플릭스가 자꾸 멈추거나 로딩이 느려졌다면, 범인은 캐시일 수 있습니다.\n\n스마트TV든 콘솔이든 오래 쓰면 임시 파일이 쌓이고, 그게 성능을 갉아먹습니다. 삼성 TV와 엑스박스 시리즈X에서 캐시를 지우는 방법과, 그게 왜 도움이 되는지를 정리했습니다.\n\n저장해두고 기기가 느려졌을 때 꺼내보세요.\n\n출처 · Engadget\n\n#테크 #삼성TV #엑스박스 #스마트TV팁 #게임콘솔 #IT상식 #캐시삭제",
+    "musicMood": "경쾌한 미니멀 비트",
+    "fingerprints": [
+      "howtoclearthecacheonyour_cuah4n",
+      "howtoclearthecacheonyour_mbix7t"
+    ],
+    "createdAt": "2026-11-15T11:42:21.095Z"
   }
 ]
